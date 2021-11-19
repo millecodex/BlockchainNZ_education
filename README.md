@@ -7,7 +7,7 @@ blockchain.org.nz/
 ├── news
 ├── events
 └── info hub
-    ├── what is a blockchain?
+    ├── what is a blockchain? [link](https://blockchain.org.nz/)
     │   ├──what is a blockchain?
     │   ├──what is a cryptocurrency?
     │   ├──featured topic: DeFi?
@@ -21,4 +21,4 @@ blockchain.org.nz/
         ├──what?
         ├──what?
         └──what?
-```
+   ```  
