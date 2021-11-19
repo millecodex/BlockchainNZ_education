@@ -8,9 +8,9 @@ blockchain.org.nz/\
 ├── news\
 ├── events\
 └── info hub\
-  ├── what is a blockchain?\
-  │  ├──[what is a blockchain?](what_is_a_blockchain.md)\
-  │  ├──[what is a cryptocurrency?](what_is_a_cryptocurrency.md)\
+  ├── [what is a blockchain?](what_is_a_blockchain.md)\
+  │  ├──what is a blockchain?\
+  │  ├──what is a cryptocurrency?\
   │  ├──[featured topic: DeFi(?)](what_is_defi)\
   │  └──see all featured topics\
   ├── about the industry\
