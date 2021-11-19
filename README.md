@@ -11,6 +11,7 @@ blockchain.org.nz/\
   ├── [what is a blockchain?](articles/what_is_a_blockchain.md)\
   │  ├──what is a blockchain?\
   │  ├──what is a cryptocurrency?\
+  │  │  └──[what is bitcoin?](articles/bitcoin.md)  
   │  ├──[featured topic: DeFi(?)](articles/defi.md)\
   │  └──see all featured topics\
   ├── about the industry\
@@ -20,5 +21,5 @@ blockchain.org.nz/\
      ├──courses\
      ├──resources\
      ├──how to become certified\
-     ├──FAQ\
-     └──glossary\
+     ├──FAQ\     
+     └──glossary
