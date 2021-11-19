@@ -39,8 +39,8 @@ And an ugly version with links:\
    ├── standards & regulations\
    ├── careers\
    └── education\
-      ├──courses\
-      ├──resources\
-      ├──how to become certified\
-      ├──FAQ\
-      └──glossary\
+       ├──courses\
+       ├──resources\
+       ├──how to become certified\
+       ├──FAQ\
+       └──glossary\
