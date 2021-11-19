@@ -4,7 +4,7 @@
 Text here.
 
 # What is a cryptocurrency?
-Text here.
+Text here. [Bitcoin](bitcoin.md)
 
 # Featured Topic: DeFi
 Blurb here. [Read more.](defi.md)
