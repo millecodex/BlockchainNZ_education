@@ -7,7 +7,7 @@ blockchain.org.nz/\
 ├── members\
 ├── news\
 ├── events\
-└── info hub\  
+└── info hub
   ├── [what is a blockchain?](articles/what_is_a_blockchain.md)\
   │  ├──what is a blockchain?\
   │  ├──what is a cryptocurrency?\
@@ -21,5 +21,5 @@ blockchain.org.nz/\
      ├──courses\
      ├──resources\
      ├──how to become certified\
-     ├──FAQ\     
+     ├──FAQ 
      └──glossary
