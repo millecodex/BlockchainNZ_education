@@ -1,8 +1,7 @@
 # Sitemap for https://blockchain.org.nz/
 Web content for Blockchain New Zealand's education section.
 
-
-And an ugly version with links:\
+### Sitemap:
 blockchain.org.nz/\
 ├── about\
 ├── members\
