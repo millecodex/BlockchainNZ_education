@@ -7,11 +7,11 @@ blockchain.org.nz/\
 ├── members\
 ├── news\
 ├── events\
-└── info hub\
-  ├── [what is a blockchain?](articles\what_is_a_blockchain.md)\
+└── info hub\  
+  ├── [what is a blockchain?](articles/what_is_a_blockchain.md)\
   │  ├──what is a blockchain?\
   │  ├──what is a cryptocurrency?\
-  │  ├──[featured topic: DeFi(?)](articles\defi)\
+  │  ├──[featured topic: DeFi(?)](articles/defi)\
   │  └──see all featured topics\
   ├── about the industry\
   ├── standards & regulations\
