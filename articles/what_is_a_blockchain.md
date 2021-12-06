@@ -12,7 +12,7 @@ Today there are myriad cryptocurrencies and blockchains with more or less of all
 # What is a cryptocurrency?
 Bitcoin was the first blockchain and presented the first use-case for a blockchain—money. The problem of digital cash was unsovled until Satoshi Nakamoto (an alias) released [software](https://bitcointalk.org/index.php?topic=382374.0) in 2008 as an experiment to see if his version could prevent coins from being copied and incentivise people to join the network. Bitcoin is referred to as a cryptocurency because user's coins are kept secure from theft using asymmetric encryption (the same technology that keeps credit card details safe when shopping online). 
 
-Today the term cryptocurrency refers to digital tokens that are represented on a blockchain such as bitcoin (lower-case *b*, $BTC), or ether (from ethereum, $ETH). Generally these tokens have value and are interchangeable (fungible). Cryptocurrency is distinct from fiat (government-backed) currency, whether its digital or cash, although the lines are becoming blurred with central bank digital currencies (CBDCs). It is also distinct from utility tokens and security tokens. And all of these are separate from NFTs!
+Today the term cryptocurrency refers to digital tokens that are represented on a blockchain such as bitcoin (lower-case *b*, $BTC), or ether (from ethereum, $ETH). Generally these tokens have value and are interchangeable (fungible). Cryptocurrency is distinct from fiat (government-backed) currency, whether its digital or cash, although the lines are becoming blurred with central bank digital currencies (CBDCs). It is also distinct from utility tokens and security tokens. And all of these are separate from NFTs! (non-fungible tokens).
 
 [See more about Bitcoin](bitcoin.md)
 
