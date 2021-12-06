@@ -2,8 +2,9 @@
 First, a brief history of the problem that Satoshi Nakamoto was looking to solve.
 
 ## Digital Cash
-* 80's & 90's
-* double-spend problem
+* The 80's & 90's has many attempts to create a digital version of money that could have a token treated as a bearer instrument and not subject to the fragilities of third party issuers and verifiers. To name a few there was Ecash ---- and Digicash in 1990. A more complete version was found with B-money and Bit Gold. See the ACM article (ref below) for a history.
+* 
+* The double-spend problem 
 
 ## The Whitepaper
 * fixed supply
@@ -18,7 +19,7 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * energy consumption
 
 ### Network
-* consensus / longest chain
+* consensus / longest chain / byzantine generals problem
 * 10-100k nodes
 * core software / dev community
 * layer 1 blockchain; lightning network
@@ -27,8 +28,8 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * most robust network humans have created
 * bootstrapped an entire financial system; global settlement in minutes; fees orders of magnitude lower than before
 * 2% of global population has used it
-* 16th largest currency next to the Russian Ruble and Swiss Franc (source)
-*
+* 14th largest currency next to the Russian Ruble and Swiss Franc [(source)](https://coinmarketcap.com/fiat-currencies/)
+
 
 ## Further Reading
 * The whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
