@@ -7,7 +7,7 @@ Sometimes referred to as decentralized-ledger technology, or DLT, a blockchain c
 
 Many blockchain projects are open-sourced so improvements are made by the community of developers, or copies can be made (called *forks*) where others can experiment and try out new features. A *public* and *permissionless* network is open to anyone to view the data and its source code; no one needs permission to access the data or run a node. An important feature of a public open network is that it is *censorship-resistant* and one of the reasons for Bitcoin's popularity and growth. There is no pay-to-play or gatekeeper and ideally everyone has equal access to the network.
 
-Today there are myriad cryptocurrencies and blockchains with more or less of all the attributes described here, however, all can trace their roots back to Bitcoin.
+Today there are myriad cryptocurrencies and blockchains with more or less of all the attributes described here, however, all can trace their roots back to [Bitcoin](bitcoin.md).
 
 # What is a cryptocurrency?
 Bitcoin was the first blockchain and presented the first use-case for a blockchain—money. The problem of digital cash was unsovled until Satoshi Nakamoto (an alias) released [software](https://bitcointalk.org/index.php?topic=382374.0) in 2008 as an experiment to see if his version could prevent coins from being copied and incentivise people to join the network. Bitcoin is referred to as a cryptocurency because user's coins are kept secure from theft using asymmetric encryption (the same technology that keeps credit card details safe when shopping online). 
