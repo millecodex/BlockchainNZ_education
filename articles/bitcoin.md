@@ -10,16 +10,17 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * addressess/ecdsa
 * utxo
 
-## Mining
+### Mining
 * the block reward
 * difficulty adjustment
+* security
 * asics
 * energy consumption
 
-## Network
-* software
+### Network
+* consensus / longest chain
 * 10-100k nodes
-* community
+* core software / dev community
 * layer 1 blockchain; lightning network
 
 ## Today
@@ -28,6 +29,10 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * 2% of global population has used it
 * 16th largest currency next to the Russian Ruble and Swiss Franc (source)
 *
+
+## Further Reading
+* The whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
+* [*Bitcoin's Academic Pedigree*, Communications of the ACM](https://cacm.acm.org/magazines/2017/12/223058-bitcoins-academic-pedigree/fulltext)
 
 
 
