@@ -26,6 +26,10 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * core software / dev community
 * layer 1 blockchain; lightning network
 
+### Socio-economic Factors
+* born from the ashes of the GFC
+* genesis block
+
 ## Today
 * most robust network humans have created
 * bootstrapped an entire financial system; global settlement in minutes; fees orders of magnitude lower than before
