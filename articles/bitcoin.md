@@ -7,7 +7,6 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * The double-spend problem 
 
 ## The Whitepaper
-
 * fixed supply is a decreasing geometric series
 * addressess/ecdsa
 * utxo
@@ -32,7 +31,8 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * bootstrapped an entire financial system; global settlement in minutes; fees orders of magnitude lower than before
 * 2% of global population has used it
 * 14th largest currency next to the Russian Ruble and Swiss Franc [(source)](https://coinmarketcap.com/fiat-currencies/)
-
+* 7 tps 
+* SoV
 
 ## Further Reading
 * The whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
