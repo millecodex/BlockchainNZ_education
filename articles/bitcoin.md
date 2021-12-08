@@ -7,9 +7,11 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * The double-spend problem 
 
 ## The Whitepaper
+
 * fixed supply is a decreasing geometric series
 * addressess/ecdsa
 * utxo
+<img width="800" alt="bitcoin_header" src="https://user-images.githubusercontent.com/39792005/145146212-c35aff55-97ab-478a-8e10-de2977bc7a7f.PNG">
 
 ### Mining
 * SHA256 & hashing
