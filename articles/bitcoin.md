@@ -37,6 +37,7 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * 14th largest currency next to the Russian Ruble and Swiss Franc [(source)](https://coinmarketcap.com/fiat-currencies/)
 * 7 tps 
 * SoV
+* features transparent, etc.; block explorers
 
 ## Further Reading
 * The whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
