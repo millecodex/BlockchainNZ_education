@@ -7,13 +7,14 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * The double-spend problem 
 
 ## The Whitepaper
-* fixed supply
+* fixed supply is a decreasing geometric series
 * addressess/ecdsa
 * utxo
 
 ### Mining
-* the block reward
+* SHA256 & hashing
 * difficulty adjustment
+* the block reward
 * security
 * asics
 * energy consumption
