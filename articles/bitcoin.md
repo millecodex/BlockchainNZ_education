@@ -1,13 +1,15 @@
 # What is bitcoin?
 First, a brief history of the problem that Satoshi Nakamoto was looking to solve.
 
-## Digital Cash
+## Digital Cash (without the bank)
 * The 80's & 90's saw many attempts to create a digital version of money that could have a token, both private and untraceable, treated as a bearer instrument and not subject to the fragilities of third party issuers and verifiers. To name a few there was David Chaum's work on *Untraceable Electronic Cash*, Wei Dai's [*b-money*](http://www.weidai.com/bmoney.txt), and Nick Szabo's [*Bit Gold*](https://unenumerated.blogspot.com/2005/12/bit-gold.html).
 * Many technical challenges along the road to these approaches were overcome by advances in cryptography such as digital signatures and hash functions. One problem stood out: how to prevent someone from using a digital coin at one shop, copying it, and using it a second time at another shop? Known as the double-spend problem, this is easily sovled using a centralized authority to check someone's balance and update it accordingly; by the time you arrive at the second retailer your card will be declined for insufficient funds.
-* The decentralized approach that removes the bank is *one* of the revolutionary ideas put forward by Satoshi.  
+* The decentralized approach that removes the bank is *one* of the revolutionary ideas put forward by Satoshi in his whitepaper.  
 
 ## The Whitepaper
-<img width="800" alt="bitcoin_header" src="https://user-images.githubusercontent.com/39792005/145146212-c35aff55-97ab-478a-8e10-de2977bc7a7f.PNG">
+<img width="800" alt="header to the bitcoin whitepaper" src="https://user-images.githubusercontent.com/39792005/145146212-c35aff55-97ab-478a-8e10-de2977bc7a7f.PNG">
+There are many components to this system that will be introduced. Individually it can be difficult to see the connection between them and how they contribute to a peer-to-peer monetary system. This is intended to be an overview and if you are just learning about Bitcoin don't be disuaded if the pieces don't fall into place quickly *(Learning is hard!)*
+
 * fixed supply is a decreasing geometric series
 * addressess/ecdsa
 * utxo
