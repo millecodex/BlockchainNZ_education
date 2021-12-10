@@ -8,6 +8,8 @@ blockchain.org.nz/
     ├── what is a blockchain?
     │   ├──what is a blockchain?
     │   ├──what is a cryptocurrency?
+    │   │  ├──what is bitcoin?
+    │   │  └──what is ethereum?
     │   ├──featured topic: DeFi?
     │   └──see all featured topics
     ├── about the industry
