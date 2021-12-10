@@ -61,5 +61,8 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * On the Shoulder of Giants - History of the tech: [*Bitcoin's Academic Pedigree*, Communications of the ACM](https://cacm.acm.org/magazines/2017/12/223058-bitcoins-academic-pedigree/fulltext)
 * [An extensive list of Bitcoin resources](https://www.lopp.net/bitcoin-information.html)
 
+### About the Author
+Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and Executive Council member of BlockchainNZ
+
 
 
