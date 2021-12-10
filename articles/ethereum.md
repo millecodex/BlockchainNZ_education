@@ -6,14 +6,13 @@ First, a brief history of the problem that Vitalik Buterin was looking to solve.
 # Initial Coin Offering (ICO)
 * founders / premine / foundation
 * pow
-* difficulty bomb
 * unlimited supply
 * DAO hack
 
 # Arbitrary Computation
 * Smart Contracts
 * Ethereum Virtual Machine (EVM)
-* Proof-of-Stake?
+* Proof-of-Stake? difficulty bomb
 
 # Applications
 * stable coins
@@ -24,9 +23,12 @@ First, a brief history of the problem that Vitalik Buterin was looking to solve.
 # Scaling
 * ETH2
 * alternate L1's
+* arbitrum
 
 # What did we miss?
-
+* sharding
+* rollups
+* 
 
 # Further Reading - the very short list
 * The Whitepaper
