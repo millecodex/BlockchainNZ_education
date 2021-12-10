@@ -7,17 +7,18 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * The decentralized approach that removes the bank is *one* of the revolutionary ideas put forward by Satoshi in his whitepaper.  
 
 ## The Whitepaper
-<img width="800" alt="header to the bitcoin whitepaper" src="https://user-images.githubusercontent.com/39792005/145146212-c35aff55-97ab-478a-8e10-de2977bc7a7f.PNG">
+<p align="center"><img width="800" alt="header to the bitcoin whitepaper" src="https://user-images.githubusercontent.com/39792005/145146212-c35aff55-97ab-478a-8e10-de2977bc7a7f.PNG"></p>
+
 * There are many components to this system that will be introduced. Individually it can be difficult to see the connection between them and how they contribute to a peer-to-peer monetary system. This is intended to be an overview and if you are just learning about Bitcoin don't be disuaded if the pieces don't fall into place quickly *(Learning is hard!)*
 
-### p2p Network & Consensus
+### Peer-to-Peer Networks & Consensus Mechanisms
 * The key to the double-spend is to distribute the record of transactions to every participant in the network. In this manner every seller can verify independently that any buyer has the required unspent amount. Every new transaction is shared through the network with everyone else in a peer-to-peer (p2p) manner, rather than sending to a central server and having them update the accounts, this is handled at the individual level. The distributed ledger removes both the need for centralized accounting, and for trust between usesr. There is no reason for Alice to trust Bob because the network consensus says that Bob has the authority to spend his coins.
 
 * Practicaly speaking, each peer in the network listens for new blocks of transactions, verifies them, and adds them to their own, local database. Should two nodes have conflicting information because they received new blocks at slightly different times, or with different transactions in them, then the state is said to fork, and for the time being *both* forks are valid. Resolving forks happens often, is expected, and is the job of the consensus mechanism. The way that Bitcoin does this is by a longest chain rule, meaning that whatever node has the longest chain of blocks is the most likely to receive a new block and therefore continue the chain. If a node falls behind, then it abandons its chain and contributes to the longest. This method of distributed system consensus is now known as *Nakamoto* conseneus.
  
 * Because the chain is public you can do an inventory of nodes online at any given time. This also removes gatekeepers as anyone is free to join or leave at any time. At the end of 2021 the number of [bitcoin nodes](https://bitnodes.io/) globally was just under 15,000. (Compare this with centralized systems like Facebook that keep your data on anywhere from 3-5 nodes.)
 
-### Mining & Security
+### Proof-of-Work Mining & Network Security
 * The next major advance demonstrated in Bitcoin was using computational power through proof-of-work to act as a secure time-stamping service. This accomplished two things: keeps the network secure because it is very hard to alter the ledger (needs heaps of power) and incentivses actors to behave honestly (in their economic best interest) 
 
 * A hash is a cryptographic function that scrambles input data and outputs a fixed-length string that appears random. Any data of any size can be fed into a hash, such as a transaction, an image, or an entire block, and the result is a string of letters and numbers that can only be recreated using the original data. This makes hashing one-way, it cannot be reverse engineered, and if you have the original data the hash can be verified very quickly.
@@ -30,7 +31,7 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 
 * So, PoW is called mining because of the non-redeemable effort that goes into finding new new coins. Every ten minumtes on average a new block is  mined and with it the miner can redeem the block reward - new bitcoins. 
 
-### Economics & Supply
+### Economic Incentives & Monetary Supply
 * The economics of creating a new currency are tricky. There are many problems to consider such as: how is the money distributed? How much is there? How will the supply change over time? Bitcoin deviates from the textbook answers to these questions by setting a fixed upper limit on the number of bitcoin that will ever be produced in addition to a mathematical supply schedule. (Distribution is handled by mining.)
 
 * The fixed upper limit is set at 21 million bitcoin and is an aribtrary constant; as long as the money is divisible the unit amount does not matter. Bitcoin is divisible into 8 decimal places, so the smallest unit, a *satoshi*, is 0.000 000 01 BTC. Divisibility is a benefit of digital money as settlement of small amounts can be handled if fees are cheap enough.
