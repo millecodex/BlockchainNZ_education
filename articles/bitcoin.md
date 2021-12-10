@@ -11,7 +11,6 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 * There are many components to this system that will be introduced. Individually it can be difficult to see the connection between them and how they contribute to a peer-to-peer monetary system. This is intended to be an overview and if you are just learning about Bitcoin don't be disuaded if the pieces don't fall into place quickly *(Learning is hard!)*
 
 ### p2p Network & Consensus
-* consensus / longest chain / byzantine generals problem
 * The key to the double-spend is to distribute the record of transactions to every participant in the network. In this manner every seller can verify independently that any buyer has the required unspent amount. Every new transaction is shared through the network with everyone else in a peer-to-peer (p2p) manner, rather than sending to a central server and having them update the accounts, this is handled at the individual level. The distributed ledger removes both the need for centralized accounting, and for trust between usesr. There is no reason for Alice to trust Bob because the network consensus says that Bob has the authority to spend his coins.
 
 * Practicaly speaking, each peer in the network listens for new blocks of transactions, verifies them, and adds them to their own, local database. Should two nodes have conflicting information because they received new blocks at slightly different times, or with different transactions in them, then the state is said to fork, and for the time being *both* forks are valid. Resolving forks happens often, is expected, and is the job of the consensus mechanism. The way that Bitcoin does this is by a longest chain rule, meaning that whatever node has the longest chain of blocks is the most likely to receive a new block and therefore continue the chain. If a node falls behind, then it abandons its chain and contributes to the longest. This method of distributed system consensus is now known as *Nakamoto* conseneus.
@@ -38,15 +37,10 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 
 * Bitcoin's supply schedule is unique because its known in advance how many new coins are going to be produced and sold on the market. Every four years there is a halving event where the new BTC rewarded each block are cut in half. Bitcoin is currently in its fouth epoch awarding 6.25 BTC every 10 minutes. This is a decreasing geometric series and thus the final amount of bitcoin won't be mined until the year 2140 (not a typo).
 
-
 ## Bitcoin Today
-* most robust network humans have created
-* bootstrapped an entire financial system; global settlement in minutes; fees orders of magnitude lower than before
-* 2% of global population has used it
-* 14th largest currency next to the Russian Ruble and Swiss Franc [(source)](https://coinmarketcap.com/fiat-currencies/)
-* 7 tps 
-* SoV
-* features transparent, etc.; block explorers
+* Satoshi [sent](https://satoshi.nakamotoinstitute.org/emails/cryptography/1/#selection-117.66-117.78) his whitepaper out to a mailing list of like-minded cryptography cipherpunks on October 31, 2008. A few months later in January 2009 he started running the software and mined the genesis block. Since this time the Bitcoin network has been the most robust computing network humans have ever created. There has been almost no downtime, few bugs, no hacks, and exponential growth. What began as an experiment has bootstrapped an entire financial system with global settlement time in minutes and fees that are orders of magnitude cheaper and more secure than traditional banking infrastructure.
+
+* With a total value of around $1 trillion USD, It is the 14th largest [currency](https://coinmarketcap.com/fiat-currencies/) next to the Russian Ruble and Swiss Franc. It is estimated that 1-2% of the global population have used or interacted with bitcoin, and [16% of Americans](https://www.pewresearch.org/fact-tank/2021/11/11/16-of-americans-say-they-have-ever-invested-in-traded-or-used-cryptocurrency/) have used or invested in cryptocurrency. There are reachable nodes running the core software in 87 countries. In El Salvador bitcoin is legal tender. 
 
 ### What did we miss?
 There are many topics not discussed here (trying to keep this as an overview) and so I encourage you, dear reader, to dig deeper on the following: 
@@ -57,11 +51,13 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * segwit, addressess, elliptic curve cryptography
 * UTXO, the unspent-transaction output set
 * the genesis block & the GFC
+* pseudonymity & privacy
 * who is Satoshi?
 
 ## Further Reading - the very short list
 * The Whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
 * On the Shoulder of Giants - History of the tech: [*Bitcoin's Academic Pedigree*, Communications of the ACM](https://cacm.acm.org/magazines/2017/12/223058-bitcoins-academic-pedigree/fulltext)
+* [An extensive list of Bitcoin resources](https://www.lopp.net/bitcoin-information.html)
 
 
 
