@@ -14,7 +14,7 @@ Bitcoin was the first blockchain and presented the first use-case for a blockcha
 
 Today the term cryptocurrency refers to digital tokens that are represented on a blockchain such as bitcoin (lower-case *b*, $BTC), or ether (from ethereum, $ETH). Generally these tokens have value and are interchangeable (fungible). Cryptocurrency is distinct from fiat (government-backed) currency, whether its digital or cash, although the lines are becoming blurred with central bank digital currencies (CBDCs). It is also distinct from utility tokens and security tokens. And all of these are separate from NFTs! (non-fungible tokens).
 
-[See more about Bitcoin](bitcoin.md)
+[Learn more: What is Bitcoin?](bitcoin.md)
 
 # Featured Topic: DeFi
 Blurb here. [Read more.](defi.md)
