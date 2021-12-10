@@ -1,3 +1,5 @@
+[↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
+
 # What is Bitcoin?
 First, a brief history of the problem that Satoshi Nakamoto was looking to solve.
 
@@ -64,6 +66,7 @@ There are many topics not discussed here (trying to keep this as an overview) an
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ
+[↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
 
 
