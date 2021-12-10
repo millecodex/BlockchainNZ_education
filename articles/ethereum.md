@@ -24,3 +24,14 @@ First, a brief history of the problem that Vitalik Buterin was looking to solve.
 # Scaling
 * ETH2
 * alternate L1's
+
+# What did we miss?
+
+
+# Further Reading - the very short list
+* The Whitepaper
+* The Yellowpaper (PhD alert)
+
+# About the Author
+Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ\
+[↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
