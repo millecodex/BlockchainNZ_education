@@ -14,7 +14,7 @@ blockchain.org.nz/\
   │  │  ├──[what is bitcoin?](articles/bitcoin.md)  
   │  │  └──[what is ethereum?](articles/ethereum.md)  
   │  ├──[featured topic: DeFi(?)](articles/defi.md)\
-  │  └──see all featured topics\
+  │  └──[see all featured topics](featured.md)\
   ├── about the industry\
   ├── standards & regulations\
   ├── careers\
