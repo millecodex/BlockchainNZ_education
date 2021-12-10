@@ -1,4 +1,4 @@
-# What is bitcoin?
+# What is Bitcoin?
 First, a brief history of the problem that Satoshi Nakamoto was looking to solve.
 
 ## Digital Cash (without the bank)
@@ -44,7 +44,7 @@ First, a brief history of the problem that Satoshi Nakamoto was looking to solve
 
 * What began as an experiment has bootstrapped an entire financial system with global settlement time in minutes and fees that are orders of magnitude cheaper and more secure than traditional banking infrastructure.
 
-### What did we miss?
+# What did we miss?
 There are many topics not discussed here (trying to keep this as an overview) and so I encourage you, dear reader, to dig deeper on the following: 
 * the difficulty adjustment & ASICs (application-specific integrated circuits)
 * open-source software & [bitcoin core](https://github.com/bitcoin/bitcoin)
@@ -56,12 +56,12 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * pseudonymity & privacy
 * who is Satoshi?
 
-## Further Reading - the very short list
+# Further Reading - the very short list
 * The Whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
 * On the Shoulder of Giants - History of the tech: [*Bitcoin's Academic Pedigree*, Communications of the ACM](https://cacm.acm.org/magazines/2017/12/223058-bitcoins-academic-pedigree/fulltext)
 * [An extensive list of Bitcoin resources](https://www.lopp.net/bitcoin-information.html)
 
-### About the Author
+# About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ
 
 
