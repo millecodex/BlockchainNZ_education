@@ -9,12 +9,16 @@ blockchain.org.nz/\
 ├── events\
 └── info hub\
   ├── [what is a blockchain?](articles/what_is_a_blockchain.md)\
-  │  ├──what is a blockchain?\
-  │  ├──what is a cryptocurrency?\
-  │  │  ├──[what is bitcoin?](articles/bitcoin.md)  
-  │  │  └──[what is ethereum?](articles/ethereum.md)  
-  │  ├──[featured topic: DeFi(?)](articles/defi.md)\
-  │  └──[see all featured topics](featured.md)\
+  │  ├── what is a blockchain?\
+  │  ├── what is a cryptocurrency?\
+  │  │  ├── [what is bitcoin?](articles/bitcoin.md)  
+  │  │  └── [what is ethereum?](articles/ethereum.md)  
+  │  ├── [featured topic: DeFi(?)](articles/defi.md)\
+  │  └── [see all featured topics](featured.md)\
+  │        ├── NFTs\
+  │        ├── DAOs\
+  │        ├── WEB3\
+  │        └── etc.\
   ├── about the industry\
   ├── standards & regulations\
   ├── careers\
