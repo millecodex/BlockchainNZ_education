@@ -17,7 +17,7 @@ blockchain.org.nz/\
   │  └── [see all featured topics](featured.md)\
   │        ├── NFTs\
   │        ├── DAOs\
-  │        ├── WEB3\
+  │        ├── Web3\
   │        └── etc.\
   ├── about the industry\
   ├── standards & regulations\
