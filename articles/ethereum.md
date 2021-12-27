@@ -31,8 +31,8 @@ First, a brief history of the problem that Vitalik Buterin was looking to solve.
 * 
 
 # Further Reading - the very short list
-* The Whitepaper
-* The Yellowpaper (PhD alert)
+* [The Whitepaper](https://ethereum.org/en/whitepaper/)
+* [The Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf) (PhD alert)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ\
