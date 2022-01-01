@@ -6,7 +6,7 @@
 1. [Initial Coin Offering](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#initial-coin-offering)
 1. [Smart Contracts](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#smart-contracts)
 1. [dapps](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#dapps)
-1. [I thought Ethereum was Proof-of-Stake?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#i-thought-ethereum-was-proof-of-stake)
+1. [Proof-of-Stake?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#i-thought-ethereum-was-proof-of-stake)
 1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#what-did-we-miss)
 1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#further-reading---the-very-short-list)
 
@@ -75,11 +75,11 @@ The downside to Bitcoin's mining algorithm is that it is suceptible to hardware 
 ### Where does proof-of-stake (PoS) come in?
 It has always the ethos of the Ethereum community to transition the network to a fully stake-based validation mechanism and remove the need for expensive customized hardware. In a PoS system consensus is handled by validators that maintain skin in the game by contributing a stake in ether and are rewarded in a similar fashion to miners. A validator's rewards are proportional to their stake in the system. 
 
-[Eth2](https://ethereum.org/en/eth2/) is the name of the upgrade which has been split into many sub phases. Presently the network is in the *final* 🤞 stages of the upgrade and the merge may happen in 2022.
+[Eth2](https://ethereum.org/en/eth2/) is the name of the upgrade which has been split into many sub phases. Presently the network is in the *final* stages of the upgrade and the merge may🤞 happen in 2022.
 
 # What did we miss?
 There are many topics not discussed here (trying to keep this as an overview) and so I encourage you, dear reader, to dig deeper on the following:
-* scaling & **Eth2** including *sharding* and *rollups*, *zero-knowledge proofs*, and the *difficulty bomb*
+* Scaling & **Eth2** including *sharding* and *rollups*, *zero-knowledge proofs*, and the *difficulty bomb*
 * The **DAO hack** was an important event in Ethereum's history. There was a bug, and a lot of money was lost, but then the *immutable* blockchain was rolled back, the community split, now there still exists Ethereum Classic (ETC) and an ongoing question over the decentralised nature of Ethereum.
 * **Layer 1's versus Layer 2's**: for example Bitcoin and Ethereum are considered base layer or layer 1 blockchains. Layer 2 blockchains look to extend the base layer and improve performance. Presently [Polygon](https://polygon.technology/), [Optimism](https://www.optimism.io/), and [Arbitrum](https://arbitrum.io/) are extending and improving the performance and reducing fees. You can think of this business model as having some of the (expensive) calculation being outsourced to a L2 which then reports back to the base layer. 
 * Tokenomics such questions like What is the total supply of ETH?
