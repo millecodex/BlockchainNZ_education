@@ -45,14 +45,11 @@ The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ether
 | Uniswap      |  Decentralised Exchange |    520 |
 | OpenSea |  NFT Marketplace |   304 |
 | MetaMask Swap  |  Decentralised Exchange |    166 |
-| Polygon Bridge      |  Decentralised Exchange |    114 |
-| Sushi      | Decentralised Exchange  |    98 |
+| Polygon Bridge      |  Bridge |    114 |
+| Sushi      | Decentralised Finance  |    98 |
 
-* stable coins
-* defi
-* dapps
-* nfts / cryptokitties / punks
-* 
+Other categories of dapps that are popular are gaming and gambling although the last few years have been dominated by [DeFi](defi.md) (decentralised finance) and 2021 saw breakout growth in NFTs (Non-fungible tokens) art & collectibles.
+
 # I thought Ethereum was Proof-of-Stake?
 * from the ICO 26% of tokens were reserved to be distributed to the miners
 * Proof-of-Stake? difficulty bomb / ETH 2.0
