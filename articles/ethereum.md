@@ -35,9 +35,19 @@ while i>0
 The simple code above continually updates the counter because the stop condition of i being less than or equal to 0 is never met. To avoid this scenario all computation in the EVM needs gas. As a contract is executed gas is consumed and if the contract runs out of the gas then the update fails. All gas is paid in ether (ETH) and goes to the nodes (miners) that perform the calculations. A follow up question is what if I am wealthy and have enough gas to spam the network in this manner? To prevent this there is a gas limit on all transactions that is calculated based on how busy the network is.
 > The recent *London* upgrade to Ethereum changed the way that gas is distributed. Previously the miner would be compensated by receiving the entire gas fee in the transaction. Now, part of this fee is *burned*, and the miner gets the remainder. Burning some ETH reduces the overall issuance. More in the section on Proof-of-Work.
 
-
 # dapps
-Dapps, decentralised applications, 
+Decentralised applications, or *dapps* just refer to smart contracts that are executed on a blockchain. In the case of Ethereum it is generally accepted that these applications are indeed decentralised meaning that they can't be censored and everyone has a fair chance to use them (subject to being able to pay gas fees).
+
+The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ethereum in 2021:
+
+| App         | Category | Users (k) |
+|--------------|:-----:|-----------:|
+| Uniswap      |  Decentralised Exchange |    520 |
+| OpenSea |  NFT Marketplace |   304 |
+| MetaMask Swap  |  Decentralised Exchange |    166 |
+| Polygon Bridge      |  Decentralised Exchange |    114 |
+| Sushi      | Decentralised Exchange  |    98 |
+
 * stable coins
 * defi
 * dapps
