@@ -12,7 +12,7 @@ The second feature was to use an account-based system. The benefit of this style
 ### Summarized in the whitepaper, Ethereum is:
 > a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions.
 
-The whitepaper for *Ethereum* was published online in 2013 which was followed by a formal specification by Gavin Wood in 2014 and culminated in the ICO in 2015.
+The whitepaper for *Ethereum* was published online in 2013 and a year later a formal specification was written by Gavin Wood and the project raised funds through their initial coin offering. This was followed by the network launch in 2015.
 
 # Initial Coin Offering (ICO)
 * founders / premine / foundation
