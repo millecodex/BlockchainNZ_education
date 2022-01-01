@@ -14,8 +14,14 @@ The second feature was to use an account-based system. The benefit of this style
 
 The whitepaper for *Ethereum* was published online in 2013 and a year later a formal specification was written by Gavin Wood and the project raised funds through their initial coin offering. This was followed by the network launch in 2015.
 
-# Initial Coin Offering (ICO)
-* founders / premine / foundation
+# Initial Coin Offering
+In order to fund their new proposed blockchain network, the founders embarked on a unique fundraising scheme that laid down the template for future crowdfunding sales. An initial coin offering (ICO) seeks to bootstrap user adoption and funding by combining the style of an initial public offering (IPO) with a crowd fund model. A marked difference from the IPO model is that the token sale was open to anyone without geographic or regulatory restriction. All users had to do to participate was deposit bitcoin and receive *ether* tokens that represent their stake in the new network. The token sale was successful resulting in more than 50 million ether (the native currency of ethereum) being sold. The founders decided to reserve 9.9% of the tokens for themselves, and another 9.9% for a foundation that was set up to guide the long term mission of the network. These tokens didn't have to be purchased in a traditional sense; a practice now known as *pre-mining*.
+
+### ICO Boom Times
+The success of Ethereum's ICO and its smart contract capability combined with its open source code made it an ideal model for other founders to fund their projects. A new project could easily copy and modify smart contract code and host their own ICO and issue their own new ERC-20 tokens. (ERC-20 refers to the token standard that most coins that run on Ethereum use.) 2017--2018 was a boom period for ICOs with many projects and tokens launching. Unfortunately many of them had questionable products and practices or were outright scams and because there was no regulation in crypto (as there is for an IPO), there was no recourse for those that invested and lost their money.
+
+
+* founders / premine 9.9% / foundation 9.9%
 * pow
 * unlimited supply
 * DAO hack
