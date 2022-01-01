@@ -65,6 +65,7 @@ Other categories of dapps that are popular are gaming and gambling although the 
 # Further Reading - the very short list
 * [The Whitepaper by Vitalik Buterin](https://ethereum.org/en/whitepaper/)
 * [The Yellowpaper by Gavin Wood](https://github.com/ethereum/yellowpaper), & [pdf](https://ethereum.github.io/yellowpaper/paper.pdf)
+* [Extensive list of learning resources](https://ethereum.org/en/learn/)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ\
