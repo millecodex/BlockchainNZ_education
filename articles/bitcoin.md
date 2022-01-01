@@ -2,11 +2,11 @@
 
 # What is Bitcoin?
 ### Contents
-1. [Brief History]()
-1. [Peer-to-Peer Networks & Consensus Mechanisms]()
-1. [Proof-of-Work Mining & Network Security]()
-1. [Economic Incentives & Monetary Supply]()
-1. [Bitcoin Today]()
+1. [Brief History](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#a-brief-history)
+1. [Peer-to-Peer Networks & Consensus Mechanisms](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#peer-to-peer-networks--consensus-mechanisms)
+1. [Proof-of-Work Mining & Network Security](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#proof-of-work-mining--network-security)
+1. [Economic Incentives & Monetary Supply](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#economic-incentives--monetary-supply)
+1. [Bitcoin Today](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#bitcoin-today)
 1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#what-did-we-miss)
 1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#further-reading---the-very-short-list)
 
