@@ -1,6 +1,15 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
 # What is Ethereum?
+### Contents
+* [Initial Coin Offering]()
+* [Smart Contracts]()
+* [dapps]()
+* [I thought Ethereum was Proof-of-Stake?]()
+* [What did we miss?]()
+* [Further Reading - the very short list]()
+
+### So, what is Ethereum?
 First, a brief history of the problems that Vitalik Buterin was looking to solve. 
 
 Bitcoin provided a solution to the double-spend problem of creating digital cash by using proof-of-work mining to both maintain the state of the ledger and allow open participation in the network based on computing power. By assigning value to these digitally scarce coins the ledger can be used as a monetary system. This works great for money but comes up short when using Bitcoin's scripting language to make simple extensions such as a decentralized exchange -- how to determine the NZD/BTC rate? or how to do some arbitrary calculation, e.g. what is the probability that your game character encounters a villan?
@@ -51,6 +60,7 @@ The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ether
 Other categories of dapps that are popular are gaming and gambling although the last few years have been dominated by [DeFi](defi.md) (decentralised finance) and 2021 saw breakout growth in NFTs (Non-fungible tokens) art & collectibles.
 
 # I thought Ethereum was Proof-of-Stake?
+* Maintaining the database of accounts and smart contracts is done by the consensus algorithm and is a key component of any blockchain and often the first point of difference between blockchains. Bitcoin uses proof-of-work any relies on miners running purpose-built hardware to process transactions, and package and publish blocks. The incentive mechanism is a lottery based on the SHA256 (secure hash algorithm) result─when miners are lucky enough to find a hash they can publish a block and earn a reward.
 * from the ICO 26% of tokens were reserved to be distributed to the miners
 * Proof-of-Stake? difficulty bomb / ETH 2.0
 * unlimited supply
