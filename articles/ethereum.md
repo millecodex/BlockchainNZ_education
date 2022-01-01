@@ -2,15 +2,16 @@
 
 # What is Ethereum?
 ### Contents
-* [Initial Coin Offering]()
-* [Smart Contracts]()
-* [dapps]()
-* [I thought Ethereum was Proof-of-Stake?]()
-* [What did we miss?]()
-* [Further Reading - the very short list]()
+* [Brief History](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#)
+* [Initial Coin Offering](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#initial-coin-offering)
+* [Smart Contracts](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#smart-contracts)
+* [dapps](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#dapps)
+* [I thought Ethereum was Proof-of-Stake?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#i-thought-ethereum-was-proof-of-stake)
+* [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#what-did-we-miss)
+* [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#further-reading---the-very-short-list)
 
-### So, what is Ethereum?
-First, a brief history of the problems that Vitalik Buterin was looking to solve. 
+# First, a Brief History
+What was the problem(s) that Vitalik Buterin was looking to solve?
 
 Bitcoin provided a solution to the double-spend problem of creating digital cash by using proof-of-work mining to both maintain the state of the ledger and allow open participation in the network based on computing power. By assigning value to these digitally scarce coins the ledger can be used as a monetary system. This works great for money but comes up short when using Bitcoin's scripting language to make simple extensions such as a decentralized exchange -- how to determine the NZD/BTC rate? or how to do some arbitrary calculation, e.g. what is the probability that your game character encounters a villan?
 
