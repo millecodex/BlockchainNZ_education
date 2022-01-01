@@ -56,11 +56,10 @@ Other categories of dapps that are popular are gaming and gambling although the 
 * unlimited supply
 
 # What did we miss?
-* scaling & ETH 2.0
-** sharding
-** rollups
-* DAO hack
-* Layer 1's versus Layer 2's, for example Bitcoin and Ethereum are considered base layer or layer 1 blockchains. Layer 2 blockchains look to extend the base layer and improve performance. Presently Polygon and Arbitrum are extending and improving the performance and reducing fees for Ethereum. 
+There are many topics not discussed here (trying to keep this as an overview) and so I encourage you, dear reader, to dig deeper on the following:
+* scaling & **ETH 2.0** including *sharding* and *rollups* and *zero-knowledge proofs*
+* The **DAO hack** was an important event in Ethereum's history. There was a bug, and a lot of money was lost, but then the *immutable* blockchain was rolled back, then the community split, now there still exists Ethereum Classic (ETC) and an ongoing question over the decentralised nature of Ethereum.
+* **Layer 1's versus Layer 2's**: for example Bitcoin and Ethereum are considered base layer or layer 1 blockchains. Layer 2 blockchains look to extend the base layer and improve performance. Presently [Polygon](https://polygon.technology/), [Optimism](https://www.optimism.io/), and [Arbitrum](https://arbitrum.io/) are extending and improving the performance and reducing fees. You can think of this business model as having some of the (expensive) calculation being outsourced to a L2 which then reports back to the base layer. 
 
 # Further Reading - the very short list
 * [The Whitepaper by Vitalik Buterin](https://ethereum.org/en/whitepaper/)
