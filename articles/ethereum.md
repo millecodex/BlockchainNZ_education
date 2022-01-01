@@ -26,7 +26,7 @@ The term *smart contract* refers to some executable code that lives on the block
 Earlier we mentioned that Ethereum is turing-complete, and here is where that comes in. A developer can write a program, say to issue crop insurance based on weather data, and store this program in a smart contract on the blockchain. As the blockchain is immutable this code will live there forever, it is also visible and thus can be easily verified or audited. The only limits to the applications that can be deployed on Ethereum come from the creativity & skill of the developer, and the amount of computation that program needs to do.
 
 ### Gas
-Computation occurs in the EVM (Ethereum virtual machine) and well we will be light on details, because its a blockchain, all the nodes need to have a copy of the data and verify any updates. This includes running *all* smart contracts and doing *any* calculation. A scenario could arise, either accidentally or maliciously, to halt the network by deploying a contract with an infinite loop:
+Computation occurs in the EVM (Ethereum virtual machine) and we will be light on details, but because its a blockchain, all the nodes need to have a copy of the data and verify any updates. This includes running *all* smart contracts and doing *any* calculation. A scenario could arise, either accidentally or maliciously, to halt the network by deploying a contract with an infinite loop:
 ```
 int i=1
 while i>0
@@ -36,7 +36,7 @@ The simple code above continually updates the counter because the stop condition
 > The recent *London* upgrade to Ethereum changed the way that gas is distributed. Previously the miner would be compensated by receiving the entire gas fee in the transaction. Now, part of this fee is *burned*, and the miner gets the remainder. Burning some ETH reduces the overall issuance. More in the section on Proof-of-Work.
 
 # dapps
-Decentralised applications, or *dapps* just refer to smart contracts that are executed on a blockchain. In the case of Ethereum it is generally accepted that these applications are indeed decentralised meaning that they can't be censored and everyone has a fair chance to use them (subject to being able to pay gas fees).
+Decentralised applications, or *dapps* just refer to smart contracts that are executed on a blockchain. When combined with a frontend these dapps can appear just like any other web application with the key difference being that that code and/or user data is stored on the blockchain. 
 
 The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ethereum in 2021:
 
