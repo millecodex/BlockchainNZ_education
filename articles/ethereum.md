@@ -50,13 +50,13 @@ Decentralised applications, or *dapps* just refer to smart contracts that are ex
 
 The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ethereum in 2021:
 
-| App         | Category | Users (k) |
-|--------------|:-----:|-----------:|
-| Uniswap      |  Decentralised Exchange |    520 |
-| OpenSea |  NFT Marketplace |   304 |
+| App            | Category                | Users (k/30 days) |
+|:-------------  |:-----                   |-------:|
+| Uniswap        |  Decentralised Exchange |    520 |
+| OpenSea        |  NFT Marketplace        |    304 |
 | MetaMask Swap  |  Decentralised Exchange |    166 |
-| Polygon Bridge      |  Bridge |    114 |
-| Sushi      | Decentralised Finance  |    98 |
+| Polygon Bridge | Bridge                  |    114 |
+| Sushi          | Decentralised Finance   |     98 |
 
 Other categories of dapps that are popular are gaming and gambling although the last few years have been dominated by [DeFi](defi.md) (decentralised finance) and 2021 saw breakout growth in NFTs (Non-fungible tokens) art & collectibles.
 
