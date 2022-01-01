@@ -19,7 +19,7 @@ While writing for *Bitcoin Weekly* and co-founding [*Bitcoin Magazine*](https://
 
 The second feature was to use an account-based system. The benefit of this style is that each account (address) has a balance *and* the option of some code and storage. (This is in contrast to Bitcoin that uses a UTXO model I won't detail here but basically can only keep track of coins and not any additional data or code.)
 
-### Summarized in the whitepaper, Ethereum is:
+### Summarized in the [whitepaper](https://ethereum.org/en/whitepaper/), Ethereum is:
 > a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions.
 
 The whitepaper for *Ethereum* was published online in 2013 and a year later a formal specification was written by Gavin Wood and the project raised funds through their initial coin offering. This was followed by the network launch in 2015.
@@ -60,8 +60,14 @@ The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ether
 
 Other categories of dapps that are popular are gaming and gambling although the last few years have been dominated by [DeFi](defi.md) (decentralised finance) and 2021 saw breakout growth in NFTs (Non-fungible tokens) art & collectibles.
 
+### Stablecoins
+Although not listed in the chart above, stable-value currencies were originally seen as applications that can run on Ethereum. Now called *stablecoins*, it is hard to ignore their growth and popularity when looking at total value. The idea is that to avoid the volatility present in the crypto markets, rather than using $ETH there is the option to use a crypto token pegged to a common currency like the $USD. If you convert some $NZD to Tether today, then you can rely on the value being relatively stable to use it in the future. Some of the stablecoins that exist on Ethereum are Tether ($USDT), $USDC, and $DAI. Both Tether and USDC are issued privately, whereas DAI is a *Decentralized Autonomous Organization* (DAO) and maintains a US dollar peg.
+
+![total-stablecoin-supply-daily](https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png)
+
+
 # I thought Ethereum was Proof-of-Stake?
-* Maintaining the database of accounts and smart contracts is done by the consensus algorithm and is a key component of any blockchain and often the first point of difference between blockchains. Bitcoin uses proof-of-work any relies on miners running purpose-built hardware to process transactions, and package and publish blocks. The incentive mechanism is a lottery based on the SHA256 (secure hash algorithm) result─when miners are lucky enough to find a hash they can publish a block and earn a reward.
+* Maintaining the database of accounts and smart contracts is done by the consensus algorithm and is a key component of any blockchain and often the first point of difference between blockchains. Bitcoin uses [proof-of-work](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#proof-of-work-mining--network-security) any relies on miners running purpose-built hardware to process transactions, and package and publish blocks. The incentive mechanism is a lottery based on the SHA256 (secure hash algorithm) result; when miners are lucky enough to find a winning hash they can publish a block and earn a reward.
 * from the ICO 26% of tokens were reserved to be distributed to the miners
 * Proof-of-Stake? difficulty bomb / ETH 2.0
 * unlimited supply
