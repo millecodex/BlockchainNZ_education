@@ -21,32 +21,39 @@ In order to fund their new proposed blockchain network, the founders embarked on
 The success of Ethereum's ICO and its smart contract capability combined with its open source code made it an ideal model for other founders to fund their projects. A new project could easily copy and modify smart contract code and host their own ICO and issue their own new ERC-20 tokens. (ERC-20 refers to the token standard that most coins that run on Ethereum use.) 2017--2018 was a boom period for ICOs with many projects and tokens launching. Unfortunately many of them had questionable products and practices or were outright scams and because there was no regulation in crypto (as there is for an IPO), there was no recourse for those that invested and lost their money (this author included 🙃). 
 
 # Smart Contracts
-* Arbitrary Computation
-* gas
-* dapps
-* Ethereum Virtual Machine (EVM)
+The term *smart contract* refers to some executable code that lives on the blockchain. This code may be a snippet, small or large, it may be straightforward or complex, it may contain bugs, not compile, it may never even be executed. Ethereum allows for code to be stored on the blockchain in *contracts* which have a callable address that looks just like a user's address. All of these bits of code are generically called smart contracts. Pedants will like to tell you that they are not smart nor are they contractual and they might be right in a traditional sense, however, the term has come to be redefined in a blockchain context.
 
-# PoW / PoS
-* from the ICO 26% of tokens were reserved to be distributed to the miners
-* Proof-of-Stake? difficulty bomb / ETH 2.0
-* unlimited supply
+Earlier we mentioned that Ethereum is turing-complete, and here is where that comes in. A developer can write a program, say to issue crop insurance based on weather data, and store this program in a smart contract on the blockchain. As the blockchain is immutable this code will live there forever, it is also visible and thus can be easily verified or audited. The only limits to the applications that can be deployed on Ethereum come from the creativity & skill of the developer, and the amount of computation that program needs to do.
 
-# Applications
+### Gas
+Computation occurs in the EVM (Ethereum virtual machine) and well we will be light on details, because its a blockchain, all the nodes need to have a copy of the data and verify any updates. This includes running *all* smart contracts and doing *any* calculation. A scenario could arise, either accidentally or maliciously, to halt the network by deploying a contract with an infinite loop:
+```
+int i=1
+while i>0
+  i=i+1
+ ```
+The simple code above continually updates the counter because the stop condition of i being less than or equal to 0 is never met. To avoid this scenario all computation in the EVM needs gas. As a contract is executed gas is consumed and if the contract runs out of the gas then the update fails. All gas is paid in ether (ETH) and goes to the nodes (miners) that perform the calculations. A follow up question is what if I am wealthy and have enough gas to spam the network in this manner? To prevent this there is a gas limit on all transactions that is calculated based on how busy the network is.
+> The recent *London* upgrade to Ethereum changed the way that gas is distributed. Previously the miner would be compensated by receiving the entire gas fee in the transaction. Now, part of this fee is *burned*, and the miner gets the remainder. Burning some ETH reduces the overall issuance. More in the section on Proof-of-Work.
+
+
+# dapps
+Dapps, decentralised applications, 
 * stable coins
 * defi
 * dapps
 * nfts / cryptokitties / punks
-
-# Scaling
-* ETH2
-* alternate L1's
-* arbitrum
+* 
+# I thought Ethereum was Proof-of-Stake?
+* from the ICO 26% of tokens were reserved to be distributed to the miners
+* Proof-of-Stake? difficulty bomb / ETH 2.0
+* unlimited supply
 
 # What did we miss?
-* sharding
-* rollups
+* scaling & ETH 2.0
+** sharding
+** rollups
 * DAO hack
-* 
+* Layer 1's versus Layer 2's, for example Bitcoin and Ethereum are considered base layer or layer 1 blockchains. Layer 2 blockchains look to extend the base layer and improve performance. Presently Polygon and Arbitrum are extending and improving the performance and reducing fees for Ethereum. 
 
 # Further Reading - the very short list
 * [The Whitepaper by Vitalik Buterin](https://ethereum.org/en/whitepaper/)
