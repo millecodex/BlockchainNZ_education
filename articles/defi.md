@@ -14,25 +14,27 @@
 # Why decentralize finance?
 In one word: trust. Or, ironically, you could also say trust*less*. Allow me to explain. For the same reason that Bitcoin is successful without a centralizing third-party─namely that you can transact with a perfect stranger in a foreign country by trusting the protocol and you *don't* need to trust the stranger─the cascade of financial products that can be built upon digital money is an ideal fit for blockchains.
 
-Anything you can do at a bank, or an investment bank, or a hedge fund, or a stock exchange can be built in code and run on a blockchain. There are number of more practical reasons why someone would be interested in decentralised finace such as higher yields than found in more standard financial products, lower fees, transparency, easier access to foreign markets, more fine grained control (you can program it), etcetera. I could go on, but lets detail some of these innovations happening in defi-land.
+Anything you can do at a bank, or an investment bank, or a hedge fund, or a stock exchange can be built in code and run on a blockchain. There are number of more practical reasons why someone would be interested in decentralised finace such as higher yields than found in more standard financial products, lower fees, transparency, easier access to foreign markets, more fine grained control (you can program it), etcetera. 
+
+I could go on, but lets detail some of these innovations happening in defi-land.
 
 # Stablecoins
-The primary advantage to having a fiat currency on a blockchain is to map value from your bank-and-mortar world to the crypto-digital world without being exposed to the price volatility of tokens. I can exchange $1 dollar for 1 crypto-token, say, USD-Coin (USDC) and be assured that 1:1 mapping will hold. For business operations, valuations, projections, and so one this is crucial. The secondary advantages come from all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, and programmability.
+The primary advantage to having a fiat currency on a blockchain is to map value from your bank-and-mortar world to the crypto-digital world without being exposed to the price volatility of tokens. I can exchange $1 dollar for 1 crypto-token, say, USD-Coin (USDC) and be assured that 1:1 mapping will hold. For business operations, valuations, projections, and so on this is crucial. The secondary advantages come from all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance.
 
-It is hard to ignore the growth and popularity when looking at the total value held in stablecoins. This chart is from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) showing growth in stablecoins over the past four years. The total value of stablecoins rose in 2021 from ~$28B to $150B. Note that this chart aggregates stables on many blockchains, for example Ethereum, Binance Smart Chain, Solana, and Tron.
+It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. Note that this chart aggregates stables on many blockchains, including Ethereum, Binance Smart Chain, Solana, and Tron.
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
-Some of the stablecoins that exist on Ethereum are Tether ($USDT), $USDC, and $DAI. Both Tether and USDC are issued privately, whereas DAI is a *Decentralized Autonomous Organization* (DAO) and maintains a US dollar peg. 
+Some of the stablecoins that exist on Ethereum are Tether ($USDT), USD-Coin ($USDC), and Dai ($DAI). Both Tether and USDC are issued privately, whereas DAI is a *Decentralized Autonomous Organization* (DAO) and maintains a US dollar peg. 
 
-Here is a partial listing of stablecoins, the currency they are pegged to, and the blockchains where they can be found.
+Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
-|USDT - Tether|USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
+|USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
 |USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
 |AUDT      |AUD         |AUD          |Ethereum|
-|NZDS      |NZD         |NZD          |Ethereum|
-|XSGD      |SGD         |SGD          |Ethereum, Zilliaq|
+|NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
+|XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
 |EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
 |DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
 |PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
@@ -45,6 +47,7 @@ Here is a partial listing of stablecoins, the currency they are pegged to, and t
   * USDT
   * algorithmic stables - USDN, FEI, FRAX, UST
 * DeXs
+  * 1.0
   * models: amm, orderbook etc
   * LPs
   * yield aggregators
@@ -52,7 +55,7 @@ Here is a partial listing of stablecoins, the currency they are pegged to, and t
 * Defi 2.0
   * non-pegged
   * rebasing
-  * options etc 
+  * options/derivatives etc 
 * Tokenize everything
 
 
