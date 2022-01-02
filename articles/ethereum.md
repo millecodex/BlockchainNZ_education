@@ -82,7 +82,7 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * Scaling & **Eth2** including *sharding* and *rollups*, *zero-knowledge proofs*, and the *difficulty bomb*
 * The **DAO hack** was an important event in Ethereum's history. There was a bug, and a lot of money was lost, but then the *immutable* blockchain was rolled back, the community split, now there still exists Ethereum Classic (ETC) and an ongoing question over the decentralised nature of Ethereum.
 * **Layer 1's versus Layer 2's**: for example Bitcoin and Ethereum are considered base layer or layer 1 blockchains. Layer 2 blockchains look to extend the base layer and improve performance. Presently [Polygon](https://polygon.technology/), [Optimism](https://www.optimism.io/), and [Arbitrum](https://arbitrum.io/) are extending and improving the performance and reducing fees. You can think of this business model as having some of the (expensive) calculation being outsourced to a L2 which then reports back to the base layer. 
-* Tokenomics such questions like What is the total supply of ETH?
+* Questions of Tokenomics: What is the total supply of ETH? Is ETH money?
 
 # Further Reading - the very short list
 * [The Whitepaper by Vitalik Buterin](https://ethereum.org/en/whitepaper/)
