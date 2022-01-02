@@ -43,7 +43,7 @@ Here is a partial listing of stablecoins, the currency they are pegged to, and t
   * yields 
 * stablecoins
   * USDT
-  * algorithmic stables
+  * algorithmic stables - USDN, FEI, FRAX, UST
 * DeXs
   * models: amm, orderbook etc
   * LPs
