@@ -90,5 +90,5 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * [Extensive list of learning resources](https://ethereum.org/en/learn/)
 
 # About the Author
-Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ\
+Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
