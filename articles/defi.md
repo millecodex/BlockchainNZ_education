@@ -4,7 +4,7 @@
 
 ### Contents
 1. [Motivation: Why decentralize finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
-1. [Stablecoins]()
+1. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)]()
 5. [DeFi 2.0]()
 6. [Token Economy]()
@@ -21,13 +21,11 @@ I could go on, but lets detail some of these innovations happening in defi-land.
 # Stablecoins
 The primary advantage to having a fiat currency on a blockchain is to map value from your bank-and-mortar world to the crypto-digital world without being exposed to the price volatility of tokens. I can exchange $1 dollar for 1 crypto-token, say, USD-Coin (USDC) and be assured that 1:1 mapping will hold. For business operations, valuations, projections, and so on this is crucial. The secondary advantages come from all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance.
 
-It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. Note that this chart aggregates stables on many blockchains, including Ethereum, Binance Smart Chain, Solana, and Tron.
+It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD.
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
-Some of the stablecoins that exist on Ethereum are Tether ($USDT), USD-Coin ($USDC), and Dai ($DAI). Both Tether and USDC are issued privately, whereas DAI is a *Decentralized Autonomous Organization* (DAO) and maintains a US dollar peg. 
-
-Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
+The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance USD ($BUSD), and Dai ($DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
 |USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
@@ -52,7 +50,7 @@ Here is a partial listing of stablecoins, the currency they are pegged to, the c
   * LPs
   * yield aggregators
   * wrapped tokens
-* Defi 2.0
+* Defi 2.0 **(New Page?)**
   * non-pegged
   * rebasing
   * options/derivatives etc 
@@ -78,7 +76,7 @@ Other categories of dapps that are popular are gaming and gambling although the 
 
 
 # What did we miss?
-* 
+* More advanced → see DeFi 2.0
 * 
 
 # Further Reading - the very short list
@@ -87,5 +85,5 @@ Other categories of dapps that are popular are gaming and gambling although the 
 * []()
 
 # About the Author
-Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of BlockchainNZ\
+Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
