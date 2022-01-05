@@ -37,21 +37,27 @@ The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance U
 |DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
 |PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
 
-### Algorithmic Stablecoins
+# Decentralised Exchanges (DEXs)
+Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the New Zealand Stock Exchange that can have complete control over their servers and centrally manage events. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions.
 
-* motivation
-  * yields 
-* stablecoins
-  * USDT
-  * algorithmic stables - USDN, FEI, FRAX, UST
-* DeXs
-  * 1.0
-  * models: amm, orderbook etc
+### Automated Market Makers (AMMs)
+The AMM solution to this is to add trading pairs to a pool of assets. The pairs are binded together so that in a pool of dollars to widgets there are always 10 widgets per dollar, depending on the depth of liquidity in the pool. A downside is slippage which is how the price moves for orders of a large fraction of the total pool liquidity, but this has improved in recent times. This AMM model bring many benefits that fall in line with a decentralised ethos:
+* users can create their own trading pair; very useful for smaller or new assets or pairings
+* users self-custody their assets & visa versa - the protocol isn't directly responsible for user's capital
+* accessibility; the crypto markets are global and thus run 24/7, and this means a user only need access to the protocol (via the internet) to trade in any market
+
+Uniswap is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years. 
+
+<p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
+
+
+* unwritten
   * LPs
   * yield aggregators
   * wrapped tokens
 * Defi 2.0 **(New Page?)**
-  * non-pegged
+  * algorithmic stables - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+  * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
   * rebasing
   * options/derivatives etc 
 * Tokenize everything
