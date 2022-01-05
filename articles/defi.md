@@ -38,7 +38,7 @@ The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance U
 |PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
 
 # Decentralised Exchanges (DEXs)
-Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the New Zealand Stock Exchange that can have complete control over their servers and centrally manage events. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions.
+Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions.
 
 ### Automated Market Makers (AMMs)
 The AMM solution to this is to add trading pairs to a pool of assets. The pairs are binded together so that in a pool of dollars to widgets there are always 10 widgets per dollar, depending on the depth of liquidity in the pool. A downside is slippage which is how the price moves for orders of a large fraction of the total pool liquidity, but this has improved in recent times. This AMM model bring many benefits that fall in line with a decentralised ethos:
@@ -49,6 +49,8 @@ The AMM solution to this is to add trading pairs to a pool of assets. The pairs 
 Uniswap is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years. 
 
 <p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
+
+> There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as X, AND Y, that will be discussed later.
 
 
 
