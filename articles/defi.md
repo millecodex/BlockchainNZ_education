@@ -51,8 +51,12 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 <p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
 
 
+
 * unwritten
-  * LPs
+  * LPs / yield farms / vaults
+  * flash loans
+  * oracles
+  * IL
   * yield aggregators
   * wrapped tokens
 * Defi 2.0 **(New Page?)**
