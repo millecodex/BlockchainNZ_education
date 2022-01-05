@@ -55,7 +55,7 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 
 
 * unwritten
-  * LPs / yield farms / vaults
+  * LPs & liquidity mining / yield farms / vaults
   * flash loans
   * oracles
   * IL
