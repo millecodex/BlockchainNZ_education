@@ -6,7 +6,7 @@
 1. [Motivation: Why decentralize finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
 1. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)]()
-6. [Token Economy]()
+6. [Farming]()
 7. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
 8. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
@@ -53,33 +53,18 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 
 # Farming (fruit & veg emojis)
 
+### Yield farms & liquidity mining
+
+### Impermanent loss
+
 * unwritten
-  * LPs & liquidity mining / yield farms / vaults
-  * flash loans
-  * oracles
+  * LPs & liquidity mining / yield farms / vaults  
   * IL
-  * yield aggregators
-  * wrapped tokens
+* yield aggregators 
+* flash loans
 * Tokenize everything
-
-
-
-
-# dapps
-Decentralised applications, or *dapps* just refer to smart contracts that are executed on a blockchain. When combined with a frontend these dapps can appear just like any other web application with the key difference being that that code and/or user data is stored on the blockchain. 
-
-The [most used dapps](https://dappradar.com/rankings/protocol/ethereum) on Ethereum in 2021:
-
-| App            | Category                | Users (k/30 days) |
-|:-------------  |:-----                   |-------:|
-| Uniswap        |  Decentralised Exchange |    520 |
-| OpenSea        |  NFT Marketplace        |    304 |
-| MetaMask Swap  |  Decentralised Exchange |    166 |
-| Polygon Bridge | Bridge                  |    114 |
-| Sushi          | Decentralised Finance   |     98 |
-
-Other categories of dapps that are popular are gaming and gambling although the last few years have been dominated by [DeFi](defi.md) (decentralised finance) and 2021 saw breakout growth in NFTs (Non-fungible tokens) art & collectibles.
-
+  * oracles
+  * wrapped tokens
 
 
 # What did we miss?
@@ -87,6 +72,7 @@ Other categories of dapps that are popular are gaming and gambling although the 
   * algorithmic stables - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
   * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
   * rebasing
+  * pool1/pool2
   * options/derivatives/perps(dydx) etc 
 
 # Further Reading - the very short list
