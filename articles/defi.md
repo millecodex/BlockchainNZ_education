@@ -6,7 +6,6 @@
 1. [Motivation: Why decentralize finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
 1. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)]()
-5. [DeFi 2.0]()
 6. [Token Economy]()
 7. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
 8. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
@@ -50,9 +49,9 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 
 <p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
 
-> There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as X, AND Y, that will be discussed later.
+> There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in the [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
-
+# Farming (fruit & veg emojis)
 
 * unwritten
   * LPs & liquidity mining / yield farms / vaults
@@ -61,12 +60,8 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
   * IL
   * yield aggregators
   * wrapped tokens
-* Defi 2.0 **(New Page?)**
-  * algorithmic stables - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
-  * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
-  * rebasing
-  * options/derivatives etc 
 * Tokenize everything
+
 
 
 
@@ -88,8 +83,11 @@ Other categories of dapps that are popular are gaming and gambling although the 
 
 
 # What did we miss?
-* More advanced → see DeFi 2.0
-* 
+* Defi 2.0 **(Separate Article)**
+  * algorithmic stables - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+  * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
+  * rebasing
+  * options/derivatives/perps(dydx) etc 
 
 # Further Reading - the very short list
 * []()
