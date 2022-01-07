@@ -68,11 +68,11 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 
 
 # What did we miss?
-* Defi 2.0 **(Separate Article)**
-  * algorithmic stables - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
-  * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
+* [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on:   
+  * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+  * non-pegged stablecoins & protocol owned liquidity
   * rebasing
-  * pool1/pool2
+  * pool 1 vs. pool 2
   * options/derivatives/perps(dydx) etc 
 
 # Further Reading - the very short list
