@@ -12,8 +12,14 @@
 # Intro?
 In one word: trust. Or, ironically, you could also say trust*less*. 
 
-# Second
-Chart
+# Algorithmic Stables 
+* USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+
+# Liquidity Owned Protocols
+* pool1/pool2
+* non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
+* rebasing
+* options/derivatives/perps(dydx) etc 
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
