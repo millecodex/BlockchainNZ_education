@@ -52,6 +52,8 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 > There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in the [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
 # Farming (fruit & veg emojis)
+Running a DEX using an AMM requires two things: a **swap** method to exchange assets for users and a **pool** of each of the assets to draw from.
+
 ### Swaps
 Farming took off in July/August of 2020 as Sushiswap and Uniswap started offering more products(?). In order to swap one asset to another a few prerequisites must be in place. 
 1. There needs to be enough of the asset available you want to buy, and 
@@ -59,10 +61,11 @@ Farming took off in July/August of 2020 as Sushiswap and Uniswap started offerin
 3. lastly, a fair price is agreed upon by both buyer and seller.
 Lets say you want to swap a Carrot token for some Apples. There may not be a direct market for swapping Carrots to Apples. In this case the protocol needs to find a route through a third (or more) tokens. For example: CRT -> ETH -> APL.
 
-There needs to be a pool of these assets to handle the swap. If there is no pool, then someone needs to create it by adding liquidity
 ### Pools
+The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, buy why would someone deposit their assets to create a pool? Well, they are incentived by the protocol or paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. 
 
 ### Yield farms & liquidity mining
+This process of committing assets to pools to earn rewards is called *yield farming*.
 
 ### Impermanent loss
 
