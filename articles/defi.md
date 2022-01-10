@@ -71,7 +71,7 @@ This process of committing assets to pools to earn rewards is called *yield farm
 The biggest known risk here is called *impermanent loss* which means that the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) the one its pegged to is sold off to maintain the pairwise value. You now have a scenario where you have the same value as you started with but less tokens overall. This loss becomes permanent when you withdrawl liquidity from the pool and are paid out a different number of token than you started with. But don't we still have the same value? Yes, only in dollars. If you, wise investor, had of held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
 
 ## Will farms survive?
-The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid)
+The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid).
 
 * unwritten
 
@@ -89,6 +89,7 @@ The long game here for a product is to gain users and lock up more and more in t
   * rebasing
   * pool 1 vs. pool 2
   * options/derivatives/perps(dydx) etc 
+  * Single-sided staking and IL insurance
 
 # Further Reading - the very short list
 * []()
