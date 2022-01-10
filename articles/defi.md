@@ -62,16 +62,19 @@ Farming took off in July/August of 2020 as Sushiswap and Uniswap started offerin
 Lets say you want to swap a Carrot token for some Apples. There may not be a direct market for swapping Carrots to Apples. In this case the protocol needs to find a route through a third (or more) tokens. For example: CRT -> ETH -> APL.
 
 ### Pools
-The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, buy why would someone deposit their assets to create a pool? Well, they are incentived by the protocol or paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. 
+The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, buy why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. 
 
 ### Yield farms & liquidity mining
-This process of committing assets to pools to earn rewards is called *yield farming*.
+This process of committing assets to pools to earn rewards is called *yield farming*. In the beginning when a swap is just getting started they offer high reward rates to encourage user to come and add liquidity. These rates can be *very* high: hundreds, or even thousands of percent annualized (APY). This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hung for the next pool to mine for liquidity.
 
 ### Impermanent loss
+The biggest known risk here is called *impermanent loss* which means that the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) the one its pegged to is sold off to maintain the pairwise value. You now have a scenario where you have the same value as you started with but less tokens overall. This loss becomes permanent when you withdrawl liquidity from the pool and are paid out a different number of token than you started with. But don't we still have the same value? Yes, only in dollars. If you, wise investor, had of held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
+
+## Will farms survive?
+The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid)
 
 * unwritten
-  * LPs & liquidity mining / yield farms / vaults  
-  * IL
+
 * yield aggregators 
 * flash loans
 * Tokenize everything
