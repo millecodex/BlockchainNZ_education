@@ -52,10 +52,15 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 > There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in the [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
 # Farming (fruit & veg emojis)
+Farming took off in June of 2020 when [Compound](https://compound.finance/) decided to transfer control of their DeFi lending product to its users by depositing tokens in a smart contract that would vest automatically over the next four years to the users in proportion to their activity. The resulting COMP tokens can be used to vote on future protocol decisions or traded on the open market. 
+> *Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit EARN tokens in a contract and receive xEARN, that xEARN can now go out into the world and start working for you. Conversely, mining is a non-renewable operation, where the more someone uses Compound the more tokens they earn. 
+
+launched their liquidity mining program (?) Sushiswap and Uniswap started offering more products(?).
+
 Running a DEX using an AMM requires two things: a **swap** method to exchange assets for users and a **pool** of each of the assets to draw from.
 
 ### Swaps
-Farming took off in July/August of 2020  when Compound launched their liquidity mining program (?) Sushiswap and Uniswap started offering more products(?). In order to swap one asset to another a few prerequisites must be in place. 
+In order to swap one asset to another a few prerequisites must be in place. 
 1. There needs to be enough of the asset available you want to buy, and 
 2. there needs to be a seller for the asset you want to sell, and
 3. lastly, a fair price is agreed upon by both buyer and seller.
