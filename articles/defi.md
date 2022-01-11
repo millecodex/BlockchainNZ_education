@@ -37,7 +37,7 @@ The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance U
 |PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
 
 # Decentralised Exchanges (DEXs)
-Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions.
+Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions, especially for time sensitive updates like access to price feeds during liquidations.
 
 ### Automated Market Makers (AMMs)
 The AMM solution to this is to add trading pairs to a pool of assets. The pairs are binded together so that in a pool of dollars to widgets there are always 10 widgets per dollar, depending on the depth of liquidity in the pool. A downside is slippage which is how the price moves for orders of a large fraction of the total pool liquidity, but this has improved in recent times. This AMM model bring many benefits that fall in line with a decentralised ethos:
@@ -55,7 +55,7 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 Running a DEX using an AMM requires two things: a **swap** method to exchange assets for users and a **pool** of each of the assets to draw from.
 
 ### Swaps
-Farming took off in July/August of 2020 as Sushiswap and Uniswap started offering more products(?). In order to swap one asset to another a few prerequisites must be in place. 
+Farming took off in July/August of 2020  when Compound launched their liquidity mining program (?) Sushiswap and Uniswap started offering more products(?). In order to swap one asset to another a few prerequisites must be in place. 
 1. There needs to be enough of the asset available you want to buy, and 
 2. there needs to be a seller for the asset you want to sell, and
 3. lastly, a fair price is agreed upon by both buyer and seller.
@@ -65,13 +65,17 @@ Lets say you want to swap a Carrot token for some Apples. There may not be a dir
 The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, buy why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. 
 
 ### Yield farms & liquidity mining
-This process of committing assets to pools to earn rewards is called *yield farming*. In the beginning when a swap is just getting started they offer high reward rates to encourage user to come and add liquidity. These rates can be *very* high: hundreds, or even thousands of percent annualized (APY). This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hung for the next pool to mine for liquidity.
+This process of committing assets to pools to earn rewards is called *yield farming*. In the beginning when a swap is just getting started they offer high reward rates in the form of a native token to encourage users to come and add liquidity. These rates can be *very* high: hundreds, or even thousands of percent annualized (APY). This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hunt for the next pool to mine for liquidity.
+
+* liquidity renting
 
 ### Impermanent loss
-The biggest known risk here is called *impermanent loss* which means that the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) the one its pegged to is sold off to maintain the pairwise value. You now have a scenario where you have the same value as you started with but less tokens overall. This loss becomes permanent when you withdrawl liquidity from the pool and are paid out a different number of token than you started with. But don't we still have the same value? Yes, only in dollars. If you, wise investor, had of held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
+The biggest known risk here is called *impermanent loss* which means that the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) the one its pegged to is sold off to maintain the pairwise value. You now have a scenario where you have the same value as you started with but fewer tokens overall. This loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. Okay, but don't I still have the same *value?* Yes, however, only in dollars. If you, wise investor, had held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
+
+* what about for the other scenario? one token drops heaps in value - does the pool add the other paired-token to make up the value??
 
 ## Will farms survive?
-The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid).
+The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. Sushiswap is available on over 14 different chains. Another one is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
 
 * unwritten
 
@@ -90,6 +94,7 @@ The long game here for a product is to gain users and lock up more and more in t
   * pool 1 vs. pool 2
   * options/derivatives/perps(dydx) etc 
   * Single-sided staking and IL insurance
+  * Self-repaying loans(!)
 
 # Further Reading - the very short list
 * []()
