@@ -108,7 +108,7 @@ The long game here for a product is to gain users and lock up more and more in t
   * Self-repaying loans(!)
 
 # Further Reading - the very short list
-* []()
+* [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
 * []()
 * []()
 
