@@ -75,12 +75,18 @@ This process of committing assets to pools to earn rewards is called *yield farm
 * liquidity renting
 
 ### Impermanent loss
-The biggest known risk here is called *impermanent loss* which means that the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) the one its pegged to is sold off to maintain the pairwise value. You now have a scenario where you have the same value as you started with but fewer tokens overall. This loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. Okay, but don't I still have the same *value?* Yes, however, only in dollars. If you, wise investor, had held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
+The biggest known risk here is called *impermanent loss* which means that the value of the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) that ratio of the pair must be adjusted.
+
+This loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. 
+
+If you, wise investor, had held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
 
 * what about for the other scenario? one token drops heaps in value - does the pool add the other paired-token to make up the value??
 
-## Will farms survive?
+## Is farming sustainable?
 The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. Sushiswap is available on over 14 different chains. Another one is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
+
+> Worth considering here when talking about project sustainability is that something like Uniswap is a contract that once deployed to a blockchain is immutable. This means its expensive and difficult to upgrade. So, even if users migrate away from a protocol, it will still live (and can be active) on the blockchain for a long time without the ongoing maintenance and personelle that a business requires.
 
 # unwritten
 * yield aggregators 
