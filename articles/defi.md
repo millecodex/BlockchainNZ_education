@@ -53,7 +53,7 @@ Uniswap is the leader in terms of activity for decentralized exchanges. The char
 
 # Farming (fruit & veg emojis)
 Farming took off in June of 2020 when [Compound](https://compound.finance/) decided to transfer control of their DeFi lending product to its users by depositing tokens in a smart contract that would vest automatically over the next four years to the users in proportion to their activity. The resulting COMP tokens can be used to vote on future protocol decisions or traded on the open market. 
-> *Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit EARN tokens in a contract and receive xEARN, that xEARN can now go out into the world and start working for you. Conversely, mining is a non-renewable operation, where the more someone uses Compound the more tokens they earn. 
+> *Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit EARN tokens in a contract and receive xEARN, that xEARN can now go out into the world and start working for you. Conversely, mining is a non-renewable operation; the more someone uses Compound the more tokens they earn. 
 
 launched their liquidity mining program (?) Sushiswap and Uniswap started offering more products(?).
 
