@@ -77,13 +77,13 @@ The biggest known risk here is called *impermanent loss* which means that the to
 ## Will farms survive?
 The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. Sushiswap is available on over 14 different chains. Another one is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
 
-* unwritten
-
+# unwritten
 * yield aggregators 
+* lenders & borrowers (aave)
 * flash loans
-* Tokenize everything
-  * oracles
-  * wrapped tokens
+* Tokenize everything 
+* oracles
+* wrapped tokens
 
 
 # What did we miss?
