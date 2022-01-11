@@ -44,12 +44,17 @@ The decentralised way to run an exchange requires two things: a **swap** method 
 ### Swaps
 In order to swap one asset to another a few prerequisites must be in place. 
 1. There needs to be enough of the asset available you want to buy, and 
-2. there needs to be a seller for the asset you want to sell, and
+2. there needs to be a buyer for the asset you want to sell, and
 3. lastly, a fair price is agreed upon by both buyer and seller.
-Lets say you want to swap a Carrot token for some Apples. There may not be a direct market for swapping Carrots to Apples. In this case the protocol needs to find a route through a third (or more) tokens. For example: CRT -> ETH -> APL.
+
+1 is created through economic incentives of YF & LM/
+2 is handled through the market(ing)/
+3 is done algorithmically
 
 ### Pools
-The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, buy why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. More on yield farming and liquidity mining below.
+The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, and you need users to come and swap assets. But why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. More on yield farming and liquidity mining below.
+
+Lets say you want to swap a Carrot token for some Apples. There may not be a direct market for swapping Carrots to Apples. In this case the protocol needs to find a route through a third (or more) tokens. For example: CRT → ETH → APL.
 
 ## Automated Market Makers (AMMs)
 The automated market maker works just as described; it algorithmically ensures that every bid can be matched with an ask, thus making a market for any token pairing.
@@ -75,6 +80,7 @@ Farming took off in June of 2020 when [Compound](https://compound.finance/) deci
 This process of committing assets to pools to earn rewards is called *yield farming*. In the beginning when a swap is just getting started they offer high reward rates in the form of a native token to encourage users to come and add liquidity. These rates can be *very* high: hundreds, or even thousands of percent annualized (APY). This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hunt for the next pool to mine for liquidity.
 
 * liquidity renting
+* self reinforcing loop of attracting users with rewards and having the users make swaps
 
 ### Impermanent Loss
 The biggest known risk here is called *impermanent loss* which means that the value of the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) that ratio of the pair must be adjusted.
