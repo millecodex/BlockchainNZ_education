@@ -7,8 +7,9 @@
 1. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#decentralised-exchanges-dexs)
 6. [Farming](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#yield-farms--liquidity-mining-sushi-unicorn-sweet_potato-cake)
-7. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
-8. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
+7. [Staking](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#staking)
+8. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
+9. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
 # Why Decentralize Finance?
 In one word: trust. Or, ironically, you could also say trust*less*. Allow me to explain. For the same reason that Bitcoin is successful without a centralizing third-party─namely that you can transact with a perfect stranger in a foreign country by trusting the protocol and you *don't* need to trust the stranger─the cascade of financial products that can be built upon digital money is an ideal fit for blockchains.
@@ -24,7 +25,7 @@ It is hard to ignore the growth and popularity of stablecoins when looking at th
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
-The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance USD ($BUSD), and Dai ($DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
+The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
 |USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
@@ -42,7 +43,7 @@ Most crypto (and all stock) exchanges are centralized and use an order book to m
 The decentralised way to run an exchange requires three things: a **swap** method for users to exchange assets, a **pool** of each of the assets to draw from, and something to **make the market** (set the price).
 
 ### Swaps
-In order to swap one asset to another a few prerequisites must be in place. There needs to be enough of the asset available you want to buy, and there needs to be a buyer for the asset you want to sell, and lastly, a fair price is agreed upon by both buyer and seller. Swaps here are directly between two assets, e.g. ETH ↔ USDT.
+In order to swap one asset to another a few prerequisites must be in place. There needs to be enough of the asset available you want to buy, and there needs to be a buyer for the asset you want to sell, and lastly, a fair price is agreed upon by both buyer and seller. Swaps here are directly between two assets, e.g. ETH <--> USDT.
 
 ### Pools
 The assets are drawn from existing pools of the *same asset pairing* (ETH/USDT). (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) If you want to swap some DAI for ETH you need a separate pool for these assets, and there's no centralized authority to create the new pool.
@@ -67,7 +68,7 @@ A few downsides:
 
 > There are two versions of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in my [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
-#  Yield Farms & Liquidity Mining (:sushi: :unicorn: :sweet_potato: :cake:)
+# Yield Farms & Liquidity Mining (:sushi: :unicorn: :sweet_potato: :cake:)
 Farming took off in June of 2020 when [Compound](https://compound.finance/) decided to transfer control of their DeFi borrowing & lending product to its users by depositing tokens in a smart contract that would vest automatically over the next four years to the users in proportion to their activity. The resulting COMP governance tokens can be used to vote on future protocol decisions or traded on the open market.
 
 This process of committing assets to pools to earn rewards is called *liquidity mining*. By adding liquidity you take a risk of impermanent loss but can reap rewards from transaction fees.
@@ -83,12 +84,16 @@ The biggest known risk here is called *impermanent loss* which means that the va
 
 For this reason it is safer (lower risk) to add liquidity on pairs that maintain a narrow price range such as stablecoins or wrapped tokens that track their unwrapped version closely. Despite the volatility in ETH, AMMs such as Uniswap and Sushiswap have been tremendously successful because LPs can also profit from pool swap fees. If the token pairing is very popular transaction fees can outweigh impermanent loss. Uniswap charges a fixed 0.3% per transaction and LPs are entitled to a cut of those fees proportional to their liqudity.
 
-### Is farming sustainable?
+### Is Farming Sustainable?
 The long game here for a product is to gain users, lock up more liquidity, generate fees to attract more users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. [Sushiswap](https://www.sushi.com/) is available on over 14 different chains. Another strategy is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
 
 These strategies need to be employed in the hostile world of open-source smart contracts. There are no patents or industry secrets. If a new product is popular and attracts a lot of users and their cryptocurrency it is likely to be forked and copied quickly.
 
 Worth considering here when talking about project sustainability is that something like Uniswap is a contract that once deployed to a blockchain is immutable. This means its expensive and difficult to upgrade. So, even if users migrate away from a protocol, it will still live (and can be active) on the blockchain for a long time without the ongoing maintenance and staff that a business requires.
+
+# Staking
+
+
 
 # unwritten
 * yield aggregators & vaults YFI
@@ -112,7 +117,7 @@ Worth considering here when talking about project sustainability is that somethi
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
 * [AMMs & ~~Impermanent~~ Divergent Loss by Pintail](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)
-* []()
+* [List of defi resources]()
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
