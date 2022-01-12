@@ -5,8 +5,8 @@
 ### Contents
 1. [Motivation: Why decentralize finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
 1. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
-3. [Decentralised Exchanges (DeXs)]()
-6. [Farming]()
+3. [Decentralised Exchanges (DeXs)](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#decentralised-exchanges-dexs)
+6. [Farming](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#yield-farms--liquidity-mining-sushi-unicorn-sweet_potato-cake)
 7. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
 8. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
@@ -78,14 +78,10 @@ In the beginning when a DeFi project is just getting started they can also entic
 
 *Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit ETH tokens in a contract and receive xETH (some synthetic or wrapped version), that xETH can now go out into the world and start working for you rather than being locked up. Conversely, mining is more of a non-renewable operation; the larger the stake the more tokens they earn.
 
-* liquidity renting
-* self reinforcing loop of attracting users with rewards and having the users make swaps
-
 ### Impermanent Loss
 The biggest known risk here is called *impermanent loss* which means that the value of the token pair you have committed to a pool becomes unbalanced when comparing present value to the price when you deposited. As one of the tokens goes up or down in value (due to external factors) the ratio of the token pair is adjusted to maintain a fixed level of liquidity. The loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. 
 
 For this reason it is safer (lower risk) to add liquidity on pairs that maintain a narrow price range such as stablecoins or wrapped tokens that track their unwrapped version closely. Despite the volatility in ETH, AMMs such as Uniswap and Sushiswap have been tremendously successful because LPs can also profit from pool swap fees. If the token pairing is very popular transaction fees can outweigh impermanent loss. Uniswap charges a fixed 0.3% per transaction and LPs are entitled to a cut of those fees proportional to their liqudity.
-
 
 ### Is farming sustainable?
 The long game here for a product is to gain users, lock up more liquidity, generate fees to attract more users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. [Sushiswap](https://www.sushi.com/) is available on over 14 different chains. Another strategy is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
@@ -101,7 +97,7 @@ Worth considering here when talking about project sustainability is that somethi
 * Tokenize everything 
 * oracles
 * wrapped tokens
-
+* liquidity renting
 
 # What did we miss?
 * [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on:   
