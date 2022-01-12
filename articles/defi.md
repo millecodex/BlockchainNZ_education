@@ -37,64 +37,62 @@ The top five by supply are Tether ($USDT), USD-Coin by Circle ($USDC), Binance U
 |PAXG - Paxos Gold|1 oz of gold|physical gold|Ethereum|
 
 # Decentralised Exchanges (DEXs)
-Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions, especially for time sensitive updates like access to price feeds during liquidations.
+Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to aggregate  and fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions, especially for time sensitive updates like access to price feeds during liquidations.
 
-The decentralised way to run an exchange requires two things: a **swap** method to exchange assets for users and a **pool** of each of the assets to draw from.
+The decentralised way to run an exchange requires three things: a **swap** method for users to exchange assets, a **pool** of each of the assets to draw from, and something to **make the market** (set the price).
 
 ### Swaps
-In order to swap one asset to another a few prerequisites must be in place. 
-1. There needs to be enough of the asset available you want to buy, and 
-2. there needs to be a buyer for the asset you want to sell, and
-3. lastly, a fair price is agreed upon by both buyer and seller.
-
-1 is created through economic incentives of YF & LM/
-2 is handled through the market(ing)/
-3 is done algorithmically
+In order to swap one asset to another a few prerequisites must be in place. There needs to be enough of the asset available you want to buy, and there needs to be a buyer for the asset you want to sell, and lastly, a fair price is agreed upon by both buyer and seller. Swaps here are directly between two assets, e.g. ETH ↔ USDT.
 
 ### Pools
-The assets are drawn from existing pools of the same asset. (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, and you need users to come and swap assets. But why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. More on yield farming and liquidity mining below.
+The assets are drawn from existing pools of the *same asset pairing* (ETH/USDT). (Keep in mind there is no broker behind the scenes sourcing the stock or using their trading account to buy and sell.) If you want to swap some DAI for ETH you need a separate pool for these assets, and there's no centralized authority to create the new pool.
 
-Lets say you want to swap a Carrot token for some Apples. There may not be a direct market for swapping Carrots to Apples. In this case the protocol needs to find a route through a third (or more) tokens. For example: CRT → ETH → APL.
+So here we have a problem to getting a DEX up and running: you need a pool of assets before users can swap between them, and you need users to come and swap assets. But why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. Ideally this is self-reinforcing. If the fees are profitable, people will add liquidity which attracts users and generates more fees.
 
-## Automated Market Makers (AMMs)
-The automated market maker works just as described; it algorithmically ensures that every bid can be matched with an ask, thus making a market for any token pairing.
+### Automated Market Makers (AMMs)
+The automated market maker works just as described; it algorithmically ensures that every bid can be matched with an ask, thus making a market for any token pairing. With a large enough pool of liquidity the price will remain stable and match the market. However, if the pool runs thin it will be difficult to place a large order or to maintain the quoted price (called slippage).
 
-The next key feature of the AMM is to add trading *pairs* to a pool of assets. The pairs are binded together according to equivallent market value, so that if 1 token costs 1 tether (USDT), then in a pool of TKN:USDT there is always 1 token for every dollar.
-
-A downside is slippage which is how the price moves for orders of a large fraction of the total pool liquidity, but this has improved in recent times. This AMM model bring many benefits that fall in line with a decentralised ethos:
+This AMM model bring many benefits that fall in line with a decentralised ethos:
 * users can create their own trading pair; very useful for smaller or new assets or pairings
 * users self-custody their assets & visa versa - the protocol isn't directly responsible for user's capital
 * accessibility; the crypto markets are global and thus run 24/7, and this means a user only need access to the protocol (via the internet) to trade in any market
 
-Uniswap is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years. 
+A few downsides:
+* slippage - how the price moves for orders of a large fraction of the total pool liquidity
+* impermanent loss due to the market value of token pairings becoming unbalanced (more later) 
+
+[Uniswap](https://uniswap.org/) is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years. 
 
 <p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
 
-> There are two version of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release often means they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in the [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
+> There are two versions of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the app code, in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in my [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
 #  Yield Farms & Liquidity Mining (:sushi: :unicorn: :sweet_potato: :cake:)
-Farming took off in June of 2020 when [Compound](https://compound.finance/) decided to transfer control of their DeFi borrowing & lending product to its users by depositing tokens in a smart contract that would vest automatically over the next four years to the users in proportion to their activity. The resulting COMP tokens can be used to vote on future protocol decisions or traded on the open market. 
+Farming took off in June of 2020 when [Compound](https://compound.finance/) decided to transfer control of their DeFi borrowing & lending product to its users by depositing tokens in a smart contract that would vest automatically over the next four years to the users in proportion to their activity. The resulting COMP governance tokens can be used to vote on future protocol decisions or traded on the open market.
 
-> *Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit ETH tokens in a contract and receive xETH (some synthetic or wrapped version), that xETH can now go out into the world and start working for you. (Perhaps deposit it in Compound.) Conversely, mining is a non-renewable operation; the more someone uses Compound the more tokens they earn.
+This process of committing assets to pools to earn rewards is called *liquidity mining*. By adding liquidity you take a risk of impermanent loss but can reap rewards from transaction fees.
 
-This process of committing assets to pools to earn rewards is called *yield farming*. In the beginning when a swap is just getting started they offer high reward rates in the form of a native token to encourage users to come and add liquidity. These rates can be *very* high: hundreds, or even thousands of percent annualized (APY). This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hunt for the next pool to mine for liquidity.
+In the beginning when a DeFi project is just getting started they can also entice users with high reward rates in the form of a native token. These rates can be *very* high: hundreds, or even thousands of percent if annualized and compounded (APY). *<Sound too good to be true? Perhaps, some of these things are very high risk. Make sure to do your own research!>*
+
+> This is where the DeFi game theory starts to get interesting. High early rates create a race-to-the-bottom scenario where early adopters and high rollers earn a lot of new tokens, then the rewards decrease as the tokens are vested, the player wants to lock in some profits and so withdraws their liquidity, claims their rewards tokens and sells them on the open market. If enough people do this the token price will fall and users wont' be as attracted to the swap anymore. The high-roller that just sold their new tokens now is on the hunt for the next pool to mine for liquidity.
+
+*Farming* vs *Mining* These terms are basically interchangeable, but we can draw some lines around them. Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards. For example, if you deposit ETH tokens in a contract and receive xETH (some synthetic or wrapped version), that xETH can now go out into the world and start working for you rather than being locked up. Conversely, mining is more of a non-renewable operation; the larger the stake the more tokens they earn.
 
 * liquidity renting
 * self reinforcing loop of attracting users with rewards and having the users make swaps
 
 ### Impermanent Loss
-The biggest known risk here is called *impermanent loss* which means that the value of the token pair you have committed to a pool becomes unbalanced. As one of the tokens goes up in value (due to external factors) that ratio of the pair must be adjusted.
+The biggest known risk here is called *impermanent loss* which means that the value of the token pair you have committed to a pool becomes unbalanced when comparing present value to the price when you deposited. As one of the tokens goes up or down in value (due to external factors) the ratio of the token pair is adjusted to maintain a fixed level of liquidity. The loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. 
 
-This loss becomes permanent when you withdraw liquidity from the pool and are paid out a different number of tokens than you started with. 
+For this reason it is safer (lower risk) to add liquidity on pairs that maintain a narrow price range such as stablecoins or wrapped tokens that track their unwrapped version closely. Despite the volatility in ETH, AMMs such as Uniswap and Sushiswap have been tremendously successful because LPs can also profit from pool swap fees. If the token pairing is very popular transaction fees can outweigh impermanent loss. Uniswap charges a fixed 0.3% per transaction and LPs are entitled to a cut of those fees proportional to their liqudity.
 
-If you, wise investor, had held your tokens rather than seeking that sweet yield you would have *more* value because of the market increase.
-
-* what about for the other scenario? one token drops heaps in value - does the pool add the other paired-token to make up the value??
 
 ### Is farming sustainable?
-The long game here for a product is to gain users and lock up more and more in their liquidity pools to attract users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. Sushiswap is available on over 14 different chains. Another one is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
+The long game here for a product is to gain users, lock up more liquidity, generate fees to attract more users and so on to reach a critical mass (although few things in DeFi are rock solid). A few strategies that teams are using include deploying contracts on as many blockchains as they can manage, e.g. [Sushiswap](https://www.sushi.com/) is available on over 14 different chains. Another strategy is to upgrade the protocol to be optimised for Layer 2 deployment, as Uniswap did with v3 for Optimism and Arbitrum.
 
-> Worth considering here when talking about project sustainability is that something like Uniswap is a contract that once deployed to a blockchain is immutable. This means its expensive and difficult to upgrade. So, even if users migrate away from a protocol, it will still live (and can be active) on the blockchain for a long time without the ongoing maintenance and personelle that a business requires.
+These strategies need to be employed in the hostile world of open-source smart contracts. There are no patents or industry secrets. If a new product is popular and attracts a lot of users and their cryptocurrency it is likely to be forked and copied quickly.
+
+Worth considering here when talking about project sustainability is that something like Uniswap is a contract that once deployed to a blockchain is immutable. This means its expensive and difficult to upgrade. So, even if users migrate away from a protocol, it will still live (and can be active) on the blockchain for a long time without the ongoing maintenance and staff that a business requires.
 
 # unwritten
 * yield aggregators & vaults YFI
@@ -117,7 +115,7 @@ The long game here for a product is to gain users and lock up more and more in t
 
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
-* []()
+* [AMMs & ~~Impermanent~~ Divergent Loss by Pintail](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)
 * []()
 
 # About the Author
