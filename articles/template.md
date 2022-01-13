@@ -3,11 +3,11 @@
 # Title
 
 ### Contents
-1. [intro](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#intro)
-1. [second](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#second)
-1. [third](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#third)
-1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
-1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
+1. [intro](template.md#intro)
+1. [second](template.md#second)
+1. [third](template.md#third)
+1. [What did we miss?](template.md#what-did-we-miss)
+1. [Further Reading - the very short list](template.md#further-reading---the-very-short-list)
 
 # Intro?
 In one word: trust. Or, ironically, you could also say trust*less*. 
