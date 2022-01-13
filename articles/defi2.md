@@ -1,7 +1,7 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
 # DeFi 2.0
-
+## Level 2. Time to find some alpha, or at least sound cool on twitter.
 ### Contents
 1. [intro](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#intro)
 1. [second](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#second)
