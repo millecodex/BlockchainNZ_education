@@ -2,13 +2,13 @@
 
 # What is Ethereum?
 ### Contents
-1. [Brief History](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#first-a-brief-history)
-1. [Initial Coin Offering](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#initial-coin-offering)
-1. [Smart Contracts](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#smart-contracts)
-1. [dapps](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#dapps)
-1. [Proof-of-Stake?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#i-thought-ethereum-was-proof-of-stake)
-1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#what-did-we-miss)
-1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/ethereum.md#further-reading---the-very-short-list)
+1. [Brief History](ethereum.md#first-a-brief-history)
+1. [Initial Coin Offering](ethereum.md#initial-coin-offering)
+1. [Smart Contracts](ethereum.md#smart-contracts)
+1. [dapps](ethereum.md#dapps)
+1. [Proof-of-Stake?](ethereum.md#i-thought-ethereum-was-proof-of-stake)
+1. [What did we miss?](ethereum.md#what-did-we-miss)
+1. [Further Reading - the very short list](ethereum.md#further-reading---the-very-short-list)
 
 # First, a Brief History
 ### What was the problem(s) that Vitalik Buterin was looking to solve?
@@ -88,6 +88,9 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * [The Whitepaper by Vitalik Buterin](https://ethereum.org/en/whitepaper/)
 * [The Yellowpaper by Gavin Wood](https://github.com/ethereum/yellowpaper), & [pdf](https://ethereum.github.io/yellowpaper/paper.pdf)
 * [Extensive list of learning resources](https://ethereum.org/en/learn/)
+
+# Next
+* :point_right: [DeFi](defi.md)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
