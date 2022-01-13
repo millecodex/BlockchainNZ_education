@@ -86,7 +86,7 @@ Farming took off in June of 2020 when [Compound](https://compound.finance/) deci
 These terms are used interchangeably, but we can draw some lines around them. 
 
 Farming refers to the idea that you can take a token and plant it somewhere else to reap extra rewards.
-> For example, if you deposit ETH into [Curve](https://curve.fi/) you are issued LP tokens and earn yield from fees. Next, my dear investor, that LP token doesn't need sit idly in your wallet, it can go out into the world and start working for you. How you say 🤔? Well deposit the LP token into Curve's staking pool and earn their native token CRV while still earning those fees 🤓.
+> For example, if you deposit ETH into [Curve](https://curve.fi/) you are issued LP tokens and earn yield from fees. Next, my dear investor, that LP token doesn't need sit idly in your wallet, it can go out into the world and start working for you. How you say 🤔? Well fren, deposit the LP token into Curve's staking pool and earn their native token CRV while still earning those fees 🤓.
 
 *Mining* is more of a non-renewable operation; the larger the stake your tokens have the more rewards they earn. DeFi's first iteration (1.0) consists of liquidity provision of two assets paired, or staked, in a pool. Recently there has been a move to *single-sided staking* so that you can still earn yield but are protected from impernanent loss.
 
