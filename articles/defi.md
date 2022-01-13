@@ -7,7 +7,7 @@
 1. [Motivation: Why Decentralize Finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
 2. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#decentralised-exchanges-dexs)
-4. [Farming](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#yield-farms--liquidity-mining-sushi-unicorn-sweet_potato-cake)
+4. [Mining & Farming & Staking](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
 5. [Summary](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#in-summary)
 6. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
 7. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
