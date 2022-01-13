@@ -98,28 +98,22 @@ These strategies need to be employed in the hostile world of open-source smart c
 Worth considering here when talking about project sustainability is that something like Uniswap is a contract that once deployed to a blockchain is immutable. This means its expensive and difficult to upgrade. So, even if users migrate away from a protocol, it will still live (and can be active) on the blockchain for a long time without the ongoing maintenance and staff that a business requires.
 
 # In Summary
-Just like Satoshi solving the double-spend problem can't be unsolved, once people caught on to the benefit of financial wizardry in the form of decentralised finance, their only limits are creativity. And perhaps regulation. But *that* is a topic for another post on another day.
+If we can have stable dollars on a blockchain mirroring the value of a real dollar, and we can have completely fabricated digital assets, all adhering to the principles of digital scarcity through cryptography, then there is a vast spectrum of possiblity opening up. We are presently at the very dawn of this financial revolution and there is sure to be much innovation and heartbreak ahead. 
 
-If we can have stable dollars on a blockchain mirroring the value of a real dollar, and we can have completely fabricated digital assets, all adhering to the principles of digital scarcity through cryptography, then there is a vast spectrum of possiblity opening up. We are presently at the very dawn of this financial revolution and there is sure to be much innovation and heartbreak ahead. I hope this has been a reasonable introduction to DeFi. I found I had to cut many topics to prevent bloat and ended up pushing many of them to [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md), so please have a look.
+Just like Satoshi solving the double-spend problem can't be unsolved, once people caught on to the benefit of financial wizardry in the form of decentralised finance, their only limits are creativity in code. And perhaps regulation. But *that* is a topic for another post on another day.
 
+I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md), so please have a look.
 
 # What did we miss?
-* [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
-  * yield aggregators & vaults YFI  
-  * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
-  * non-pegged stablecoins & protocol owned liquidity
-  * flash loans
-  * rebasing
-  * oracles
-  * pool 1 vs. pool 2
-  * options/derivatives/perps(dydx) etc 
-  * Single-sided staking and IL insurance
-  * Self-repaying loans(!)
+### [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
+* yield aggregators & vaults
+* pool 1 vs. pool 2
+* algorithmic & unpegged stablecoins
+* flash loans & self-repaying loands
 
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
 * [AMMs & ~~Impermanent~~ Divergent Loss by Pintail](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)
-* [List of defi resources]()
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
