@@ -2,13 +2,13 @@
 
 # What is Bitcoin?
 ### Contents
-1. [A Brief History of Digital Cash](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#a-brief-history)
-1. [Peer-to-Peer Networks & Consensus Mechanisms](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#peer-to-peer-networks--consensus-mechanisms)
-1. [Proof-of-Work Mining & Network Security](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#proof-of-work-mining--network-security)
-1. [Economic Incentives & Monetary Supply](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#economic-incentives--monetary-supply)
-1. [Bitcoin Today](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#bitcoin-today)
-1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#what-did-we-miss)
-1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/bitcoin.md#further-reading---the-very-short-list)
+1. [A Brief History of Digital Cash](bitcoin.md#a-brief-history)
+1. [Peer-to-Peer Networks & Consensus Mechanisms](bitcoin.md#peer-to-peer-networks--consensus-mechanisms)
+1. [Proof-of-Work Mining & Network Security](bitcoin.md#proof-of-work-mining--network-security)
+1. [Economic Incentives & Monetary Supply](bitcoin.md#economic-incentives--monetary-supply)
+1. [Bitcoin Today](bitcoin.md#bitcoin-today)
+1. [What did we miss?](bitcoin.md#what-did-we-miss)
+1. [Further Reading - the very short list](bitcoin.md#further-reading---the-very-short-list)
 
 # A brief history
 What was the problem that Satoshi Nakamoto was looking to solve?
@@ -85,6 +85,9 @@ There are many topics not discussed here (trying to keep this as an overview) an
 * The Whitepaper: [*Bitcoin: A Peer-to-Peer Electronic Cash System* ](https://bitcoin.org/bitcoin.pdf)
 * On the Shoulder of Giants - History of the tech: [*Bitcoin's Academic Pedigree*, Communications of the ACM](https://cacm.acm.org/magazines/2017/12/223058-bitcoins-academic-pedigree/fulltext)
 * [An extensive list of Bitcoin resources](https://www.lopp.net/bitcoin-information.html)
+
+# Next 
+* :point_right: [What is Ethereum?](ethereum.md)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
