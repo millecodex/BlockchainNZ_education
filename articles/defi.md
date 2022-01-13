@@ -4,13 +4,13 @@
 ## Part 1.0: *an* Introduction
 
 ### Contents
-1. [Motivation: Why Decentralize Finance?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#motivation)
-2. [Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins)
-3. [Decentralised Exchanges (DeXs)](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#decentralised-exchanges-dexs)
-4. [Mining & Farming & Staking](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
-5. [Summary](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#in-summary)
-6. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
-7. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
+1. [Motivation: Why Decentralize Finance?](defi.md#motivation)
+2. [Stablecoins](defi.md#stablecoins)
+3. [Decentralised Exchanges (DeXs)](defi.md#decentralised-exchanges-dexs)
+4. [Mining & Farming & Staking](defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
+5. [Summary](defi.md#in-summary)
+6. [What did we miss?](defi.md#what-did-we-miss)
+7. [Further Reading - the very short list](defi.md#further-reading---the-very-short-list)
 
 # Why Decentralize Finance?
 In one word: trust. Or, ironically, you could also say trust*less*. Allow me to explain. For the same reason that Bitcoin is successful without a centralizing third-party─namely that you can transact with a perfect stranger in a foreign country by trusting the protocol and you *don't* need to trust the stranger─the cascade of financial products that can be built upon digital money is an ideal fit for blockchains.
