@@ -109,10 +109,10 @@ If we can have stable dollars on a blockchain mirroring the value of a real doll
 
 Just like Satoshi solving the double-spend problem can't be unsolved, once people caught on to the benefit of financial wizardry in the form of decentralised finance, their only limits are creativity in code. And perhaps regulation. But *that* is a topic for another post on another day.
 
-I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md), so please have a look.
+I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part 2.0](articles/defi2.md), so please have a look.
 
 # What did we miss?
-### [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is my dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
+### [Defi 2.0](defi2.md) is my dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
 * yield aggregators & vaults
 * pool 1 vs. pool 2
 * algorithmic & unpegged stablecoins
@@ -120,7 +120,7 @@ I hope this has been a reasonable introduction to the world of DeFi and some of 
 
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
-* How does the AMM actually *make the market? [AMMs & ~~Impermanent~~ Divergent Loss by Pintail](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)
+* How does the AMM actually *make* the market? [AMMs & ~~Impermanent~~ Divergent Loss by Pintail](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
