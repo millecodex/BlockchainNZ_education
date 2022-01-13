@@ -24,4 +24,4 @@ Economists, historians, central bankers, and Bitcoiners, will all debate their o
 Bitcoin has decentralised money. What can be said of *finance*?
 * [Read more: Decentralised Finance 1.0](defi.md)
 
-[See all featured topics](https://github.com/millecodexBlockchainNZ_education/featured.md)
+[See all featured topics](https://github.com/millecodex/BlockchainNZ_education/blob/main/featured.md)
