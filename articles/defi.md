@@ -4,7 +4,7 @@
 ## Part 1.0: *an* Introduction
 
 ### Contents
-1. [Motivation: Why Decentralize Finance?](#motivation)
+1. [Motivation: Why Decentralize Finance?](defi.md#motivation)
 2. [Stablecoins](defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)](defi.md#decentralised-exchanges-dexs)
 4. [Mining & Farming & Staking](defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
