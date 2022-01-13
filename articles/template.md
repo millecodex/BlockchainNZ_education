@@ -39,6 +39,9 @@ Table
 * []()
 * []()
 
+# Next
+* :point_right: [DeFi](defi.md)
+
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
