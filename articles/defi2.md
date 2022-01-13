@@ -12,6 +12,19 @@
 # Intro?
 In one word: trust. Or, ironically, you could also say trust*less*. 
 
+# What did we miss (From Part I)?
+* [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
+  * yield aggregators & vaults YFI  
+  * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+  * non-pegged stablecoins & protocol owned liquidity
+  * flash loans
+  * rebasing
+  * oracles
+  * pool 1 vs. pool 2
+  * options/derivatives/perps(dydx) etc 
+  * Single-sided staking and IL insurance
+  * Self-repaying loans(!)
+
 # Algorithmic Stables 
 * USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
 
