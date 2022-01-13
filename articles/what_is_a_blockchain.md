@@ -17,8 +17,8 @@ Today the term cryptocurrency refers to digital tokens that are represented on a
 Economists, historians, central bankers, and Bitcoiners, will all debate their own version of what a currency is, how is it different from a cryptocurrency, and what is bitcoin and all those other coins? These are interesting and important questions worth thinking about. A good place to start is with the *OG*: Bitcoin.
 
 # Learn More
-* :point_right: [What is Bitcoin?](bitcoin.md)
-* :point_right: [What is Ethereum?](ethereum.md)
+:point_right: [What is Bitcoin?](bitcoin.md)
+:point_right: [What is Ethereum?](ethereum.md)
 
 # Featured Topic: DeFi
 Bitcoin has decentralised money. What can be said of *finance*?
