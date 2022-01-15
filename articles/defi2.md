@@ -9,8 +9,8 @@
 1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
 1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
-# Intro?
-In one word: trust. Or, ironically, you could also say trust*less*. 
+# Introduction
+In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges and how the automated market maker works with pool, liquidity mining and yield farming. Here we're going to start with a foundational product - YFI. What happens when you can automate some of the behaviour witnessed in part 1.0?
 
 # What did we miss (From Part I)?
 * [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
