@@ -1,6 +1,6 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
-# DeFi 2.0
+# DeFi Part II (& 2.0)
 ## Level 2. Time to find some alpha, or at least sound cool on twitter.
 ### Contents
 1. [intro](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#intro)
@@ -10,20 +10,21 @@
 1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
 # Introduction
-In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges and how the automated market maker works with pool, liquidity mining and yield farming. Here we're going to start with a foundational product - YFI. What happens when you can automate some of the behaviour witnessed in part 1.0?
+In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to 2.0 and discuss algorithmic coins, rebasing, and self-repaying loans.
 
-# What did we miss (From Part I)?
-* [Defi 2.0](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) is the dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
-  * yield aggregators & vaults YFI  
+
+
+# Topics not in Part I (1.0)
+  * yield aggregators & vaults YFI (1.0)
   * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
   * non-pegged stablecoins & protocol owned liquidity
-  * flash loans
+  * flash loans (1.0)
   * rebasing
-  * oracles
-  * pool 1 vs. pool 2
+  * oracles (~ necessary infrastructure)
+  * pool 1 vs. pool 2 (motivation for 2.0 innovation)
   * options/derivatives/perps(dydx) etc 
-  * Single-sided staking and IL insurance
-  * Self-repaying loans(!)
+  * Single-sided staking and IL insurance (Bancor v3)
+  * Self-repaying loans(!) Abracadabra/MIM
 
 # Algorithmic Stables 
 * USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
