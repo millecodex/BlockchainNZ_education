@@ -1,21 +1,28 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
 # DeFi Part II (& 2.0)
-## Level 2. Time to find some alpha, or at least sound cool on twitter.
-### Contents
-1. [intro](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#intro)
-1. [second](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#second)
-1. [third](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/template.md#third)
-1. [What did we miss?](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#what-did-we-miss)
-1. [Further Reading - the very short list](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#further-reading---the-very-short-list)
 
 # Introduction
-In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to 2.0 and discuss algorithmic coins, rebasing, and self-repaying loans.
+In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#DeFi2.0) and discuss algorithmic coins, rebasing, and self-repaying loans.
+
+### Contents
+1. [](defi2.md#intro)
+1. [](defi2.md#second)
+1. [](defi2.md#third)
+1. [What did we miss?](defi2.md#what-did-we-miss)
+1. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
+
+# Yield Aggregators & Vaults
+The winter of Defi (2020; Summer in the northern hemisphere) looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. So a simple question arises: how can I, a simple investor, capture some of this yield by moving my coins (without gas fees eating into my profits)?
+
+[Andre Cronje](https://andrecronje.medium.com/) was there with yEarn to automatically move investments between dydx, Compound, and Aave. The native token, YFI, was advertised as having no value and was distributed through a liquidity mining program to users and was so successful it now trades at tens of thousands of dollars. 
+
+As with other successful DeFi bricks, this model was copied eagerly and now aggregators and vaults are common. The present version of yearn.finance offers a vault for depositing tokens that then use strategies such as shifting capital, auto-compounding, and rebalancing. These vaults offer self-custody and allow withdrawals at any time, both features which represent reduced risk to the user. They also offer a bank that is used for borowing/lending activities; again, common features in the defi landscape.
 
 
 
 # Topics not in Part I (1.0)
-  * yield aggregators & vaults YFI (1.0)
+
   * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
   * non-pegged stablecoins & protocol owned liquidity
   * flash loans (1.0)
@@ -41,14 +48,7 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 Table
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
-|USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
-|AUDT      |AUD         |AUD          |Ethereum|
-|NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
-|XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
-|EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
-|DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
-|PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
+|AUDT      |AUD         |AUD    |Ethereum|
 
 # What did we miss?
 * Point form list
