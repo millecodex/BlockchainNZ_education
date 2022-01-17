@@ -15,9 +15,15 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 # Yield Aggregators & Vaults
 The winter of Defi (2020; Summer in the northern hemisphere) looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. So a simple question arises: how can I, a simple investor, capture some of this yield by moving my coins (without gas fees eating into my profits)?
 
-[Andre Cronje](https://andrecronje.medium.com/) was there with yEarn to automatically move investments between dydx, Compound, and Aave. The native token, YFI, was advertised as having no value and was distributed through a liquidity mining program to users and was so successful it now trades at tens of thousands of dollars. 
+[Andre Cronje](https://andrecronje.medium.com/) was there with *yEarn* to automatically move investments between *dydx*, *Compound*, and *Aave*. The native governance token, YFI, was advertised as having no value and was distributed through a liquidity mining program to users and was so successful it now trades at tens of thousands of dollars.
 
-As with other successful DeFi bricks, this model was copied eagerly and now aggregators and vaults are common. The present version of yearn.finance offers a vault for depositing tokens that then use strategies such as shifting capital, auto-compounding, and rebalancing. These vaults offer self-custody and allow withdrawals at any time, both features which represent reduced risk to the user. They also offer a bank that is used for borowing/lending activities; again, common features in the defi landscape.
+> "we have released YFI, a completely valueless 0 supply token. We re-iterate, it has 0 financial value. There is no pre-mine, there is no sale, no you cannot buy it, no, it won’t be on uniswap, no, there won’t be an auction. We don’t have any of it."\
+-*Andre Cronje on the [launch of YFI](https://medium.com/iearn/yfi-df84573db81) explicity stating that there are no tokens reserved for insiders, specifically VCs*
+
+As with other successful DeFi Legos, this model was copied eagerly and now aggregators and vaults are common. The present version of [yearn.finance](yearn.finance) offers a vault for depositing tokens that then use strategies such as shifting capital, auto-compounding, and rebalancing to earn yield. These vaults offer self-custody and allow withdrawals at any time, both features which represent reduced risk to the user. 
+
+Another feautre of many DeFi protocols is borowing and lending because of the simplicity of doing it in a trustless blockchain environment. In this scenario the lender earns interest directly from the borrower in an almost peer-to-peer transaction. The third party here holds the collateral and facilitates the *bank*. As an example Yearn offers loans of DAI at 1.35% APY (as of Jan. 2021) which is at the same level of capital lending that only institutions would have access to.
+
 
 
 
