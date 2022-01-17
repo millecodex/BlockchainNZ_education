@@ -24,7 +24,8 @@ As with other successful DeFi Legos, this model was copied eagerly and now aggre
 
 Another feautre of many DeFi protocols is borowing and lending because of the simplicity of doing it in a trustless blockchain environment. In this scenario the lender earns interest directly from the borrower in an almost peer-to-peer transaction. The third party here holds the collateral and facilitates the *bank*. As an example Yearn offers loans of DAI at 1.35% APY (as of Jan. 2021) which is at the same level of capital lending that only institutions would have access to.
 
-
+# Flash Loans
+Flash loans are a uniquely blockchain and defi possibility. There is no real analog in traditional finance or the surrounding waters. A flash loan is some activity that involves borrowing funds, using them, and returning them all within a single transaction.
 
 
 # Topics not in Part I (1.0)
