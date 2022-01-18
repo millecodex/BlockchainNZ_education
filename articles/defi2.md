@@ -8,9 +8,10 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 ### Contents
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
 1. [Flash Loans](defi2.md#flash-loans)
-1. [](defi2.md#third)
-1. [What did we miss?](defi2.md#what-did-we-miss)
-1. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
+1. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
+2. [DeFi 2.0](defi2.md#)
+3. [What did we miss?](defi2.md#what-did-we-miss)
+4. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
 # Yield Aggregators & Vaults
 The winter of Defi (2020; Summer in the northern hemisphere) looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. So a simple question arises: how can I, a simple investor, capture some of this yield by moving my coins (without gas fees eating into my profits)?
@@ -27,7 +28,7 @@ Another feautre of many DeFi protocols is borowing and lending because of the si
 # Flash Loans
 Flash loans are a uniquely blockchain and defi possibility. There is no real analog in traditional finance or the surrounding waters. A flash loan is a speedy instrument that involves borrowing funds, using them, and returning them all within a single transaction. To understand how this is possible we'll momentarily discuss a database concept called *atomicity*. Database systems need to update when there is new information, for example, when withdrawing $100 from an ATM the bank's database needs to update the customer account balance. 
 
-The balance update can be further broken down into some substeps:
+The balance update can be further broken down into some substeps: **check this**
 1. ATM sends the bank a request to debit $100
 2. Bank checks $100 is available & puts a lock on the account so that another update can't come through until this transaction is finished
 3. ATM receives the OK and asks bank to debit the funds
@@ -38,32 +39,45 @@ If something happens in the electronic communication between steps 2 and 4 the d
 
 Okay, back to flash loans. Here a saavy blockchainer can use the latency in the chain to their advantage. The blocktime for Ethereum is around 12 seconds, allowing plenty of time for a smart contract to borrow money, send it elsewhere, do some stuff, await receipt, and return the money. Due to atomicity, if the money isn't returned or market volatility influences the outcome, the blockchain state will not be updated. A step-by-step view of a flash loan used for arbitrage, all of which is executed in a single block:
 
-1. borrow $1 m USDT (it can be a lot of money because collateral isn't necessary as there's no risk of absconding with the cash)
-2. Send that $1 m USDT to exchange X to buy a TOKEN
-3. Send that $1 m of TOKEN to exchange Y and sell into USDT for more than $1 m (otherwise it wouldn't be profitable)
-4. return original $1 m USDT + interest & keep the change
+1. borrow $1m USDT (it can be a lot of money because collateral isn't necessary as there's no risk of absconding with the cash)
+2. Send that $1m USDT to exchange X to buy a TOKEN
+3. Send that $1m of TOKEN to exchange Y and sell into USDT for more than $1m (otherwise it wouldn't be profitable)
+4. return original $1m USDT + interest & keep the change
 
 If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap--settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
-# Algorithmic Stablecoins 
-* USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
-For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset-USD-behind it. This creates other issues that have negative press for Tether. If a large number of people want to cash out of their USDC cryptocurrency and back into dollars then this could create a problem for Circle (the company that issues USDC) as they need to be ready and have enough available. After a successful exchange they could burn the tokens (send them to an unspendable address) to provably reduce the supply.
+# Algorithmic Stablecoins  *USDN, FEI, FRAX, UST: see Messario 2021 report p.120.*
+We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins), collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions. 
+
+#### *(i) Collateralized*
+For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset behind it. This creates centralised custodial issues. If a large number of people want to cash out of their USDS, for example, and back into dollars then this could create a problem for Circle, the company that issues USDC, as they need to be ready and have enough available. Upon redemption they should burn the tokens to provably reduce the circulating supply.
 
 
-We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](), collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with overcollaterization requirements for onchain versions. 
-
-### Purely Algorithmic Stablecoins
-As with many things in DeFi there was a push early on to automate this process and have code manage the peg in a decentralised manner. This trustless version should be scalable and require no maintenance, however, many attempts have been difficult to bootstrap or subject to volatility.
+#### *(ii) Purely Algorithmic*
+As with many things in DeFi there is a push to automate the process and have code be the decentralised arbiter. This trustless algorithmic stablecoin should be scalable and require no maintenance, however, many attempts have been difficult to bootstrap or subject to volatility. Starting a new stable currency with no collateral is risky business for the users and this lack of trust has been apparent in the uptake of these coins.
 
 Basis, Empty Set Dollar, and Seigniorage Shares
 
 
-### Hybrid: Collateral+Algorithmic
-A hybrid approach can use aspects of collateralization and trustless algorithmic adjustments to mitigate custodial and management risk while capturing efficiencies of automated controls. A successful example here is [FRAX](https://docs.frax.finance/) which is described as a hybrid (fractional) seigniorage shares model. This uses two tokens: FRAX which is soft-pegged to USD and Frax shares (FXS) to incentivise governance. A fraction of the FRAX is collateralized using mostly (but not all) stable cryptocurencies. The remaining fraction is unbacked. The ratio can be adjusted to keep its peg. Adjustment functions can be called by any holder and they are rewarded with seigniorage revenue through FXS. Additionally FXS is used for fees accrual and excess collateral value.
+#### *(iii) Hybrid of Collateral + Algorithmic*
+A hybrid approach can use aspects of collateralization and trustless algorithmic adjustments to mitigate custodial and management risk while capturing efficiencies of automated controls. A successful example here is [FRAX](https://docs.frax.finance/) which is described as a hybrid (fractional) seigniorage shares model. This uses two tokens: FRAX which is soft-pegged to USD and Frax shares (FXS) to incentivise governance. A fraction of the FRAX is collateralized using mostly (but not all) stable cryptocurencies. The remaining fraction is unbacked. The ratio between backed/unbacked can be adjusted to keep its peg. Adjustment functions can be called by any holder and they are rewarded with seigniorage revenue through FXS. Additionally FXS is used for fees accrual and excess collateral value.
+
+According to the Frax [docs](https://docs.frax.finance/conclusion):
+> *The novel insight is to use market forces itself to see how much of a stablecoin can be algorithmically stabilized with its own seigniorage token so that it keeps a tight band around $1 like fiatcoins*
+
+#### How does it stay at $1?
+The value of FRAX (the peg) is set by an oracle that queries Chainlink for the true value of USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per FRAX then there is an opportunity for someone to mint new tokens, this costs them $1 (combination of USDC + FXS at the ratio described above), and sell them on the market for $1.01, pocketing the difference. As the supply of tokens increases the market price will fall back in line. A similar mechanism occurs when the price is $0.99 -> you can purchase 100 FRAX for $99 in the market, turn around and redeem them from the protocol for $100, profiting $1 for your trouble.
+
+# DeFi 2.0 - Second Generation Protocols
+The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance.
+
+* pool1/pool2
+
+## Liquidity Owned Protocols
+* non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 saw immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
 
 
 # Topics unwritten
-
   * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
   * non-pegged stablecoins & protocol owned liquidity
   * rebasing
@@ -75,11 +89,7 @@ A hybrid approach can use aspects of collateralization and trustless algorithmic
 
 
 
-# Liquidity Owned Protocols
-* pool1/pool2
-* non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 say immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
-* rebasing
-* options/derivatives/perps(dydx) etc 
+
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
