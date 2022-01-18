@@ -46,20 +46,25 @@ Okay, back to flash loans. Here a saavy blockchainer can use the latency in the 
 
 If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap--settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
-# Algorithmic Stablecoins  *USDN, FEI, FRAX, UST: see Messario 2021 report p.120.*
+# Algorithmic Stablecoins
 We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins), collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions. 
 
-#### *(i) Collateralized*
-For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset behind it. This creates centralised custodial issues. If a large number of people want to cash out of their USDS, for example, and back into dollars then this could create a problem for Circle, the company that issues USDC, as they need to be ready and have enough available. Upon redemption they should burn the tokens to provably reduce the circulating supply.
+#### *(i) Collateralized* (e.g. USDC, USDT, DAI)
+For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset behind it. This creates centralised custodial and [regulatory issues](https://www.theverge.com/2021/10/15/22728253/tether-41-million-misleading-statements-fiat-currency-bitfinex-cftc). If a large number of people want to cash out of their USDS, for example, and back into dollars then this could create a problem for Circle, the company that issues USDC, as they need to be ready and have enough available. Upon redemption they should burn the tokens to provably reduce the circulating supply.
 
 
-#### *(ii) Purely Algorithmic*
+#### *(ii) Purely Algorithmic* (e.g. USDx, 
 As with many things in DeFi there is a push to automate the process and have code be the decentralised arbiter. This trustless algorithmic stablecoin should be scalable and require no maintenance, however, many attempts have been difficult to bootstrap or subject to volatility. Starting a new stable currency with no collateral is risky business for the users and this lack of trust has been apparent in the uptake of these coins.
 
-Basis, Empty Set Dollar, and Seigniorage Shares
+Basis, Empty Set Dollar, and Seigniorage Shares (USDx)
+
+The chart from CoinGecko shows the market price of USDx had trouble holding its peg.
+
+<img width="800" alt="usdx dollars price chart loses it peg to the USD" src="https://user-images.githubusercontent.com/39792005/150029689-995a1c67-2638-45e1-ad85-a0f1948a0ebb.PNG">
 
 
-#### *(iii) Hybrid of Collateral + Algorithmic*
+
+#### *(iii) Hybrid of Collateral + Algorithmic* (e.g. FRAX)
 A hybrid approach can use aspects of collateralization and trustless algorithmic adjustments to mitigate custodial and management risk while capturing efficiencies of automated controls. A successful example here is [FRAX](https://docs.frax.finance/) which is described as a hybrid (fractional) seigniorage shares model. This uses two tokens: FRAX which is soft-pegged to USD and Frax shares (FXS) to incentivise governance. A fraction of the FRAX is collateralized using mostly (but not all) stable cryptocurencies. The remaining fraction is unbacked. The ratio between backed/unbacked can be adjusted to keep its peg. Adjustment functions can be called by any holder and they are rewarded with seigniorage revenue through FXS. Additionally FXS is used for fees accrual and excess collateral value.
 
 According to the Frax [docs](https://docs.frax.finance/conclusion):
