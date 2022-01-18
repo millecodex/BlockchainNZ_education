@@ -43,7 +43,7 @@ Okay, back to flash loans. Here a saavy blockchainer can use the latency in the 
 3. Send that $1 m of TOKEN to exchange Y and sell into USDT for more than $1 m (otherwise it wouldn't be profitable)
 4. return original $1 m USDT + interest & keep the change
 
-If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap to settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
+If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap--settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
 # Topics unwritten
 
