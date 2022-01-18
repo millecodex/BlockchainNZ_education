@@ -6,8 +6,8 @@
 In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#DeFi2.0) and discuss algorithmic coins, rebasing, and self-repaying loans.
 
 ### Contents
-1. [Yield Aggregators & Vaults](defi2.md#intro)
-1. [Flash Loans](defi2.md#second)
+1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
+1. [Flash Loans](defi2.md#flash-loans)
 1. [](defi2.md#third)
 1. [What did we miss?](defi2.md#what-did-we-miss)
 1. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
@@ -45,6 +45,12 @@ Okay, back to flash loans. Here a saavy blockchainer can use the latency in the 
 
 If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap--settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
+# Algorithmic Stablecoins 
+* USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset-USD-behind it. This creates other issues that have negative press for Tether. If a large number of people want to cash out of their USDC cryptocurrency and back into dollars then this could create a problem for Circle (the company that issues USDC) as they need to be ready and have enough available. After a successful exchange they could burn the tokens (send them to an unspendable address) to provably reduce the supply.
+
+As with many things in DeFi there was a push early on to automate this process and have code manage the peg in a decentralised manner.
+
 # Topics unwritten
 
   * algorithmic stablecoins - USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
@@ -56,8 +62,7 @@ If the user tries to settle their loan (step 4) and not return any funds then th
   * Single-sided staking and IL insurance (Bancor v3)
   * Self-repaying loans(!) Abracadabra/MIM
 
-# Algorithmic Stables 
-* USDN, FEI, FRAX, UST: see Messario 2021 report p.120.
+
 
 # Liquidity Owned Protocols
 * pool1/pool2
