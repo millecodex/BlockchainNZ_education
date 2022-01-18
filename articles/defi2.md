@@ -25,8 +25,25 @@ As with other successful DeFi Legos, this model was copied eagerly and now aggre
 Another feautre of many DeFi protocols is borowing and lending because of the simplicity of doing it in a trustless blockchain environment. In this scenario the lender earns interest directly from the borrower in an almost peer-to-peer transaction. The third party here holds the collateral and facilitates the *bank*. As an example Yearn offers loans of DAI at 1.35% APY (as of Jan. 2021) which is at the same level of capital lending that only institutions would have access to.
 
 # Flash Loans
-Flash loans are a uniquely blockchain and defi possibility. There is no real analog in traditional finance or the surrounding waters. A flash loan is some activity that involves borrowing funds, using them, and returning them all within a single transaction.
+Flash loans are a uniquely blockchain and defi possibility. There is no real analog in traditional finance or the surrounding waters. A flash loan is a speedy instrument that involves borrowing funds, using them, and returning them all within a single transaction. To understand how this is possible we'll momentarily discuss a database concept called *atomicity*. Database systems need to update when there is new information, for example, when withdrawing $100 from an ATM the bank's database needs to update the customer account balance. 
 
+The balance update can be further broken down into some substeps:
+1. ATM sends the bank a request to debit $100
+2. Bank checks $100 is available & puts a lock on the account so that another update can't come through until this transaction is finished
+3. ATM receives the OK and asks bank to debit the funds
+4. Bank updates the balance and unlocks the account
+5. ATM dispenses cash
+
+If something happens in the electronic communication between steps 2 and 4 the database will rollback the operations and the transaction will fail. The reader may be familiar with an error message similar to "the service is not available, please try again later" which usually means some update has failed somewhere between the user and the server. Atomic comes from the greek atoma which means indivisible; in this case either the update is successfull or its not. There is not grey area where you get $100 and your account does not register the transaction.
+
+Okay, back to flash loans. Here a saavy blockchainer can use the latency in the chain to their advantage. The blocktime for Ethereum is around 12 seconds, allowing plenty of time for a smart contract to borrow money, send it elsewhere, do some stuff, await receipt, and return the money. Due to atomicity, if the money isn't returned or market volatility influences the outcome, the blockchain state will not be updated. A step-by-step view of a flash loan used for arbitrage, all of which is executed in a single block:
+
+1. borrow $1 m USDT (it can be a lot of money because collateral isn't necessary as there's no risk of absconding with the cash)
+2. Send that $1 m USDT to exchange X to buy a TOKEN
+3. Send that $1 m of TOKEN to exchange Y and sell into USDT for more than $1 m (otherwise it wouldn't be profitable)
+4. return original $1 m USDT + interest & keep the change
+
+If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. There are three uses for a flash loan: 
 
 # Topics not in Part I (1.0)
 
