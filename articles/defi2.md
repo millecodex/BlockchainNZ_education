@@ -50,15 +50,17 @@ If the user tries to settle their loan (step 4) and not return any funds then th
 For a stablecoin to remain pegged to a fiat currency it must be actively managed. Tether issues (mints) new USDT when required and takes USD deposits as backing. As the volume of USDT grows, so does the value of the asset-USD-behind it. This creates other issues that have negative press for Tether. If a large number of people want to cash out of their USDC cryptocurrency and back into dollars then this could create a problem for Circle (the company that issues USDC) as they need to be ready and have enough available. After a successful exchange they could burn the tokens (send them to an unspendable address) to provably reduce the supply.
 
 
-We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](), collateralized has some equivallent backing reserved for anyone wanting to bridge from crypto back into dollars. This comes with custodial risk for those managing the peg offchain, or with overcollaterization requirements for onchain versions. 
+We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](), collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with overcollaterization requirements for onchain versions. 
 
 ### Purely Algorithmic Stablecoins
-As with many things in DeFi there was a push early on to automate this process and have code manage the peg in a decentralised manner. This trustless version should be scalable and require no maintenance, however, many attempts have been difficult to bootstrap.
+As with many things in DeFi there was a push early on to automate this process and have code manage the peg in a decentralised manner. This trustless version should be scalable and require no maintenance, however, many attempts have been difficult to bootstrap or subject to volatility.
 
 Basis, Empty Set Dollar, and Seigniorage Shares
 
 
 ### Hybrid: Collateral+Algorithmic
+A hybrid approach can use aspects of collateralization and trustless algorithmic adjustments to mitigate custodial and management risk while capturing efficiencies of automated controls. A successful example here is [FRAX](https://docs.frax.finance/) which is described as a hybrid (fractional) seigniorage shares model. This uses two tokens: FRAX which is soft-pegged to USD and Frax shares (FXS) to incentivise governance. A fraction of the FRAX is collateralized using mostly (but not all) stable cryptocurencies. The remaining fraction is unbacked. The ratio can be adjusted to keep its peg. Adjustment functions can be called by any holder and they are rewarded with seigniorage revenue through FXS. Additionally FXS is used for fees accrual and excess collateral value.
+
 
 # Topics unwritten
 
