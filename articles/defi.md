@@ -38,7 +38,7 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 |DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
 |PAXG - Paxos Gold|1 oz of gold|physical gold|Ethereum|
 
-There are other varieties of stablecoins, including ones that have no collateral backing and controlled algorithmically. More on these in [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md#algorithmic-stablecoins).
+There are other varieties of stablecoins, including ones that have no collateral backing and are controlled algorithmically. More on these in [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md#algorithmic-stablecoins).
 
 # Decentralised Exchanges (DEXs)
 Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to aggregate and fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions, especially for time sensitive updates like access to price feeds during liquidations.
