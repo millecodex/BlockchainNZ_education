@@ -30,13 +30,15 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
 |USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
+|USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
 |AUDT      |AUD         |AUD          |Ethereum|
 |NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
 |XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
 |EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
 |DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
 |PAXG - Paxos Gold|1 oz of gold|physical gold|Ethereum|
+
+Algorithmic stablecoins will be expanded upon in [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md#algorithmic-stablecoins).
 
 # Decentralised Exchanges (DEXs)
 Most crypto (and all stock) exchanges are centralized and use an order book to match trades. Called the central limit order book (CLOB) model, this works very well for a corporate structure such as the NZX (New Zealand Stock Exchange) that can have complete control over their servers and centrally manage events. The order book is a list of all the open buy/bid and sell/ask orders for a stock. Its the job of the software matching engine to aggregate and fill as many orders as possible at the market price. This type of model does not scale to a blockchain because of amount of activity that would need to be written to the chain; all bids & asks for example, and the latency when updating the actual transactions, especially for time sensitive updates like access to price feeds during liquidations.
