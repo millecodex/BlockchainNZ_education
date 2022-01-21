@@ -52,7 +52,7 @@ Table
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
 |USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
+|USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
 |AUDT      |AUD         |AUD          |Ethereum|
 |NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
 |XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
