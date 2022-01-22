@@ -3,11 +3,40 @@
 # Stablecoins; a primer
 
 ### Contents
-1. [intro](template.md#intro)
+1. [Introduction - How many types?](template.md#intro)
 1. [second](template.md#second)
 1. [third](template.md#third)
 1. [What did we miss?](template.md#what-did-we-miss)
 1. [Further Reading - the very short list](template.md#further-reading---the-very-short-list)
+
+# How many varietals in the stable?
+We [first](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins) introduced stablecoins as a key element of DeFi to map value from your traditional banking world to the crypto-digital world without being exposed to volatility. 
+
+I can exchange $1 dollar for 1 crypto-token, say, USD-Coin (USDC) and be assured that 1:1 mapping will hold. For business operations, valuations, projections, and so on this is crucial. The secondary advantages come from all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance.
+
+Gold
+Fiat
+Crypto
+Nothing
+
+
+It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. DeFi has been largely responsible for this increased demand for a variety of stablecoins as they are useful for liquidity provision, farming, lending/borrowing, or short term settlement.
+
+<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
+
+The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
+|Stablecoin|Currency Peg|Backing|Blockchains          |
+|:---------|:-----------|:------|:--------------------|
+|USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
+|USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
+|AUDT      |AUD         |AUD          |Ethereum|
+|NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
+|XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
+|EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
+|DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
+|PAXG - Paxos Gold|1 oz of gold|physical gold|Ethereum|
+
+There are other varieties of stablecoins, including ones that have no collateral backing and are controlled algorithmically. More on these in [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md#algorithmic-stablecoins).
 
 ## Algorithmic Stablecoins
 We can categorize stablecoins in three ways: collateralized, algorithmic, or a hybrid. As discussed in [Part I](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins), collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions. 
@@ -45,20 +74,6 @@ According to the Frax [docs](https://docs.frax.finance/conclusion):
 
 The value of FRAX (the peg) is set by an oracle that queries Chainlink for the true value of USD. Market forces allow for arbitrage when the price deviates from $1.00. Minting new tokens costs $1 via a combination of USDC + FXS at the ratio described above, and each token can always be redeemed for $1. If, for example, the price drops to $0.99, you can purchase 100 FRAX for $99 in the market, turn around and redeem them from the protocol for $100, profiting $1 for your trouble.
 
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
-
-# Third
-Table
-|Stablecoin|Currency Peg|Backing|Blockchains          |
-|:---------|:-----------|:------|:--------------------|
-|USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Bitcoin (Liquid), Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
-|AUDT      |AUD         |AUD          |Ethereum|
-|NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
-|XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
-|EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
-|DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
-|PAXG - Paxos Gold|1 oz of gold|physcial gold|Ethereum|
 
 # What did we miss?
 * Point form list
