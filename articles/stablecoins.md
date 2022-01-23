@@ -10,19 +10,9 @@
 1. [Further Reading - the very short list](template.md#further-reading---the-very-short-list)
 
 # How many varietals in the stable?
-We [first](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins) introduced stablecoins as a key element of DeFi to map value from your traditional banking world to the crypto-digital world without being exposed to volatility. 
+We [first](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins) introduced stablecoins as a key element of DeFi to map value from your traditional banking world to the crypto-digital world without being exposed to volatility. Thus far they have proven essential for  business operations, valuations, projections, trading and settlement. Although they generally adopt all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance, not all stablecoins are created equal.
 
-I can exchange $1 dollar for 1 crypto-token, say, USD-Coin (USDC) and be assured that 1:1 mapping will hold. For business operations, valuations, projections, and so on this is crucial. The secondary advantages come from all the benifits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance.
-
-Gold
-Fiat
-Crypto
-Nothing
-
-
-It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. DeFi has been largely responsible for this increased demand for a variety of stablecoins as they are useful for liquidity provision, farming, lending/borrowing, or short term settlement.
-
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
+Lets start by categorizing what assets, if any, are backing the stablecoins to ensure consumer confidence should they need to be redeemed. From hard to soft collateralization we have: Gold, Fiat, Crypto, and Nothing.
 
 The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
