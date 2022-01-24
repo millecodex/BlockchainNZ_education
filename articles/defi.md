@@ -116,9 +116,9 @@ I hope this has been a reasonable introduction to the world of DeFi and some of 
 # What did we miss?
 ### [Defi 2.0](defi2.md) is my dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
 * yield aggregators & vaults
-* pool 1 vs. pool 2
+* flash loans & self-repaying loans
 * algorithmic & unpegged stablecoins
-* flash loans & self-repaying loands
+
 
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
