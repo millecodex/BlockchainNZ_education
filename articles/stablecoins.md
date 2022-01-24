@@ -75,7 +75,7 @@ The value of FRAX (the peg) is set by an oracle that queries Chainlink for the t
 # Further Reading - the very short list
 * [Beware the Coupon Clipper: The Insurmountable Flaws of so-called Algorithmic Stablecoins](http://thinking.farm/essays/2021-01-17-beware-the-coupon-clipper/)
 * [Motivation, design, and performance of the Ampleforth protocol under live market conditions](https://faq.ampleforth.org/durability)
-* []()
+* [On price stability of Liquity](https://www.liquity.org/blog/on-price-stability-of-liquity)
 
 # Next
 * :point_right: [DeFi](defi.md)
