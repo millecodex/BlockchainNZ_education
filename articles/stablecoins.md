@@ -57,7 +57,11 @@ Compare this to *Ampleforth* which describes itself as a "durable, fully-algorit
 
 ### Empty Set Dollar (ESD)
 
-<img width="800" alt="empty set dollar price chart ESD" src="https://user-images.githubusercontent.com/39792005/150709622-1c1d088b-3695-4d4d-bfbd-33a40da1e6af.PNG">
+<img width="600" alt="empty set dollar price chart ESD" src="https://user-images.githubusercontent.com/39792005/150709622-1c1d088b-3695-4d4d-bfbd-33a40da1e6af.PNG">
+
+### Digital Standard Unit (DSU)
+<img width="600" alt="DSU digital standard unit total circulating value" src="https://user-images.githubusercontent.com/39792005/150884497-58daf7b2-723c-42c1-b44f-4596995e0f9d.PNG"> Chart from [DeFi Pulse](https://www.defipulse.com/usd/DSU)
+
 
 #### *(iii) Hybrid of Collateral + Algorithmic* (e.g. FRAX, ESD, FEI, RAI)
 A hybrid approach can use aspects of collateralization and trustless algorithmic adjustments to mitigate custodial and management risk while capturing efficiencies of automated controls. A successful example here is [FRAX](https://docs.frax.finance/) which is described as a hybrid (fractional) seigniorage shares model. This uses two tokens: FRAX which is soft-pegged to USD and Frax shares (FXS) to incentivise governance. A fraction of the FRAX is collateralized using mostly (but not all) stable cryptocurencies. The remaining fraction is unbacked. The ratio between backed/unbacked can be adjusted to keep its peg. Adjustment functions can be called by any holder and they are rewarded with seigniorage revenue through FXS. Additionally FXS is used for fees accrual and excess collateral value.
