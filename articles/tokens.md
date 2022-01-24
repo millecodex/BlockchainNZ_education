@@ -9,11 +9,12 @@
 * minting
 * airdrops
 * NFTs
-
+<p align="center"><img width="400" alt="tokens_abracadabra" src="https://user-images.githubusercontent.com/39792005/150704500-eab147f5-5191-4999-b44f-2bf044d7ac8b.png"></p>
 ## standards
 * ERC-20
 * ERC-755
-* ERC-1155
+* ERC-1155!
+
 
 ## Addresses - Separate Article?
 * bitcoin
