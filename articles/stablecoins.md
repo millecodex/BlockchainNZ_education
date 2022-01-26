@@ -47,6 +47,8 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 |AMPL      |2019 USD    |none         ||
 |RAI       |none        |crypto       ||
 
+> As of January 2022, [CoinGecko](https://www.coingecko.com/en/categories/stablecoins) lists 71 stablecoins, 52 of which have active trading.
+
 # What is stability?
 Lets begin by looking at the question: What is stability?
 > peg
