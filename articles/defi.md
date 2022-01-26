@@ -114,11 +114,10 @@ Just like Satoshi solving the double-spend problem can't be unsolved, once peopl
 I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part 2.0](defi2.md), so please have a look.
 
 # What did we miss?
-### [Defi 2.0](defi2.md) is my dive into more complex and obscure financial stuff happening on the blockchain. Here you will find a primer on: 
+### [Part II](defi2.md) will continue with: 
 * yield aggregators & vaults
 * flash loans & self-repaying loans
 * algorithmic & unpegged stablecoins
-
 
 # Further Reading - the very short list
 * [History of DeFi by Finematics](https://finematics.com/history-of-defi-explained/)
