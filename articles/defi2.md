@@ -14,42 +14,57 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 4. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
 # Yield Aggregators & Vaults
-The winter of Defi (2020; Summer in the northern hemisphere) looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. So a simple question arises: how can I, a simple investor, capture some of this yield by moving my coins (without gas fees eating into my profits)?
+Twenty-twenty was the *Summer of Defi* (winter in the southern hemisphere) and folks looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. A simple question arises: how can I, a simple investor, capture some of this yield by moving my coins to the new farm with the highest yield (without gas fees eating into my profits)?
 
-[Andre Cronje](https://andrecronje.medium.com/) was there with *yEarn* to automatically move investments between *dydx*, *Compound*, and *Aave*. The native governance token, YFI, was advertised as having no value and was distributed through a liquidity mining program to users and was so successful it now trades at tens of thousands of dollars.
+[Andre Cronje](https://andrecronje.medium.com/) was there with *yEarn* to automatically move investments between *dydx*, *Compound*, and *Aave*. Users would deposit their tokens into a yVault, receive a `yvToken` in return, and have their underlying tokens get deployed behind the scenes to a protocol such as Compound, earning `COMP`, which is then sold for the user's token increasing the amount in their vault. yEarn's native governance token, `YFI`, was advertised as having no value and was distributed through a liquidity mining program to users and was so successful it now trades at tens of thousands of dollars.
 
 > "we have released YFI, a completely valueless 0 supply token. We re-iterate, it has 0 financial value. There is no pre-mine, there is no sale, no you cannot buy it, no, it won’t be on uniswap, no, there won’t be an auction. We don’t have any of it."\
 -*Andre Cronje on the [launch of YFI](https://medium.com/iearn/yfi-df84573db81) explicity stating that there are no tokens reserved for insiders, specifically VCs*
 
 As with other successful DeFi Legos, this model was copied eagerly and now aggregators and vaults are common. The present version of [yearn.finance](yearn.finance) offers a vault for depositing tokens that then use strategies such as shifting capital, auto-compounding, and rebalancing to earn yield. These vaults offer self-custody and allow withdrawals at any time, both features which represent reduced risk to the user. 
 
-Another feautre of many DeFi protocols is borowing and lending because of the simplicity of doing it in a trustless blockchain environment. In this scenario the lender earns interest directly from the borrower in an almost peer-to-peer transaction. The third party here holds the collateral and facilitates the *bank*. As an example Yearn offers loans of DAI at 1.35% APY (as of Jan. 2021) which is at the same level of capital lending that only institutions would have access to.
+Another feautre of many DeFi protocols is borowing and lending because of the simplicity of doing it in a trustless blockchain environment. In this scenario the lender earns interest directly from the borrower in an almost peer-to-peer transaction. The third party here holds the collateral and facilitates the *bank*. As an example Yearn offers loans of `DAI` at 1.35% APR and [Aave](https://aave.com/) offers loans of `USDC` at 1.12% APR (as of Jan. 2021) which is at the same level of capital lending that only institutions would have access to.
 
 # Flash Loans
 Flash loans are a uniquely blockchain and defi possibility. There is no real analog in traditional finance or the surrounding waters. A flash loan is a speedy instrument that involves borrowing funds, using them, and returning them all within a single transaction. To understand how this is possible we'll momentarily discuss a database concept called *atomicity*. Database systems need to update when there is new information, for example, when withdrawing $100 from an ATM the bank's database needs to update the customer account balance. 
 
-The balance update can be further broken down into some substeps: **check this**
+A single ATM transaction can be  broken down into substeps:
 1. ATM sends the bank a request to debit $100
 2. Bank checks $100 is available & puts a lock on the account so that another update can't come through until this transaction is finished
 3. ATM receives the OK and asks bank to debit the funds
 4. Bank updates the balance and unlocks the account
 5. ATM dispenses cash
 
-If something happens in the electronic communication between steps 2 and 4 the database will rollback the operations and the transaction will fail. The reader may be familiar with an error message similar to "the service is not available, please try again later" which usually means some update has failed somewhere between the user and the server. Atomic comes from the greek atoma which means indivisible; in this case either the update is successfull or its not. There is not grey area where you get $100 and your account does not register the transaction.
+If something happens in the electronic communication between steps 2 and 4 the database will rollback the operations and the transaction will fail. The reader may be familiar with a type of online error message similar to *"the service is not available, please try again later"* which usually means some update has failed somewhere between the user and the server. In these cases the intermediate steps of the update are discarded and the database reverts back to before the update attempt. Atomic comes from the Greek *atomos* which means indivisible; in this case either the update is successfull or its not. There is no grey area where you get $100 and your account does not register the transaction.
 
-Okay, back to flash loans. Here a savvy blockchainer can use the latency in the chain to their advantage. The blocktime for Ethereum is around 12 seconds, allowing plenty of time for a smart contract to borrow money, send it elsewhere, do some stuff, await receipt, and return the money. Due to atomicity, if the money isn't returned or market volatility influences the outcome, the blockchain state will not be updated. A step-by-step view of a flash loan used for arbitrage, all of which is executed in a single block:
+Okay, back to flash loans. Here a savvy blockchainer can use the latency in the chain to their advantage. The blocktime for Ethereum is around 12 seconds, allowing plenty of time for a smart contract to borrow money, send it elsewhere, do some stuff, await receipt, and return the money. Due to atomicity, if the money isn't returned or market volatility influences the outcome and not enough is returned, the blockchain state will not be updated. This also means that there is no risk in that loan for the borrower and the lender. 
 
-1. borrow $1m USDT (it can be a lot of money because collateral isn't necessary as there's no risk of absconding with the cash)
+A step-by-step view of a flash loan used for arbitrage, all of which is executed in a single block:
+1. Borrow $1m USDT (it can be a lot of money because collateral isn't necessary as there's no risk of absconding with the cash)
 2. Send that $1m USDT to exchange X to buy a TOKEN
 3. Send that $1m of TOKEN to exchange Y and sell into USDT for more than $1m (otherwise it wouldn't be profitable)
-4. return original $1m USDT + interest & keep the change
+4. Return original $1m USDT + interest & fees & keep the change
 
-If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges 0.09% on the principle. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap--settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
+If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However, you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges a 0.09% fee on the principle meaning you could borrow $1,000,000 for $900!. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap to settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
 # Algorithmic Stablecoins
-See the deeper dive [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
+Stablecoins like `USDC` and `USDT` are backed by US dollar deposits in the ratio of 1:1. They remain stable because at any time when a user wants to redeem their tokens for dollars the equivallent amount is available to them. This does not mean that the underlying USD remains stable, but for general purposes the US dollar is the most consistently valued (and used) currency. This system requires someone to manage the pool of funds, handle the deposits and redemptions and any associated KYC and regulatory reporting requirements. At the same time this management is the primary risk because the custodian such as Circle or Tether could blacklist addresses, censor clients, obscure transparency and reporting, or perpetrate fraud.
 
-# DeFi 2.0 - Second Generation Protocols
+A truly stable unit of account, method of exchange, and store of value in a decentralised manner is the goal of an algorithmic stablecoin. Removing the manager means putting their duties in code on the blockchain. The autonomous coin must:
+* maintain a unit of account: for a USD-pegged stablecoin this would be 1 USD, ideally at 1:1, although some small deviation can be expected and is tolerated
+* be useful as a method of exchange: the token should be present where it is needed and in enough quantity (liquidity) to function for trade
+* represent a store of value such that you can momentarily hold value in the token; i.e. if you transfer $100 into a stablecoin you expect it to have the same purchasing power in the future. How long into the future is a matter of trusting the token to maintain that value.
+
+The longest-lived algorithmic stablecoin is `DAI` run by MakerDAO. DAI is pegged to the US-dollar and operates by loaning depositors DAI in exchange for 150% the value of `ETH`. The overcollateralization can absorb some of the volatility of ether, but Maker has mechanisms in place to avoid the value of the collateral dipping below the loaned DAI. In the event of liquidation a user's vault is opened, the ETH sold and the loan closed. This all happens in automatically in the smart contract. The peg of DAI is not set to 1; it must be bought and sold naturally in the market at an equillibrium of $1.00. If the price starts to rise above $1, then there is an opportunity to take out a loan of DAI and sell on the open market for >$1. This will naturally increase the supply and reduce the price. Similarly, if the price is trading at $0.99, borrowers can buy DAI and repay their loans at a discount.
+
+> <p align="center"><img width="800" alt="DAIUSD_chart_trading_view_2022-01-27" src="https://user-images.githubusercontent.com/39792005/151265017-05c7dd67-d31a-4ce7-b7b5-8bd94f79e332.png"></p>
+> The chart from [Trading View](https://www.tradingview.com/symbols/DAIUSD/) shows how DAI has maintained its stability with reference to the Dollar. There are notable periods of volatility.
+
+DAI is a overcollateralized algorithmic stablecoin backed by a combination of cryptocurrency and USDC stablecoin collateral. Overcollateralization represents an inefficiency in capital allocation (extra ETH is unused in my vault) and the partially backed stablecoin situation introduces custodial risks we addressed above. On top of this there is the pricing volatility risk of ether. For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which has <100% of collateral, and RAI which has a floating peg. Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
+
+
+# DeFi 2.0 - Second Generation Protocols!
+
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance.
 
 * pool1/pool2
