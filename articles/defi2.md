@@ -55,14 +55,16 @@ A truly stable unit of account, method of exchange, and store of value in a dece
 * be useful as a method of exchange: the token should be present where it is needed and in enough quantity (liquidity) to function for trade
 * represent a store of value such that you can momentarily hold value in the token; i.e. if you transfer $100 into a stablecoin you expect it to have the same purchasing power in the future. How long into the future is a matter of trusting the token to maintain that value.
 
+### MakerDAO's DAI 
 The longest-lived algorithmic stablecoin is `DAI` run by MakerDAO. DAI is pegged to the US-dollar and operates by loaning depositors DAI in exchange for 150% the value of `ETH`. The overcollateralization can absorb some of the volatility of ether, but Maker has mechanisms in place to avoid the value of the collateral dipping below the loaned DAI. In the event of liquidation a user's vault is opened, the ETH sold and the loan closed. This all happens in automatically in the smart contract. The peg of DAI is not set to 1; it must be bought and sold naturally in the market at an equillibrium of $1.00. If the price starts to rise above $1, then there is an opportunity to take out a loan of DAI and sell on the open market for >$1. This will naturally increase the supply and reduce the price. Similarly, if the price is trading at $0.99, borrowers can buy DAI and repay their loans at a discount.
 
 > <p align="center"><img width="800" alt="DAIUSD_chart_trading_view_2022-01-27" src="https://user-images.githubusercontent.com/39792005/151286172-e2d51188-693a-41b7-be40-e53210986cca.png"></p>
+> 
 > The chart from [Trading View](https://www.tradingview.com/symbols/DAIUSD/) shows the DAI price against the Dollar. There are notable periods of volatility, especially during the March 2020 covid crash where it traded as high as $1.098, and the May 2021 crypto markets crash. 
 
-![DAIUSD_chart_trading_view_2022-01-27](https://user-images.githubusercontent.com/39792005/151286172-e2d51188-693a-41b7-be40-e53210986cca.png)
+DAI is a overcollateralized algorithmic stablecoin backed by a combination of cryptocurrency and USDC stablecoin collateral. Overcollateralization represents an inefficiency in capital allocation (extra ETH is unused in my vault) and the partially backed stablecoin situation introduces custodial risks we addressed above. On top of this there is the pricing volatility risk of ether. 
 
-DAI is a overcollateralized algorithmic stablecoin backed by a combination of cryptocurrency and USDC stablecoin collateral. Overcollateralization represents an inefficiency in capital allocation (extra ETH is unused in my vault) and the partially backed stablecoin situation introduces custodial risks we addressed above. On top of this there is the pricing volatility risk of ether. For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which has <100% of collateral, and RAI which has a floating peg. Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
+For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which is fractionally collateralized under a variable ratio depending on user confidence, and `RAI` which isn't pegged to any dollar, but has a floating peg. Another notable is Ampleforth's `AMPL` that changes the amount of supply (rebases) to maintain a peg of 1 USD in 2019 inflation adjusted terms. Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
 
 
 # DeFi 2.0 - Second Generation Protocols!
@@ -82,7 +84,7 @@ The name DeFi 2.0 has emerged naturally as people were trying to fix the problem
   * pool 1 vs. pool 2 (motivation for 2.0 innovation)
   * options/derivatives/perps(dydx) etc 
   * Single-sided staking and IL insurance (Bancor v3)
-  * Self-repaying loans(!) Abracadabra/MIM
+  * Self-repaying loans(!) Alchemix/Abracadabra/MIM
 
 
 
@@ -90,11 +92,6 @@ The name DeFi 2.0 has emerged naturally as people were trying to fix the problem
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
-# Third
-Table
-|Stablecoin|Currency Peg|Backing|Blockchains          |
-|:---------|:-----------|:------|:--------------------|
-|AUDT      |AUD         |AUD    |Ethereum|
 
 # What did we miss?
 * 
