@@ -73,7 +73,6 @@ For these reasons there has been an innovative period of new algorithmic stablec
 
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance.
 
-* pool1/pool2
 
 ## Liquidity Owned Protocols
 * non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 saw immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
@@ -83,17 +82,19 @@ The name DeFi 2.0 has emerged naturally as people were trying to fix the problem
   * non-pegged stablecoins  & protocol owned liquidity
   * rebasing
   * oracles (~ necessary infrastructure)
-  * pool 1 vs. pool 2 (motivation for 2.0 innovation)
   * options/derivatives/perps(dydx) etc 
   * Single-sided staking and IL insurance (Bancor v3)
   * Self-repaying loans(!) Alchemix/Abracadabra/MIM
 
+## Pool 1 vs Pool 2 & Vampire Attacks
+The pools used for liquidity provision and mining have evolved into two categories: pool 1 and pool 2. The first, Pool 1, represents tokens that are not part of the protocol or governance structure and can be easily moved around to pools with the highest interest rate. These tokens generally have deeper liquidity, are more common, and would still exist without the farm. Examples would be depositing `ETH-USDC` into Sushi. Neither of these tokens have their own governance token, and they can easily move to Yearn if the rate are more attractive. This type of fickle capital behaviour can be called *mercenary capital* as it moves to the highest bidder in a moments notice.
 
+Having your liquidity drained from your platform is a problem as it affects onboarding new users and trading activity & fees. The next step is to incentive folks to keep their captial around by offering higher yields in a second pool, in the form of pairs with a native governance token, e.g. `SUSHI`. Now, tokens farming with a SUSHI pairing have higher rewards and aren't as easily moved to a competitor because the `SUSHI-ETH` or `SUSHI-USDC` pool doesn't exist there. 
 
+This balance between Pool 1 and Pool 2 incentivises a new type of risk called a *vampire attack* and is how Sushi got started. When SushiSwap came on the scene in August 2020 it was just a fork of Uniswap and as such needed some bells or whistles to attract funds. It did this by offering very attractive rates for those that staked Uniswap's LP tokens on its platform and gave them the new SUSHI token for doing so. Popularity grew quickly and more people began depositing into SushiSwap pools (to earn SUSHI) and contribute to its AMM. Within a week it grew to over $1B in total value locked (TVL). Weeks alter amidst some [drama](https://finematics.com/vampire-attack-sushiswap-explained/) involving its head developer - Chef Nomi - it dropped down to hundreds of millions, but survived, and now is among the premier AMMs.
 
-
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
-
+> <p align="center"><img width="800" alt="sushi TVL vampire attack" src="https://user-images.githubusercontent.com/39792005/151486262-012d7632-0408-45bf-9af9-bb30249c07df.png"></p>
+> SushiSwap launched at the end of August, 2020 and quickly grew to over $1B in TVL
 
 # What did we miss?
 * 
@@ -102,7 +103,7 @@ The name DeFi 2.0 has emerged naturally as people were trying to fix the problem
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
 
 # Further Reading - the very short list
-* [Beware the Coupon Clipper: The Insurmountable Flaws of so-called Algorithmic Stablecoins](http://thinking.farm/essays/2021-01-17-beware-the-coupon-clipper/)
+* []()
 * []()
 
 # About the Author
