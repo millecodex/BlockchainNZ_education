@@ -64,7 +64,9 @@ The longest-lived algorithmic stablecoin is `DAI` run by MakerDAO. DAI is pegged
 
 DAI is a overcollateralized algorithmic stablecoin backed by a combination of cryptocurrency and USDC stablecoin collateral. Overcollateralization represents an inefficiency in capital allocation (extra ETH is unused in my vault) and the partially backed stablecoin situation introduces custodial risks we addressed above. On top of this there is the pricing volatility risk of ether. 
 
-For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which is fractionally collateralized under a variable ratio depending on user confidence, and `RAI` which isn't pegged to any dollar, but has a floating peg. Another notable is Ampleforth's `AMPL` that changes the amount of supply (rebases) to maintain a peg of 1 USD in 2019 inflation adjusted terms. Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
+For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which is fractionally collateralized under a variable ratio depending on user confidence, and `RAI` which isn't pegged to any dollar, but has a floating peg. Another notable is Ampleforth's `AMPL` that changes the amount of supply (rebases) to maintain a peg of 1 USD in 2019 inflation adjusted terms. 
+
+> Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
 
 
 # DeFi 2.0 - Second Generation Protocols!
