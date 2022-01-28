@@ -9,9 +9,10 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
 1. [Flash Loans](defi2.md#flash-loans)
 1. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
-2. [DeFi 2.0](defi2.md#)
-3. [What did we miss?](defi2.md#what-did-we-miss)
-4. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
+2. [Pool 1 vs Pool 2 & Vampire Attacks]()
+3. [DeFi 2.0]()
+4. [What did we miss?](defi2.md#what-did-we-miss)
+5. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
 # Yield Aggregators & Vaults
 Twenty-twenty was the *Summer of Defi* (winter in the southern hemisphere) and folks looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. A simple question arises: how can I, a simple investor, capture some of this yield by moving my coins to the new farm with the highest yield (without gas fees eating into my profits)?
@@ -47,6 +48,17 @@ A step-by-step view of a flash loan used for arbitrage, all of which is executed
 
 If the user tries to settle their loan (step 4) and not return any funds then the entire series of steps if voided and the blockchain retains its state from before the flash loan. However, you would lose your fees paid for borrowing the money. [Aave](https://docs.aave.com/faq/flash-loans) charges a 0.09% fee on the principle meaning you could borrow $1,000,000 for $900!. In addition to arbitrage, there are two more uses for a flash loan: a collateral swap to settle a loan and within the same transaction deposit different collateral, and self liquidation if you want to release some collateral from a loan.
 
+# Pool 1 vs Pool 2 & Vampire Attacks
+The pools used for liquidity provision and mining have evolved into two categories: Pool 1 and Pool 2. The first, Pool 1, represents tokens that are not part of the protocol or governance structure and can be easily moved around to pools with the highest interest rate. These tokens generally have deeper liquidity, are more common, and would still exist without the farm. Examples would be depositing `ETH-USDC` into Sushi. Neither of these tokens have their own governance token, and they can easily move to Yearn if the rate are more attractive. This type of fickle capital behaviour can be called *mercenary capital* as it moves to the highest bidder in a moments notice.
+
+Having your liquidity drained from your platform is a problem as it affects onboarding new users and trading activity & fees. The next step is to incentive folks to keep their captial around by offering higher yields in a second pool, in the form of pairs with a native governance token, e.g. `SUSHI`. Now, tokens farming with a SUSHI pairing have higher rewards and aren't as easily moved to a competitor because the `SUSHI-ETH` or `SUSHI-USDC` pool doesn't exist there. 
+
+This balance between Pool 1 and Pool 2 incentivises a new type of risk called a *vampire attack* and is how Sushi got started. When SushiSwap came on the scene in August 2020 it was just a fork of Uniswap and as such needed some bells or whistles to attract funds. It did this by offering very attractive rates for those that staked Uniswap's LP tokens on its platform and gave them the new SUSHI token for doing so. Popularity grew quickly and more people began depositing into SushiSwap pools (to earn SUSHI) and contribute to its AMM. Within a week it grew to over $1B in total value locked (TVL). Weeks alter amidst some [drama](https://finematics.com/vampire-attack-sushiswap-explained/) involving its head developer - Chef Nomi - it dropped down to hundreds of millions, but survived, and now is among the premier AMMs.
+
+> <p align="center"><img width="800" alt="sushi TVL vampire attack" src="https://user-images.githubusercontent.com/39792005/151486262-012d7632-0408-45bf-9af9-bb30249c07df.png"></p>
+> SushiSwap launched at the end of August, 2020 and quickly grew to over $1B in TVL
+
+
 # Algorithmic Stablecoins
 Stablecoins like `USDC` and `USDT` are backed by US dollar deposits in the ratio of 1:1. They remain stable because at any time when a user wants to redeem their tokens for dollars the equivallent amount is available to them. This does not mean that the underlying USD remains stable, but for general purposes the US dollar is the most consistently valued (and used) currency. This system requires someone to manage the pool of funds, handle the deposits and redemptions and any associated KYC and regulatory reporting requirements. At the same time this management is the primary risk because the custodian such as Circle or Tether could blacklist addresses, censor clients, obscure transparency and reporting, or perpetrate fraud.
 
@@ -69,26 +81,18 @@ For these reasons there has been an innovative period of new algorithmic stablec
 > Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
 
 
-
-## Pool 1 vs Pool 2 & Vampire Attacks
-The pools used for liquidity provision and mining have evolved into two categories: Pool 1 and Pool 2. The first, Pool 1, represents tokens that are not part of the protocol or governance structure and can be easily moved around to pools with the highest interest rate. These tokens generally have deeper liquidity, are more common, and would still exist without the farm. Examples would be depositing `ETH-USDC` into Sushi. Neither of these tokens have their own governance token, and they can easily move to Yearn if the rate are more attractive. This type of fickle capital behaviour can be called *mercenary capital* as it moves to the highest bidder in a moments notice.
-
-Having your liquidity drained from your platform is a problem as it affects onboarding new users and trading activity & fees. The next step is to incentive folks to keep their captial around by offering higher yields in a second pool, in the form of pairs with a native governance token, e.g. `SUSHI`. Now, tokens farming with a SUSHI pairing have higher rewards and aren't as easily moved to a competitor because the `SUSHI-ETH` or `SUSHI-USDC` pool doesn't exist there. 
-
-This balance between Pool 1 and Pool 2 incentivises a new type of risk called a *vampire attack* and is how Sushi got started. When SushiSwap came on the scene in August 2020 it was just a fork of Uniswap and as such needed some bells or whistles to attract funds. It did this by offering very attractive rates for those that staked Uniswap's LP tokens on its platform and gave them the new SUSHI token for doing so. Popularity grew quickly and more people began depositing into SushiSwap pools (to earn SUSHI) and contribute to its AMM. Within a week it grew to over $1B in total value locked (TVL). Weeks alter amidst some [drama](https://finematics.com/vampire-attack-sushiswap-explained/) involving its head developer - Chef Nomi - it dropped down to hundreds of millions, but survived, and now is among the premier AMMs.
-
-> <p align="center"><img width="800" alt="sushi TVL vampire attack" src="https://user-images.githubusercontent.com/39792005/151486262-012d7632-0408-45bf-9af9-bb30249c07df.png"></p>
-> SushiSwap launched at the end of August, 2020 and quickly grew to over $1B in TVL
-
-
-
 # DeFi 2.0 - Second Generation Protocols!
 
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance.
 
-## Liquidity Owned Protocols
-* non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 saw immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
+## Un-pegged Stablecoins & Liquidity Owned Protocols
+non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 saw immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
 
+## Self-repaying loans(!) Alchemix/Abracadabra/MIM
+
+## Single-sided staking and IL insurance (Bancor v3)
+
+## Voting-Escrow (ve)
 
 # Topics unwritten
   * non-pegged stablecoins  & protocol owned liquidity
