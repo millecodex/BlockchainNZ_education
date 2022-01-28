@@ -118,6 +118,7 @@ I hope this has been a reasonable introduction to the world of DeFi and some of 
 # What did we miss?
 ### [Part II](defi2.md) will continue with: 
 * yield aggregators & vaults
+* Pool 1 vs Pool 2 & vampire attacks
 * flash loans & self-repaying loans
 * algorithmic & unpegged stablecoins
 
