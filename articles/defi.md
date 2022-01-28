@@ -1,7 +1,7 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
 # DeFi (Decentralized Finance)
-## Part 1.0: *an* Introduction
+## Part I: *an* Introduction
 
 ### Contents
 1. [Motivation: Why Decentralize Finance?](defi.md#motivation)
@@ -113,7 +113,7 @@ If we can have stable dollars on a blockchain mirroring the value of a real doll
 
 Just like Satoshi solving the double-spend problem can't be unsolved, once people caught on to the benefit of financial wizardry in the form of decentralised finance, their only limits are creativity in code. And perhaps regulation. But *that* is a topic for another post on another day.
 
-I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part 2.0](defi2.md), so please have a look.
+I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part II](defi2.md), so please have a look.
 
 # What did we miss?
 ### :point_right: [Part II](defi2.md) will continue with: 
