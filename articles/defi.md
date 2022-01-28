@@ -116,7 +116,7 @@ Just like Satoshi solving the double-spend problem can't be unsolved, once peopl
 I hope this has been a reasonable introduction to the world of DeFi and some of the foundational building blocks. I found I had to cut many topics to prevent bloat, pushing many of them to [Part 2.0](defi2.md), so please have a look.
 
 # What did we miss?
-### [Part II](defi2.md) will continue with: 
+### :point_right: [Part II](defi2.md) will continue with: 
 * yield aggregators & vaults
 * Pool 1 vs Pool 2 & vampire attacks
 * flash loans & self-repaying loans
