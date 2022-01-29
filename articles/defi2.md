@@ -83,10 +83,27 @@ For these reasons there has been an innovative period of new algorithmic stablec
 
 # DeFi 2.0 - Second Generation Protocols!
 
-The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance.
+The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance. (Of course I ~~fear~~ anticipate that by the time I'm finished composing these topics a third gen will have emerged :money_with_wings:)
 
-## Un-pegged Stablecoins & Liquidity Owned Protocols
-non-pegged - OHM - A free floating, or non-pegged coin is allowed to fluctuate up as much as demand will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. 2021 saw immense popularity in Olympus DAO leading the way with about a $700M treasury built up in less than a year at a market value of over $3B.
+## Unpegged Stablecoins
+Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to flucuate in price to the upside as long as it keeps a target floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be reserve currency of DeFi. OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $700M treasury built up in less than a year at a market value of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
+
+The reason behind this is called *rebases*. Every eight hours new treasury tokens (from bonding) are distributed to holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens of thousands of percent. Can that be right? Well yes, and no. It is because if you held for a year you would have dramatically more tokens, but its not because price is excluded from the marketing. The token is designed to fall in value, down to the floor target. So if a large demand pushed the price up crating a frenzy, then it has equally as far to fall. See the chart for OHM.
+
+> Olympus DAO token chart
+> 
+
+These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. One even continually rebases so you can watch in realtime your token balance increase.
+
+One of the innovations the rebasing phase has brought is that of protocol owned liquidity.
+
+## Protocol Owned Liquidity
+Lets pause for a moment and conside who *owns* the tokens that are criss crossing DeFi-land. Although it seems obvious - it should be the users, right? - it may not always be so. Standard yield farming pools use liquidity that is owned by the users. All participants receive a receipt of their share of the pool and that gives them the right to redeem it at any time. This has led to the mercenary capital jumping around at a moments notice. *This* then led to Pool 2 with governance tokens. So user-owned liquidity is good for users but bad for protocols which in turn is bad for the user's bottom line. 
+
+One way around this is to implement delays that lock up your tokens for a set amount of time thus guaranteeing the liquidity is available. Time delays as long as 4 years can be seen in convex and all parachain auctions on Polkadot require 96 weeks.
+
+A third option may be the best yet. Protocol owned liquidiy
+
 
 ## Self-repaying loans(!) Alchemix/Abracadabra/MIM
 
