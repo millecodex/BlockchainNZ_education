@@ -96,6 +96,7 @@ As with many things in DeFi there is a push to automate the process and have cod
 
 
 ## Coupon Clipping & Bonding
+### Seigniorage Shares
 ## Supply Management Strategies
 
  
