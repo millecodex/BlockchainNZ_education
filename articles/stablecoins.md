@@ -49,13 +49,24 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 |RAI       |none        |crypto       |Ethereum|
 
 # What is stability?
-Lets begin by looking at the question: What is stability?
-> peg
-> how does it remain stable?
+Lets begin by looking at the question: What is stability? Just like liquidity means not affecting the price, *stability means not worrying about the price*. In a liquid market no individual's buy/bid or sell/ask activity should be able to change the price. In a stable market the same individual isn't concerned about price movement; they can look away and come back at some time in the future expecting the price to be the same. This is not equivalent to being able to predict the price in the future─there is still some uncertainty─however we will not spend a lot time worry about price flucuation.
 
-**How does it stay pegged at $1?**
+The vast majority of stablecoins are pegged to the US dollar which means they target the price of $1.00. Any deviance from this numerical value will invoke some mechanism to bring the price back to 1. Its tempting to call 1 an equilibrium but there is a subtle difference. An equilibrium condition is arrived at naturally such as a mass hanging from a spring -> the force of gravity down will be in equillibrium with the force of the spring going up. In the case of the US dollar the numerical value is set and its spending power (the natural equilibrium) varies with inflation and monetary policy etc. 
+
+The previous example of equilibrium versus target peg brings up a problem with stablecoins, that is, they are only stable compared to their reference peg. The utility of such tokens is in fact variable, just as the wages of your parents generation cannot be compared to yours today. An interesting example is Ampleforth that is pegged to the 2019 inflation-adjusted US dollar. More on `AMPL` later.
+
+Do we need a peg? Not at all. This is called floating and is what many currencices have been doing against the US dollar since 1971. Unpegged stablecoins may not necessaryily fit into this analysis but will be discussed later.
+
+Does the peg need to be 1? No, its just handy because its the standard unit for much of the globe, even if not the dollar. Reflexer's `RAI` token was originally pegged to 3.14 (π) because they needed a place to start. It is free to float according to the market.
+
+### Volatility
+
+
+### How does it stay pegged?
 Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle that can be queried from a smart contract to check that say, 1 dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, this costs them $1, and sell them on the market for $1.01, pocketing the difference. As the supply of tokens increases the market price will fall back in line. A similar mechanism occurs when the price drops below $1.00. Say it is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem them from the protocol for $100, profiting $1 for your trouble.
 
+In summary:
+> Just like liquidity means not affecting the price, stability means not worrying about the price.
 
 # How many breeds in the stable?
 In an effort to categorize or taxonomize the myriad coins in the stable, the most obvious approach is by the type of collateral used to back the token.
