@@ -29,12 +29,13 @@ Introducing stablecoins beginning with the question: What makes a coin stable? a
 We [first](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins) introduced stablecoins as a key element of DeFi to map value from your traditional banking world to the crypto-digital world without being exposed to volatility. Thus far they have proven essential for liquidity pools, trading and settlement, as well as operations like borrowing & lending. Although they generally adopt all the benefits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance, not all stablecoins are created equal.
 
 #### Up and to the Right
-It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. DeFi has been largely responsible for this increased demand for a variety of stablecoins as they are useful for liquidity provision, farming, lending/borrowing, or short term settlement.
+It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. DeFi has been largely responsible for this increased demand with people rushing to create a stablecoin for every chain and every new finance protocol.
 
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
+> <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
-The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
-|Stablecoin|Currency Peg|Collateral   |Blockchains          |
+The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a DAO. Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found. (As of January 2022, [CoinGecko](https://www.coingecko.com/en/categories/stablecoins) lists 71 stablecoins, 52 of which have active trading.)
+
+|Stablecoin|Peg|Collateral   |Blockchains          |
 |:---------|:-----------|:------------|:--------------------|
 |USDT      |USD         |Mix of assets|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
 |USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
@@ -43,11 +44,9 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 |EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
 |DAI       |USD         |crypto       |Ethereum, Polygon, BSC, Fantom, Gnosis |
 |PAXG      |1 oz of gold|physical gold|Ethereum|
-|FRAX      |USD         |crypto, fractional|   |
-|AMPL      |2019 USD    |none         ||
-|RAI       |none        |crypto       ||
-
-> As of January 2022, [CoinGecko](https://www.coingecko.com/en/categories/stablecoins) lists 71 stablecoins, 52 of which have active trading.
+|FRAX      |USD         |crypto, fractional|Ethereum, Avalanche, BSC, Fantom, Kusama   |
+|AMPL      |2019 USD    |none         |Ethereum, Avalanche, BSC, Near|
+|RAI       |none        |crypto       |Ethereum|
 
 # What is stability?
 Lets begin by looking at the question: What is stability?
