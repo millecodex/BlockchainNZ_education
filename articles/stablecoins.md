@@ -4,16 +4,18 @@
 Introducing stablecoins beginning with the question: What makes a coin stable? and looking at some of the unique features that algorithmic stablecoins have innovated. The second portion will investigate risks associated with this new asset and detail some case studies from the wild.
 
 # Contents
-1. Introduction
-1. What is stability?
-1. How many breeds in the stable?
+1. [Introduction](stablecoins.md#introduction)
+2. [What is stability?](stablecoins.md#what-is-stability)
+   - Volatility
+   - How does it stay pegged? 
+3. [How many breeds in the stable?](stablecoins.md#how-many-breeds-in-the-stable)
    - (Weak) Taxonomy
      - Collateral and ownership
-1. Algorithmic Stablecoins
+4. Algorithmic Stablecoins
    - Coupon Clipping & Bonding
    - Supply Management Strategies
-1. Risks
-1. Case Studies
+5. Risks
+6. Case Studies
    1. De-Peg
       - Dai
       - sUSD
@@ -21,9 +23,9 @@ Introducing stablecoins beginning with the question: What makes a coin stable? a
       - Dollar Protocol
       - Empty Set Collar
       - Basis
-1. Conclusion
-1. [What did we miss?](stablecoins.md#what-did-we-miss)
-1. [Further Reading - the very short list](stablecoins.md#further-reading---the-very-short-list)
+7. Conclusion
+8. [What did we miss?](stablecoins.md#what-did-we-miss)
+9. [Further Reading - the very short list](stablecoins.md#further-reading---the-very-short-list)
 
 # Introduction
 We [first](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi.md#stablecoins) introduced stablecoins as a key element of DeFi to map value from your traditional banking world to the crypto-digital world without being exposed to volatility. Thus far they have proven essential for liquidity pools, trading and settlement, as well as operations like borrowing & lending. Although they generally adopt all the benefits of having a cryto-native platform such as low fees, fast settlements, auditability, programmability, and censorship resistance, not all stablecoins are created equal.
