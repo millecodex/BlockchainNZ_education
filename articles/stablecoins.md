@@ -51,15 +51,19 @@ The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD
 # What is stability?
 Lets begin by looking at the question: What is stability? Just like liquidity means not affecting the price, *stability means not worrying about the price*. In a liquid market no individual's buy/bid or sell/ask activity should be able to change the price. In a stable market the same individual isn't concerned about price movement; they can look away and come back at some time in the future expecting the price to be the same. This is not equivalent to being able to predict the price in the future─there is still some uncertainty─however we will not spend a lot time worry about price flucuation.
 
-The vast majority of stablecoins are pegged to the US dollar which means they target the price of $1.00. Any deviance from this numerical value will invoke some mechanism to bring the price back to 1. Its tempting to call 1 an equilibrium but there is a subtle difference. An equilibrium condition is arrived at naturally such as a mass hanging from a spring -> the force of gravity down will be in equillibrium with the force of the spring going up. In the case of the US dollar the numerical value is set and its spending power (the natural equilibrium) varies with inflation and monetary policy etc. 
+The vast majority of stablecoins are pegged to the US dollar which means they target the price of $1.00. Any deviance from this numerical value will invoke some mechanism to bring the price back to 1. Its tempting to call 1 an equilibrium but there is a subtle difference. An equilibrium condition is arrived at naturally such as a mass hanging from a spring -> the force of gravity *down* will be in equillibrium with the force of the spring *up*. In the case of the US dollar the numerical value is set and its spending power (the natural equilibrium) varies with inflation and monetary policy etc. 
 
-The previous example of equilibrium versus target peg brings up a problem with stablecoins, that is, they are only stable compared to their reference peg. The utility of such tokens is in fact variable, just as the wages of your parents generation cannot be compared to yours today. An interesting example is Ampleforth that is pegged to the 2019 inflation-adjusted US dollar. More on `AMPL` later.
+The previous example of equilibrium versus target peg brings up a problem with stablecoins, that is, they are only stable compared to their reference peg. The utility of such tokens is in fact variable, just as the wages of your parents generation cannot be compared to yours today. An interesting example is Ampleforth that is pegged to the 2019 inflation-adjusted US dollar. More on `AMPL` later. 
 
 ### Volatility
 If we set the target to be 1 and allow some variation in either direction, this is the volatility that can be expected. In fact, the stablecoin can only be considered stable within a certain subjective tolerance. The more resolution required, the more difficult it will be to maintain the peg. If you are comfortable with ±0.5% volatility then you'll be happy trading between $0.995 and $1.005 for an asset valued at $1.000. The farther from the target that the price strays the harder it is for people to maintain confidence. In other words, they will begin to worry about the peg and our token is no longer considered stable. 
 
+**volatility analysis & calculation**
+
 ### How does it stay pegged?
 So what can you do when your dollar is trading for 99½ cents? Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle (external to the blockchain) that can be queried from a smart contract to check that say, 1 blockchain-dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, which, by definition cost them $1.00, and sell them on the open market for $1.01, pocketing the difference. These newly minted tokens cause the supply to increases reducing the market demand. The price should reflect this supply expansion and decrease towards the peg. A similar mechanism occurs when the price drops below $1.00. Say your token is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem 100 from the protocol for $100, profiting $1 for your trouble. This type of regular arbitrage is open to anyone undertake and often executed by bots that watch the various exchanges for price and execute a trade when profitable.
+
+Fiat stablecoins like USDC have their peg set and do not need to be maintained by market mechanisms as long they can scale.
 
 ### Does the peg need to be 1? 
 No, its just handy because its the standard unit for much of the globe, even if not the dollar. There are not many examples, however, AMPL presently trades around $1.079 which is the 2019 inflation-adjusted peg.
@@ -67,15 +71,17 @@ No, its just handy because its the standard unit for much of the globe, even if 
 ### Do we need a peg? 
 Not at all. This is called floating and is what many currencices do in the foreign exchange markets such as the US Dollar and Japanese Yen since 1971, and the New Zealand Dollar  since 1985. Reflexer's `RAI` token was originally set to 3.14 (π) because they needed a place to start. Now it is free to float according to the market. A new category called unpegged stablecoins has emerged and will be discussed later.
 
-
 # How many breeds in the stable?
-In an effort to categorize or taxonomize the myriad coins in the stable, the most obvious approach is by the type of collateral used to back the token.
+In an effort to categorize or taxonomize the myriad coins in the stable, a few approaches arise including: collateral ownership, collateral type, and maintenance dynamics. I will consider all angles in an attempt to develop a (weak) taxonomy.
 
-### Collateral
+### Collateral Type
 Now, categorizing what assets, if any, are backing the stablecoins to ensure consumer confidence should they need to be redeemed. Ordered from material to virtual collateralization we have: Gold, Fiat, Crypto, and Nothing. 
 
-## (Weak) Taxonomy
-* Collateral and ownership
+### Collateral Ownership
+
+### Peg Maintenance Dynamics
+
+
 collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions.
 
 This is by no means straight-forward, and you will find different perspectives out there. [X] does it this way; [Y] does it that way. While tempting to say that all stables are either algorithmic or not, this is inconsistent because it doesn't capture the variability withing the algorithmic sphere. For this reason, a better way to group these is by........
