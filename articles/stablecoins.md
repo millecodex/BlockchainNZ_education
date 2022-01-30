@@ -55,18 +55,18 @@ The vast majority of stablecoins are pegged to the US dollar which means they ta
 
 The previous example of equilibrium versus target peg brings up a problem with stablecoins, that is, they are only stable compared to their reference peg. The utility of such tokens is in fact variable, just as the wages of your parents generation cannot be compared to yours today. An interesting example is Ampleforth that is pegged to the 2019 inflation-adjusted US dollar. More on `AMPL` later.
 
-Do we need a peg? Not at all. This is called floating and is what many currencices have been doing against the US dollar since 1971. Unpegged stablecoins may not necessaryily fit into this analysis but will be discussed later.
-
-Does the peg need to be 1? No, its just handy because its the standard unit for much of the globe, even if not the dollar. Reflexer's `RAI` token was originally pegged to 3.14 (π) because they needed a place to start. It is free to float according to the market.
-
 ### Volatility
-
+If we set the target to be 1 and allow some variation in either direction, this is the volatility that can be expected. In fact, the stablecoin can only be considered stable within a certain subjective tolerance. The more resolution required, the more difficult it will be to maintain the peg. If you are comfortable with ±0.5% volatility then you'll be happy trading between $0.995 and $1.005 for an asset valued at $1.000. The farther from the target that the price strays the harder it is for people to maintain confidence. In other words, they will begin to worry about the peg and our token is no longer considered stable. 
 
 ### How does it stay pegged?
-Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle that can be queried from a smart contract to check that say, 1 dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, this costs them $1, and sell them on the market for $1.01, pocketing the difference. As the supply of tokens increases the market price will fall back in line. A similar mechanism occurs when the price drops below $1.00. Say it is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem them from the protocol for $100, profiting $1 for your trouble.
+So what can you do when your dollar is trading for 99½ cents? Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle (external to the blockchain) that can be queried from a smart contract to check that say, 1 blockchain-dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, which, by definition cost them $1.00, and sell them on the open market for $1.01, pocketing the difference. These newly minted tokens cause the supply to increases reducing the market demand. The price should reflect this supply expansion and decrease towards the peg. A similar mechanism occurs when the price drops below $1.00. Say your token is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem 100 from the protocol for $100, profiting $1 for your trouble. This type of regular arbitrage is open to anyone undertake and often executed by bots that watch the various exchanges for price and execute a trade when profitable.
 
 In summary:
 > Just like liquidity means not affecting the price, stability means not worrying about the price.
+
+Do we need a peg? Not at all. This is called floating and is what many currencices have been doing against the US dollar since 1971. Unpegged stablecoins may not necessaryily fit into this analysis but will be discussed later.
+
+Does the peg need to be 1? No, its just handy because its the standard unit for much of the globe, even if not the dollar. Reflexer's `RAI` token was originally pegged to 3.14 (π) because they needed a place to start. It is free to float according to the market.
 
 # How many breeds in the stable?
 In an effort to categorize or taxonomize the myriad coins in the stable, the most obvious approach is by the type of collateral used to back the token.
