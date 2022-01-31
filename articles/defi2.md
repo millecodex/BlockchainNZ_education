@@ -7,12 +7,15 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 
 ### Contents
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
-1. [Flash Loans](defi2.md#flash-loans)
-1. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
-2. [Pool 1 vs Pool 2 & Vampire Attacks]()
-3. [DeFi 2.0]()
-4. [What did we miss?](defi2.md#what-did-we-miss)
-5. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
+2. [Flash Loans](defi2.md#flash-loans)
+3. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
+   - [MakerDAO's DAI]()
+5. [Pool 1 vs Pool 2 & Vampire Attacks]()
+6. [DeFi 2.0]()
+   - [Unpegged Stablecoins]()
+   - [Protocol Owned Liquidity]()
+9. [What did we miss?](defi2.md#what-did-we-miss)
+10. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
 # Yield Aggregators & Vaults
 Twenty-twenty was the *Summer of Defi* (winter in the southern hemisphere) and folks looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. A simple question arises: how can I, a simple investor, capture some of this yield by moving my coins to the new farm with the highest yield (without gas fees eating into my profits)?
@@ -68,7 +71,7 @@ A truly stable unit of account, method of exchange, and store of value in a dece
 * represent a store of value such that you can momentarily hold value in the token; i.e. if you transfer $100 into a stablecoin you expect it to have the same purchasing power in the future. How long into the future is a matter of trusting the token to maintain that value.
 
 ### MakerDAO's DAI 
-The longest-lived algorithmic stablecoin is `DAI` run by MakerDAO. DAI is pegged to the US-dollar and operates by loaning depositors DAI in exchange for 150% the value of `ETH`. The overcollateralization can absorb some of the volatility of ether, but Maker has mechanisms in place to avoid the value of the collateral dipping below the loaned DAI. In the event of liquidation a user's vault is opened, the ETH sold and the loan closed. This all happens in automatically in the smart contract. The peg of DAI is not set to 1; it must be bought and sold naturally in the market at an equillibrium of $1.00. If the price starts to rise above $1, then there is an opportunity to take out a loan of DAI and sell on the open market for >$1. This will naturally increase the supply and reduce the price. Similarly, if the price is trading at $0.99, borrowers can buy DAI and repay their loans at a discount.
+The longest-lived algorithmic stablecoin is `DAI` run by [MakerDAO](https://makerdao.com/en/). DAI is pegged to the US-dollar and operates by loaning depositors DAI in exchange for 150% the value of `ETH`. The overcollateralization can absorb some of the volatility of ether, but Maker has mechanisms in place to avoid the value of the collateral dipping below the loaned DAI. In the event of liquidation a user's vault is opened, the ETH sold and the loan closed. This all happens in automatically in the smart contract. The peg of DAI is not set to 1; it must be bought and sold naturally in the market at an equillibrium of $1.00. If the price starts to rise above $1, then there is an opportunity to take out a loan of DAI and sell on the open market for >$1. This will naturally increase the supply and reduce the price. Similarly, if the price is trading at $0.99, borrowers can buy DAI and repay their loans at a discount.
 
 > <p align="center"><img width="800" alt="DAIUSD_chart_trading_view_2022-01-27" src="https://user-images.githubusercontent.com/39792005/151286172-e2d51188-693a-41b7-be40-e53210986cca.png"></p>
 > 
@@ -82,29 +85,31 @@ For these reasons there has been an innovative period of new algorithmic stablec
 
 
 # DeFi 2.0 - Second Generation Protocols!
-
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance. (Of course I ~~fear~~ anticipate that by the time I'm finished composing these topics a third gen will have emerged :money_with_wings:)
 
 ## Olympus DAO & Unpegged Stablecoins
-Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to float in price to the upside above a crypto-asset backed floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be a "decentralized reserve currency protocol." OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $750M treasury built up in less than a year at a market cap of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
+Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to float in price to the upside above a crypto-asset backed floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be a "decentralized reserve currency protocol." OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the DAO governing the protocol offers users incentives via a discount to mint new tokens. For example, you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $750M treasury built up in less than a year at a market cap of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
 
-The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens of thousands of percent. Can that be right? Well yes and no. It correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless demand crates a frenzy. In times of low demand times it has equally as far to fall down to the floor target.
+The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens-of-thousands of percent. Can that be right? Well yes and no. It correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless demand crates a frenzy. In times of low demand times it has equally as far to fall down to the floor target.
 
-> <img width="623" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/151730076-6e7c8475-ea54-44f0-b988-f3e4e225484b.PNG">
-> Olympus DAO chart for `OHM`. The price is very misleading because the supply is so inflationary.
+> <img width="800" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/151730076-6e7c8475-ea54-44f0-b988-f3e4e225484b.PNG">
+> 
+> Olympus DAO chart for `OHM`. The price is very misleading because the supply is so inflationary. The next chart shows the market value of backing per OHM, or indicates the trading multiple above floor ([Dune Analytics](https://dune.xyz/shadow/Olympus-(OHM))).
+> 
+> <img width="800" alt="market value of backing per ohm dune analytics" src="https://user-images.githubusercontent.com/39792005/151752605-1171137a-2055-4256-ad9d-9106997311a8.PNG">
 
-These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. One even rebases continually so you can watch your token balance increase in realtime.
+These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. [Invictus DAO](https://medium.com/@Sol-Invictus/the-great-event-9a3d81e0ce3b) even rebases continually so you can watch your token balance increase in realtime.
 
 One of the innovations the rebasing era has brought to DeFi is *protocol owned* liquidity.
 
-### Protocol Owned Liquidity
-Lets pause for a moment and conside who *owns* the tokens that are criss crossing DeFi-land. Although it seems obvious - it should be the users, right? - it may not always be so. Standard yield farming pools use liquidity that is owned by the users. All participants receive a receipt of their share of the pool and that gives them the right to redeem it at any time. This has led to the mercenary capital jumping around at a moments notice. *This* then led to Pool 2 with governance tokens. So user-owned liquidity is good for users but bad for protocols which in turn is bad for the user's bottom line. 
+## Protocol Owned Liquidity
+Lets pause for a moment and conside who *owns* the tokens that are criss crossing DeFi-land. Although it seems obvious - it should be the users, right? - it may not always be so. Standard yield farming pools use liquidity that is owned by the users. All participants receive a receipt of their share of the pool and that gives them the right to redeem it at any time. This has led to the mercenary capital jumping ship at a moments notice. *This* then led to Pool 2 with governance tokens. So user-owned liquidity is good for users but bad for protocols which in turn can be bad for the user's bottom line. 
 
-One way around this is to implement delays that lock up your tokens for a set amount of time thus guaranteeing the liquidity is available. Time delays as long as 4 years can be seen in convex and all parachain auctions on Polkadot require 96 weeks.
+One way around this is to implement delays that lock up your tokens for a set amount of time thus guaranteeing a minimum amount of liquidity. Time delays as long as four years can be seen in Curve thereby boosting your rewards. Incredibly the average locktime on Curve is 3.63 years indicating high user confidence. Other lockups: all parachain auctions on Polkadot require 96 weeks, Eth2 validators require 32 ether locked up for at least one year, and possibly longer depending on the rollout. 
 
-A third option may be the best yet. Protocol owned liquidiy as pioneered in Olympus DAO is simple in the intention: rather than having users deposit assets and shop their LP tokens to the highest APY the users must purchase protocol tokens directly in exchange for collateral. The benefit is twofold: discounted tokens are available through the bonding process, and stakers are rewarded with the astronomical interest rates helped along by the autocompounding rebasing. The DAO will maintain the treasury only accepting well known or stable tokens thus setting the floor price for the rebase token at 1 `DAI`. By design the interest rates will fall and in the long run this should stabilize the token price. 
+A third option may be the best yet. Protocol owned liquidiy as pioneered in Olympus DAO is simple in the intention: rather than having users deposit any assets and shop their LP tokens to the highest APY the users must purchase protocol tokens directly in exchange for collateral. The benefit is twofold: discounted tokens are available through the bonding process, and stakers are rewarded with the astronomical interest rates helped along by the autocompounding rebasing. The DAO will maintain the treasury only accepting well known or stable tokens thus setting the floor price for the rebase token at 1 `DAI`. By design the high interest rates in the short term incentivise growth, then will fall and in the long run this should stabilize the token price. 
 
-The issue we've seen in the DeFi2.0 era is that people are excited about this concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price than floor. It worth noting here that this is what floating currencies do. Unfortionately at the time of writing (February 2022) many people bought at a price greater than current market value, in short, it couldn't go up forever. This doesn't mean the floor peg broke because every token is still backed by the same amount of underlying.
+The issue we've seen in the DeFi2.0 era is that people are excited about this rebasing concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price. It worth noting here that this is what floating currencies do. Unfortionately as of the time of writing (February 2022) many people bought at a price greater than the mark price; in short, it couldn't go up forever. This doesn't mean the floor "peg" broke because every token is still backed by the same amount of underlying, just multiples below market price (see the previous chart).
 
 
 
@@ -128,7 +133,7 @@ The issue we've seen in the DeFi2.0 era is that people are excited about this co
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
 
 # Further Reading - the very short list
-* []()
+* [Olympus DAO FAQ](https://docs.olympusdao.finance/main/basics/basics)
 * []()
 
 # About the Author
