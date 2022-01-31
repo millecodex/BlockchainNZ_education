@@ -13,12 +13,15 @@ blockchain.org.nz/\
   │  ├── what is a cryptocurrency?\
   │  │  ├── [what is bitcoin?](articles/bitcoin.md)  
   │  │  └── [what is ethereum?](articles/ethereum.md)  
-  │  ├── [featured topic: DeFi(?)](articles/defi.md)\
+  │  ├── [featured topic: DeFi](articles/defi.md)\
   │  └── [see all featured topics](featured.md)\
-  │        ├── NFTs\
-  │        ├── DAOs\
-  │        ├── Web3\
-  │        └── etc.\
+  │    ├── [DeFi Part II](articles/defi2.md)\
+  │    ├── [Tokens](articles/defi.md)\
+  │    ├── [Stablecoins](articles/defi.md)\
+  │    ├── NFTs\
+  │    ├── DAOs\
+  │    ├── Web3\
+  │    └── etc.\
   ├── about the industry\
   ├── standards & regulations\
   ├── careers\
