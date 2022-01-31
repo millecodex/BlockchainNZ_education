@@ -85,24 +85,28 @@ For these reasons there has been an innovative period of new algorithmic stablec
 
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance. (Of course I ~~fear~~ anticipate that by the time I'm finished composing these topics a third gen will have emerged :money_with_wings:)
 
-## Unpegged Stablecoins
-Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to flucuate in price to the upside as long as it keeps a target floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be reserve currency of DeFi. OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $700M treasury built up in less than a year at a market value of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
+## Olympus DAO & Unpegged Stablecoins
+Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to float in price to the upside above a crypto-asset backed floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be a "decentralized reserve currency protocol." OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the protocol offers users incentives via a discount to mint new tokens. I.e. you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $750M treasury built up in less than a year at a market cap of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
 
-The reason behind this is called *rebases*. Every eight hours new treasury tokens (from bonding) are distributed to holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens of thousands of percent. Can that be right? Well yes, and no. It is because if you held for a year you would have dramatically more tokens, but its not because price is excluded from the marketing. The token is designed to fall in value, down to the floor target. So if a large demand pushed the price up crating a frenzy, then it has equally as far to fall. See the chart for OHM.
+The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens of thousands of percent. Can that be right? Well yes and no. It correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless demand crates a frenzy. In times of low demand times it has equally as far to fall down to the floor target.
 
-> Olympus DAO token chart
-> 
+> <img width="623" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/151730076-6e7c8475-ea54-44f0-b988-f3e4e225484b.PNG">
+> Olympus DAO chart for `OHM`. The price is very misleading because the supply is so inflationary.
 
-These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. One even continually rebases so you can watch in realtime your token balance increase.
+These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. One even rebases continually so you can watch your token balance increase in realtime.
 
-One of the innovations the rebasing phase has brought is that of protocol owned liquidity.
+One of the innovations the rebasing era has brought to DeFi is *protocol owned* liquidity.
 
-## Protocol Owned Liquidity
+### Protocol Owned Liquidity
 Lets pause for a moment and conside who *owns* the tokens that are criss crossing DeFi-land. Although it seems obvious - it should be the users, right? - it may not always be so. Standard yield farming pools use liquidity that is owned by the users. All participants receive a receipt of their share of the pool and that gives them the right to redeem it at any time. This has led to the mercenary capital jumping around at a moments notice. *This* then led to Pool 2 with governance tokens. So user-owned liquidity is good for users but bad for protocols which in turn is bad for the user's bottom line. 
 
 One way around this is to implement delays that lock up your tokens for a set amount of time thus guaranteeing the liquidity is available. Time delays as long as 4 years can be seen in convex and all parachain auctions on Polkadot require 96 weeks.
 
-A third option may be the best yet. Protocol owned liquidiy
+A third option may be the best yet. Protocol owned liquidiy as pioneered in Olympus DAO is simple in the intention: rather than having users deposit assets and shop their LP tokens to the highest APY the users must purchase protocol tokens directly in exchange for collateral. The benefit is twofold: discounted tokens are available through the bonding process, and stakers are rewarded with the astronomical interest rates helped along by the autocompounding rebasing. The DAO will maintain the treasury only accepting well known or stable tokens thus setting the floor price for the rebase token at 1 `DAI`. By design the interest rates will fall and in the long run this should stabilize the token price. 
+
+The issue we've seen in the DeFi2.0 era is that people are excited about this concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price than floor. It worth noting here that this is what floating currencies do. Unfortionately at the time of writing (February 2022) many people bought at a price greater than current market value, in short, it couldn't go up forever. This doesn't mean the floor peg broke because every token is still backed by the same amount of underlying.
+
+
 
 
 ## Self-repaying loans(!) Alchemix/Abracadabra/MIM
@@ -112,8 +116,6 @@ A third option may be the best yet. Protocol owned liquidiy
 ## Voting-Escrow (ve)
 
 # Topics unwritten
-  * non-pegged stablecoins  & protocol owned liquidity
-  * rebasing
   * oracles (~ necessary infrastructure)
   * options/derivatives/perps(dydx) etc 
   * Single-sided staking and IL insurance (Bancor v3)
