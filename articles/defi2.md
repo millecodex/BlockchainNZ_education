@@ -3,7 +3,7 @@
 # DeFi Part II (& 2.0)
 
 # Introduction
-In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#defi-20---second-generation-protocols) and discuss algorithmic coins, rebasing, and self-repaying loans.
+In [Part 1.0](defi.md) we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#defi-20---second-generation-protocols) and discuss algorithmic coins, rebasing, and self-repaying loans.
 
 ### Contents
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
