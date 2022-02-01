@@ -3,18 +3,18 @@
 # DeFi Part II (& 2.0)
 
 # Introduction
-In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#DeFi2.0) and discuss algorithmic coins, rebasing, and self-repaying loans.
+In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentralized exchanges, the automated market maker & pools, liquidity mining and yield farming. Here we're going to start by looking at happens when you can automate some of the behaviour witnessed in part 1.0. Eventually we'll get to [DeFi2.0](defi2.md#defi-20---second-generation-protocols) and discuss algorithmic coins, rebasing, and self-repaying loans.
 
 ### Contents
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
 2. [Flash Loans](defi2.md#flash-loans)
 3. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
-   - [MakerDAO's DAI]()
-5. [Pool 1 vs Pool 2 & Vampire Attacks]()
-6. [DeFi 2.0]()
-   - [Unpegged Stablecoins]()
-   - [Protocol Owned Liquidity]()
-   - [Self-repaying Loans]()
+   - [MakerDAO's DAI](defi2.md#makerdaos-dai)
+5. [Pool 1 vs Pool 2 & Vampire Attacks](defi2.md#pool-1-vs-pool-2--vampire-attacks)
+6. [DeFi 2.0](defi2.md#defi-20---second-generation-protocols)
+   - [Unpegged Stablecoins](defi2.md#olympus-dao--unpegged-stablecoins)
+   - [Protocol Owned Liquidity](defi2.md#protocol-owned-liquidity)
+   - [Self-repaying Loans](defi2.md#self-repaying-loans)
 9. [What did we miss?](defi2.md#what-did-we-miss)
 10. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
