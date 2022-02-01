@@ -91,7 +91,7 @@ The name DeFi 2.0 has emerged naturally as people were trying to fix the problem
 ## Olympus DAO & Unpegged Stablecoins
 Another type of ''stablecoin'' has no peg at all. In this sense its not stable as its allowed to float in price to the upside above a crypto-asset backed floor. Olympus DAO is the primary example here with their `OHM` token that is intending to be a "decentralized reserve currency protocol." OHM is a free-floating, or non-pegged coin is allowed to fluctuate up as much as demand (speculation) will tolerate and down to floor based on its treasury. In order to build up the treasury to a sizable value (>~$1B? to back-stop the token) the DAO governing the protocol offers users incentives via a discount to mint new tokens. For example, you can buy $100 worth of tokens for $95 if you particpate in the bonding program. At the end of a vesting period you are issued the new token that can only be exchanged at market value. As of November 2021 Olympus DAO led the way with about a $750M treasury built up in less than a year at a market cap of over $3B. It has since returned to more humble levels inspiring many to call it a Ponzi scheme.
 
-The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens-of-thousands of percent. Can that be right? Well yes and no. It correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless demand crates a frenzy. In times of low demand times it has equally as far to fall down to the floor target.
+The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens-of-thousands of percent. Can that be right? Well yes and no. Its correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless counteracted by demand. 
 
 > <img width="800" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/151730076-6e7c8475-ea54-44f0-b988-f3e4e225484b.PNG">
 > 
@@ -116,10 +116,10 @@ A third option may be the best yet. Protocol owned liquidiy as pioneered in Olym
 
 One issue we've seen in the DeFi2.0 era is that people are excited about this rebasing concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price. It worth noting here that this is what floating currencies do. Unfortunately as of the time of writing (February 2022) many people bought at a price greater than the mark price; in short, it couldn't go up forever. This doesn't mean the floor "peg" broke because every token is still backed by the same amount of underlying, just multiples below market price (see the previous chart).
 
+## Self-repaying loans Alchemix/Abracadabra/MIM
+Due to the trustless nature of DeFi lending requires overcollateralization. To borrow $1000 you must deposit more than $1000 of some accepted token. This removes the insolvency risk on the lender and helps absorb market volatility, especially for non-stablecoins. The lender now has many option of how to use collateral in their favour to make more money. This [rehypothecation](https://www.investopedia.com/terms/r/rehypothecation.asp) is what banks do with your house deposit. 
 
-
-
-## Self-repaying loans(!) Alchemix/Abracadabra/MIM
+Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. Alchemix requires collateral that is already in interest-bearing form. They then put it work and wait. The borrower can 
 
 ## Single-sided staking and IL insurance (Bancor v3)
 
