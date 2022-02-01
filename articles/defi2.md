@@ -119,7 +119,7 @@ One issue we've seen in the DeFi2.0 era is that people are excited about this re
 ## Self-repaying loans Alchemix/Abracadabra/MIM
 Due to the trustless nature of DeFi lending requires overcollateralization. To borrow $1000 you must deposit more than $1000 of some accepted token. This removes the insolvency risk on the lender and helps absorb market volatility, especially for non-stablecoins. The lender now has many option of how to use collateral in their favour to make more money. This [rehypothecation](https://www.investopedia.com/terms/r/rehypothecation.asp) is what banks do with your house deposit. 
 
-Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. Alchemix requires collateral that is already in interest-bearing form. They then put it work and wait. The borrower can 
+Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. [Alchemix](https://alchemix-finance.gitbook.io/alchemix-finance/) requires collateral that is already in interest-bearing form. The collateral goes straight to work in a vault and they loan out 50% in their own stablecoin. The borrower can take $500 and do as they please; their loan will pay itself back.
 
 ## Single-sided staking and IL insurance (Bancor v3)
 
