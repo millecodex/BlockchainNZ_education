@@ -111,6 +111,7 @@ One way around this is to implement delays that lock up your tokens for a set am
 * C.R.E.A.M. staking periods of 1-4 years
 * parachain auctions on Polkadot require 96 weeks
 * Eth2 validators require 32 ether locked up for at least one year, and possibly longer depending on the rollout
+
 Lockups can buy time but don't solve the problem, merely delaying the sell pressure.
 
 A third option may be the best yet. Protocol owned liquidiy as pioneered in Olympus DAO is simple in the intention: rather than having users deposit any assets and shop their LP tokens to the highest APY the users purchase protocol tokens with them. The LP tokens are then *locked* in the treasury. The benefit is twofold: discounted tokens are available through the bonding process, and stakers are rewarded with the astronomical interest rates helped along by the autocompounding rebasing. The DAO will maintain the treasury, accepting stable LP tokens thus having control over the floor price. They also collect pool fees directly which acts as cash flow and can offset downward token volatility. By design the high interest rates in the short term incentivise growth, then will fall and in the long run this should stabilize the token price. 
@@ -118,28 +119,30 @@ A third option may be the best yet. Protocol owned liquidiy as pioneered in Olym
 One issue we've seen in the DeFi2.0 era is that people are excited about this rebasing concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price. It worth noting here that this is what floating currencies do. Unfortunately as of the time of writing (February 2022) many people bought at a price greater than the mark price; in short, it couldn't go up forever. This doesn't mean the floor "peg" broke because every token is still backed by the same amount of underlying, just multiples below market price (see the previous chart).
 
 ## Self-repaying Loans
-Due to the trustless nature of DeFi lending requires overcollateralization. To borrow $1000 you must deposit more than $1000 of some accepted token. This removes the insolvency risk on the lender and helps absorb market volatility, especially for non-stablecoins. The lender now has many option of how to use collateral in their favour to make more money. This [rehypothecation](https://www.investopedia.com/terms/r/rehypothecation.asp) is what banks do with your house deposit. 
+Due to the trustless nature of DeFi lending requires overcollateralization. To borrow $500 you must deposit more than $500 of some accepted token. This removes the insolvency risk on the lender and helps absorb market volatility, especially for non-stablecoins. The lender now has many option of how to use collateral in their favour to make more money. This [rehypothecation](https://www.investopedia.com/terms/r/rehypothecation.asp) is what banks do with your house deposit. 
 
-Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. [Alchemix](https://alchemix-finance.gitbook.io/alchemix-finance/) requires collateral that is already in interest-bearing form. The collateral goes straight to work in a vault and they loan out 50% in their own stablecoin. The borrower can take $500 and do as they please; their loan will pay itself back.
+Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. [Alchemix](https://alchemix-finance.gitbook.io/alchemix-finance/) has requirements on acceptable collateral to ensure that it can generate income. The collateral goes straight to work in a vault and they loan out 50% in their own stablecoin. After depositing $1000 the borrower recieves $500 to do as they please knowing their loan will pay itself back.
 
-## Single-sided staking and IL insurance (Bancor v3)
+## Single-Sided Staking and IL Insurance
+[Bancor](https://bancor.network/) introduced both single-sided staking and [impermanent loss](defi.md#impermanent-loss) protection insurance with their version 2 protocol. Single-sided staking allows deposits into a pool with a single token rather than the multiple token approach required of other LPs. This opens up fees and rewards for those that want long exposure to a token without the risk of having a secondary token tied up in a pairing. Behind the scenes the protocol matches single-sided deposits with the Bancor token `BNT` to behave as a standard AMM.
 
-## Voting-Escrow (ve)
+A benefit here is that Bancor can redistribute IL risk from the LP to the protocol. This smooths price diveregence across all pairs and they use income from co-investments to cover loss. A position becomes fully insured after 100 days by incrementing the protection 1% per day. If someone withdraws within 100 days and experience IL they are eligible for partial protection. Someone that waited 100 days or more and withdraws is fully insured. The upcoming Bancor V3 is promising instant IL protection for every LP.
 
-# Topics unwritten
-  * oracles (~ necessary infrastructure)
-  * options/derivatives/perps(dydx) etc 
-  * Single-sided staking and IL insurance (Bancor v3)
+
 
 # What did we miss?
-* 
+* oracles (~ necessary infrastructure)
+* options/derivatives/perps(dydx) etc 
+* covered calls
+* Voting-Escrow (ve)
 
 # Next
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
 
 # Further Reading - the very short list
 * [Olympus DAO FAQ](https://docs.olympusdao.finance/main/basics/basics)
-* []()
+* [The Liquidity Loyalty Problem](https://posey.medium.com/the-liquidity-loyalty-problem-7e999f912080)
+* [The Alchemix Whitepaper (and a short history of DeFi)](https://alchemix.fi/c76d1d663f6c8247b86a8fca83d5bd1b.pdf)
 
 # About the Author
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
