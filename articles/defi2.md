@@ -7,16 +7,16 @@ In [Part 1.0](defi.md) we covered some foundational parts of DeFi: stablecoins, 
 
 ### Contents
 1. [Yield Aggregators & Vaults](defi2.md#yield-aggregators--vaults)
-2. [Flash Loans](defi2.md#flash-loans)
-3. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
+1. [Flash Loans](defi2.md#flash-loans)
+1. [Algorithmic Stablecoins](defi2.md#algorithmic-stablecoins)
    - [MakerDAO's DAI](defi2.md#makerdaos-dai)
-5. [Pool 1 vs Pool 2 & Vampire Attacks](defi2.md#pool-1-vs-pool-2--vampire-attacks)
-6. [DeFi 2.0](defi2.md#defi-20---second-generation-protocols)
+1. [Pool 1 vs Pool 2 & Vampire Attacks](defi2.md#pool-1-vs-pool-2--vampire-attacks)
+1. [DeFi 2.0](defi2.md#defi-20---second-generation-protocols)
    - [Unpegged Stablecoins](defi2.md#olympus-dao--unpegged-stablecoins)
    - [Protocol Owned Liquidity](defi2.md#protocol-owned-liquidity)
    - [Self-repaying Loans](defi2.md#self-repaying-loans)
-9. [What did we miss?](defi2.md#what-did-we-miss)
-10. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
+1. [What did we miss?](defi2.md#what-did-we-miss)
+1. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
 # Yield Aggregators & Vaults
 Twenty-twenty was the *Summer of Defi* (winter in the southern hemisphere) and folks looked at yields coming out of farms and saw the trend of capital hopping around to the projects with the highest interest rate. A simple question arises: how can I, a simple investor, capture some of this yield by moving my coins to the new farm with the highest yield (without gas fees eating into my profits)?
@@ -62,7 +62,6 @@ This balance between Pool 1 and Pool 2 incentivises a new type of risk called a 
 
 > <p align="center"><img width="800" alt="sushi TVL vampire attack" src="https://user-images.githubusercontent.com/39792005/151486262-012d7632-0408-45bf-9af9-bb30249c07df.png"></p>
 > SushiSwap launched at the end of August, 2020 and quickly grew to over $1B in TVL
-
 
 # Algorithmic Stablecoins
 Stablecoins like `USDC` and `USDT` are backed by US dollar deposits in the ratio of 1:1. They remain stable because at any time when a user wants to redeem their tokens for dollars the equivallent amount is available to them. This does not mean that the underlying USD remains stable, but for general purposes the US dollar is the most consistently valued (and used) currency. This system requires someone to manage the pool of funds, handle the deposits and redemptions and any associated KYC and regulatory reporting requirements. At the same time this management is the primary risk because the custodian such as Circle or Tether could blacklist addresses, censor clients, obscure transparency and reporting, or perpetrate fraud.
@@ -124,14 +123,11 @@ Due to the trustless nature of DeFi lending requires overcollateralization. To b
 Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. [Alchemix](https://alchemix-finance.gitbook.io/alchemix-finance/) has requirements on acceptable collateral to ensure that it can generate income. The collateral goes straight to work in a vault and they loan out 50% in their own stablecoin. After depositing $1000 the borrower recieves $500 to do as they please knowing their loan will pay itself back.
 
 ## Single-Sided Staking and Impermanent Loss Insurance
-[Bancor](https://bancor.network/) introduced both single-sided staking and [impermanent loss](defi.md#impermanent-loss)(IL) protection insurance with their version 2 protocol. Single-sided staking allows deposits into a pool with a single token rather than the multiple token approach required of other LPs. This opens up fees and rewards for those that want long exposure to a token without the risk of having a secondary token tied up in a pairing. Behind the scenes the protocol matches single-sided deposits with the Bancor token `BNT` to behave as a standard [AMM](defi.md#automated-market-makers-amms).
+[Bancor](https://bancor.network/) introduced both single-sided staking and [impermanent loss](defi.md#impermanent-loss) (IL) protection insurance with their version 2 protocol. Single-sided staking allows deposits into a pool with a single token rather than the multiple token approach required of other LPs. This opens up fees and rewards for those that want long exposure to a token without the risk of having a secondary token tied up in a pairing. Behind the scenes the protocol matches single-sided deposits with the Bancor token `BNT` to behave as a standard [AMM](defi.md#automated-market-makers-amms).
 
 A benefit here is that Bancor can redistribute IL risk from the LP to the protocol. This smooths price diveregence across all pairs and they use income from co-investments to cover loss. A position becomes fully insured after 100 days by incrementing the protection 1% per day. If someone withdraws within 100 days and experience IL they are eligible for partial protection. Someone that waited 100 days or more and withdraws is fully insured. The upcoming Bancor V3 is promising instant IL protection for every LP.
 
-
-
 # What did we miss?
-* oracles (~ necessary infrastructure)
 * options/derivatives/perps(dydx) etc 
 * covered calls
 * Voting-Escrow (ve)
