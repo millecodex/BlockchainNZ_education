@@ -14,6 +14,7 @@ In Part 1.0 we covered some foundational parts of DeFi: stablecoins, decentraliz
 6. [DeFi 2.0]()
    - [Unpegged Stablecoins]()
    - [Protocol Owned Liquidity]()
+   - [Self-repaying Loans]()
 9. [What did we miss?](defi2.md#what-did-we-miss)
 10. [Further Reading - the very short list](defi2.md#further-reading---the-very-short-list)
 
@@ -116,7 +117,7 @@ A third option may be the best yet. Protocol owned liquidiy as pioneered in Olym
 
 One issue we've seen in the DeFi2.0 era is that people are excited about this rebasing concept and speculation has caused the tokens to rise well above the treasury-backed floor. This causes newcomers to have to purchase at a much higher price. It worth noting here that this is what floating currencies do. Unfortunately as of the time of writing (February 2022) many people bought at a price greater than the mark price; in short, it couldn't go up forever. This doesn't mean the floor "peg" broke because every token is still backed by the same amount of underlying, just multiples below market price (see the previous chart).
 
-## Self-repaying loans Alchemix/Abracadabra/MIM
+## Self-repaying Loans
 Due to the trustless nature of DeFi lending requires overcollateralization. To borrow $1000 you must deposit more than $1000 of some accepted token. This removes the insolvency risk on the lender and helps absorb market volatility, especially for non-stablecoins. The lender now has many option of how to use collateral in their favour to make more money. This [rehypothecation](https://www.investopedia.com/terms/r/rehypothecation.asp) is what banks do with your house deposit. 
 
 Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn vault it can earn interest while waiting for the loan to mature. And if the interest is used to pay down the loan the maturity date can be removed altogether. This is the idea behind a self-repaying loan. [Alchemix](https://alchemix-finance.gitbook.io/alchemix-finance/) requires collateral that is already in interest-bearing form. The collateral goes straight to work in a vault and they loan out 50% in their own stablecoin. The borrower can take $500 and do as they please; their loan will pay itself back.
@@ -129,7 +130,6 @@ Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn v
   * oracles (~ necessary infrastructure)
   * options/derivatives/perps(dydx) etc 
   * Single-sided staking and IL insurance (Bancor v3)
-  * Self-repaying loans(!) Alchemix/Abracadabra/MIM
 
 # What did we miss?
 * 
