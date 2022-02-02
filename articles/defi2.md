@@ -128,9 +128,10 @@ Now, if that $1000 loan collateral is in a stablecoin and deposited in a Yearn v
 A benefit here is that Bancor can redistribute IL risk from the LP to the protocol. This smooths price diveregence across all pairs and they use income from co-investments to cover loss. A position becomes fully insured after 100 days by incrementing the protection 1% per day. If someone withdraws within 100 days and experience IL they are eligible for partial protection. Someone that waited 100 days or more and withdraws is fully insured. The upcoming Bancor V3 is promising instant IL protection for every LP.
 
 # What did we miss?
-* options/derivatives/perps(dydx) etc 
-* covered calls
-* Voting-Escrow (ve)
+Many folks have made fancy bricks to help build the DeFi citadel. Perhaps you, dear financier, are interested in:
+* Futures? [dydx](https://dydx.exchange/) is a DEX that can facilitate perpetual futures contracts on layer 2 via Starkware
+* Covered-calls? [Ribbon Finance](https://www.ribbon.finance/) earns yield on its deposits by running a weekly automated options selling strategy
+
 
 # Next
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
