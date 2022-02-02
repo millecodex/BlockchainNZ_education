@@ -30,4 +30,4 @@ A good place to start is with the *OG*: Bitcoin.
 Bitcoin has decentralised money. What can be said of *finance*?
 * :point_right: [Decentralised Finance 1.0](defi.md)
 ---
-[See all featured topics](https://github.com/millecodex/BlockchainNZ_education/blob/main/featured.md)
+[See all featured topics](featured.md)
