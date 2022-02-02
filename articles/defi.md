@@ -30,14 +30,14 @@ It is hard to ignore the growth and popularity of stablecoins when looking at th
 The top five by supply are Tether `USDT`, USD-Coin by Circle `USDC`, Binance USD `BUSD`, and Dai `DAI`. Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
 |:---------|:-----------|:------|:--------------------|
-|USDT      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
-|AUDT      |AUD         |AUD          |Ethereum|
-|NZDS      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
-|XSGD      |SGD         |SGD          |Ethereum, Zilliqa|
-|EURS      |EUR         |EUR          |Ethereum, Polygon, Algorand|
-|DAI       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
-|PAXG - Paxos Gold|1 oz of gold|physical gold|Ethereum|
+|`USDT`      |USD      |[mix of assets](https://www.bloombergquint.com/business/tether-gives-more-details-on-assets-backing-crypto-stablecoin)|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
+|`USDC`      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
+|`AUDT`      |AUD         |AUD          |Ethereum|
+|`NZDS`      |NZD         |NZD          |Ethereum ([still in beta as of Jan. 2021](https://www.techemynt.com/))|
+|`XSGD`      |SGD         |SGD          |Ethereum, Zilliqa|
+|`EURS`      |EUR         |EUR          |Ethereum, Polygon, Algorand|
+|`DAI`       |USD         |crypto collateral|Ethereum, Polygon, BSC, Fantom, Gnosis ||
+|`PAXG` - Paxos Gold|1 oz of gold|physical gold|Ethereum|
 
 There are other varieties of stablecoins, including ones that have no collateral backing and are controlled algorithmically. More on these in [Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md#algorithmic-stablecoins).
 
