@@ -7,10 +7,11 @@
 1. [Motivation: Why Decentralize Finance?](defi.md#motivation)
 2. [Stablecoins](defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)](defi.md#decentralised-exchanges-dexs)
-4. [Mining & Farming & Staking](defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
-5. [Summary](defi.md#in-summary)
-6. [What did we miss?](defi.md#what-did-we-miss)
-7. [Further Reading - the very short list](defi.md#further-reading---the-very-short-list)
+4. [Pricing & Oracles](defi.md#oracles)
+5. [Mining & Farming & Staking](defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
+6. [Summary](defi.md#in-summary)
+7. [What did we miss?](defi.md#what-did-we-miss)
+8. [Further Reading - the very short list](defi.md#further-reading---the-very-short-list)
 
 # Why Decentralize Finance?
 In one word: trust. Or, ironically, you could also say trust*less*. Allow me to explain. For the same reason that Bitcoin is successful without a centralizing third-party─namely that you can transact with a perfect stranger in a foreign country by trusting the protocol and you *don't* need to trust the stranger─the cascade of financial products that can be built upon digital money is an ideal fit for blockchains.
@@ -24,7 +25,7 @@ The primary advantage to having a fiat currency on a blockchain is to map value 
 
 It is hard to ignore the growth and popularity of stablecoins when looking at the total value. This chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/stablecoins) is showing growth in stablecoins over the past four years. In 2021 the total value of stablecoins rose from ~$28B to $150B USD. DeFi has been largely responsible for this increased demand for a variety of stablecoins as they are useful for liquidity provision, farming, lending/borrowing, or short term settlement.
 
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
+> <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
 The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a *Decentralized Autonomous Organization* (DAO). Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found.
 |Stablecoin|Currency Peg|Backing|Blockchains          |
@@ -53,8 +54,8 @@ The assets are drawn from existing pools of the *same asset pairings*, e.g. `ETH
 
 Here we have a problem in getting a DEX up and running: you need a pool of assets before users can swap between them, and you need users to come and swap assets. But why would someone deposit their assets to create a pool? Well, they are incentivised by the protocol; paid for their efforts by earning a share of the transaction fees, or extra tokens, or both. Ideally this is self-reinforcing. If the fees are profitable, people will add liquidity which attracts users and generates more fees, ad infinitium.
 
-<p align="center"><img width="800" alt="Uniswap pool schematic" src="https://user-images.githubusercontent.com/39792005/149413404-3bc2ea73-43a7-4aff-bb23-cefdc785be14.PNG"></p>
-
+> <p align="center"><img width="800" alt="Uniswap pool schematic" src="https://user-images.githubusercontent.com/39792005/149413404-3bc2ea73-43a7-4aff-bb23-cefdc785be14.PNG"></p>
+> 
 > Creating a pool (from the [Uniswap docs](https://docs.uniswap.org/protocol/V2/concepts/core-concepts/pools)) shows the Deposit function taking 10 of A and 1 of B to pair in the ratio 10:1 into the pool. The provider receives 4 LP share tokens that might look like `A-B-LP`. The number of LP tokens received will be a proportional representation of the pool. On the right a trader accesses the reserve pool to swap A for B.
 
 To create a pool I just need to deposit two assets into the protocol's smart contract. Its in my best interest to add equivallent values of each asset; in the example above Token B is ten times the price of Token A and so the ratio of A:B I want to deposit is 10:1. At this point I am issued an LP (liquidity provider) token representing the combined assets, which might look like: `USDC-ETH-LP-v2`, meaning I now have a proportional amount of the USDC-ETH pool as an LP for version 2. This is the receipt proving my commitment and I must hold onto this `USDC-ETH-LP-v2` token to be able to withdraw liquidity and claim any rewards. Note here that because I hold a single token (not two separate ones) I am exposed to second-degree market effects as the independent fluctuation in price of either token away from the ratio (*e.g.* 10:1) affects my position. More on this later in [*impermanent loss*](defi.md#impermanent-loss).
@@ -71,11 +72,23 @@ A few downsides:
 * slippage - how the price moves for orders of a large fraction of the total pool liquidity
 * impermanent loss due to the market value of token pairings becoming unbalanced (more later) 
 
-[Uniswap](https://uniswap.org/) is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years. 
+> <p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
+> 
+> [Uniswap](https://uniswap.org/) is the leader in terms of activity for decentralized exchanges. The chart from [TheBlock](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial) shows that they have maintained over 50% of the market for the past few years.
 
-<p align="center"><img width="800" alt="total-decentralized-exchange-volume" src="https://user-images.githubusercontent.com/39792005/148142845-94dc4032-645f-4854-ae65-3e361481a49d.png"></p>
+There are two versions of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the [app code](https://github.com/Uniswap/v2-core/blob/master/contracts/UniswapV2Pair.sol), in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in my [Defi - Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
 
-> There are two versions of Uniswap: v2 and v3. This is a quirk of decentralized blockchain developement. Once the [app code](https://github.com/Uniswap/v2-core/blob/master/contracts/UniswapV2Pair.sol), in this case the Uniswap contract, is deployed on a blockchain, its effectively set and cannot be edited, updated, or have bugs fixed. This immutability is a key feature of blockchains and dapps, however, it means that for a project to have a new release they have to deploy another contract which introduces migratory challenges (and significant cost). Also, Uniswap v3 has many new features such as concentrated liquidity, and limit-like orders, that increase efficiency and will be discussed more in my [Defi - Part II](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/defi2.md) dive.
+# Oracles: Where do the prices *come* from?
+An oracle is a source of truth that connects the outside world to blockchainland. Smart contracts cannot know in advance the price of an asset and so must query some service that maintains the price feed. This information can then be used to update the state. For example, in a prediction market there may be a bet for the next winner of the World Cup with all funds locked in a contract until the final. At this point the contract needs to be aware of who won before distributing the winnings. Another example could be weather reports on flooding to settle an insurance contract. Oracle feeds help getting real-world data into the blockchain.
+
+If a blockchain used a regular API to get information there would be differences based on the time it was sent. All nodes in the network need to verify the data so they must use an absolute source for truth, including going back and verifying old transactions, so any pricing or oracle data needs to written into a block. Uniswap has developed a method to store price data on-chain which mitigates some of the issues to do with block latency and price volatility by using [time-weighted average prices](https://docs.uniswap.org/protocol/V2/concepts/core-concepts/oracles) (TWAPs). Chainlink is a blockchain oracle service provider and they have developed a network of decentralized off-chain providers that cryptographically sign messages attesting to information which is then aggregated before being written to the blockchain. 
+
+> <p align="center"><img width="800" alt="oracles connect data to blockchains chainlink" src="https://user-images.githubusercontent.com/39792005/152075044-48db86bd-da23-4ad2-bfe0-19ddac7d5cf1.PNG"></p>
+> 
+> The oracle problem: blockchains can't natively communicate with real-world data feeds. Source: [Chainlink](https://chain.link/education/blockchain-oracles)
+
+To avoid an issue where a service is not available when needed or perhaps a feed has been manipulated it can be designed to use multiple oracles by, for example, combining Uniswap and Chainlink data, adding your own weighting function, and publishing the result. Others use the Chainlink infrastructure to create their own oracles.
+
 
 # Liquidity Mining & Yield Farming (:sushi: :unicorn: :sweet_potato: :cake:)
 In the beginning when a DeFi project is just getting started they can also entice users with high reward rates in the form of a native token. This process of committing assets to pools to earn rewards is called *liquidity mining*. By adding liquidity you take a risk of impermanent loss but can reap rewards from transaction fees.
