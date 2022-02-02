@@ -131,7 +131,7 @@ A benefit here is that Bancor can redistribute IL risk from the LP to the protoc
 Many folks have made fancy bricks to help build the DeFi citadel. Perhaps you, dear financier, are interested in:
 * Futures? [dydx](https://dydx.exchange/) is a DEX that can facilitate perpetual futures contracts on layer 2 via Starkware
 * Covered-calls? [Ribbon Finance](https://www.ribbon.finance/) earns yield on its deposits by running a weekly automated options selling strategy
-
+* Miner-extractable Value? or MEV as its known presents a large profit opportunity and risk. [Read Charlie Noyes' take](https://research.paradigm.xyz/MEV).
 
 # Next
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
