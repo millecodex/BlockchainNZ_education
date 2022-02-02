@@ -161,7 +161,7 @@ In the [post mortem](https://medium.com/dollar-protocol/xbond-deprecation-a-post
 stuff here
 
 # What did we miss?
-* I'm not sure yet
+* Branded Dollars allow a project to use their own token to bootstrap their own stablecoin. [ICHI](https://www.ichi.org/) is calling it stablecoin-as-a-service.
 
 # Further Reading - the very short list
 * [A Note on Cryptocurrency Stabilisation: Seigniorage Shares by Robert Sams (pdf)](https://github.com/rmsams/stablecoins/blob/master/paper.pdf)
