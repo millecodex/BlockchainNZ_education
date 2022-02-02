@@ -93,11 +93,10 @@ Another type of ''stablecoin'' has no peg at all. In this sense its not stable a
 
 The reason behind this is called *rebases*. Every eight hours new tokens are distributed to current holders increasing their balance. This is a highly inflationary supply and results mathematically in a high annual percentage compounding rate (APY). Sky high. Crazy high. :rocket: Tens-of-thousands of percent. Can that be right? Well yes and no. Its correct because if you held for a year you would have dramatically more tokens, but its incorrect because price is excluded from the marketing. The inflationary pressure will push the price down unless counteracted by demand. 
 
-> <img width="800" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/151730076-6e7c8475-ea54-44f0-b988-f3e4e225484b.PNG">
+> <p align="center"><img width="800" alt="olympus dao OHM price chart" src="https://user-images.githubusercontent.com/39792005/152081921-bd20db38-44d2-45a6-b2fb-73f39eb3d427.PNG"></p>
 > 
-> Olympus DAO chart for `OHM`. The price is very misleading because the supply is so inflationary. The next chart shows the market value of backing per OHM, or indicates the trading multiple above floor ([Dune Analytics](https://dune.xyz/shadow/Olympus-(OHM))).
-> 
-> <img width="800" alt="market value of backing per ohm dune analytics" src="https://user-images.githubusercontent.com/39792005/151752605-1171137a-2055-4256-ad9d-9106997311a8.PNG">
+> The risk-free market value of backing per OHM shows the unpegged nature as it trades at multiples above the 1 `DAI` floor ([Dune Analytics](https://dune.xyz/shadow/Olympus-(OHM))).
+
 
 These rebasing protocols are still in their infancy, and thus high risk. There is at least one for every main chain. [Invictus DAO](https://medium.com/@Sol-Invictus/the-great-event-9a3d81e0ce3b) even rebases continually so you can watch your token balance increase in realtime.
 
