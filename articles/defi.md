@@ -7,7 +7,7 @@
 1. [Motivation: Why Decentralize Finance?](defi.md#motivation)
 2. [Stablecoins](defi.md#stablecoins)
 3. [Decentralised Exchanges (DeXs)](defi.md#decentralised-exchanges-dexs)
-4. [Pricing & Oracles](defi.md#oracles)
+4. [Pricing & Oracles](defi.md#oracles-where-do-the-prices-come-from)
 5. [Mining & Farming & Staking](defi.md#liquidity-mining--yield-farming-sushi-unicorn-sweet_potato-cake)
 6. [Summary](defi.md#in-summary)
 7. [What did we miss?](defi.md#what-did-we-miss)
