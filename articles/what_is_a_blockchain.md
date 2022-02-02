@@ -7,7 +7,7 @@ Sometimes referred to as decentralized-ledger technology, or DLT, a blockchain c
 
 > <p align="center"><img width="800" alt="blockchain data structure resembles ledger books" src="https://user-images.githubusercontent.com/39792005/152084209-bbde7db2-ddef-4f1b-bc98-354c0bc2e2ed.PNG"></p>
 > 
-> Each individual ledger is analagous to a block. When one book is full and new one begins and the account balances are copied over, thus linking the blocks. The term ledger is an accounting system that starts all the way back in th 1400's when the Medici family in Florence popularized double-entry accounting. The blockchain can be thought of as triple-entry accounting, where the third ledger is the distributed copies that maintain consensus.
+> Each individual ledger is analagous to a block. When one book is full and new one begins and the account balances are copied over, thus linking the blocks. The term ledger is an accounting system that starts all the way back in the 1400's when the Medici family in Florence popularized double-entry accounting. The blockchain can be thought of as triple-entry accounting, where the third ledger is the distributed copies that maintain consensus.
 
 Many blockchain projects are open-sourced so improvements are made by the community of developers, or copies can be made (called *forks*) where others can experiment and try out new features. A *public* and *permissionless* network is open to anyone to view the data and its source code; no one needs permission to access the data or run a node. An important feature of a public open network is that it is *censorship-resistant* and this is one of the reasons for Bitcoin's popularity and growth. There is no pay-to-play or gatekeeper. Ideally everyone has equal access to the network.
 
