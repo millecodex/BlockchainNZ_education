@@ -144,3 +144,11 @@ Many folks have made fancy bricks to help build the DeFi citadel. Perhaps you, d
 Jeff is a Senior Lecturer in Blockchain & Cryptocurrencies at AUT and an Executive Council member of [BlockchainNZ](https://blockchain.org.nz/). He can be found tweeting about crypto at [@japple](https://twitter.com/Japple).\
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 
+<!-- This content will not appear in the rendered Markdown 
+## Governance & voting escrow
+* curve wars 
+Risks:
+https://forum.makerdao.com/t/signal-request-gbmkr-a-proposal-to-benefit-long-term-mkr-holders/12756/15
+-->
+
+
