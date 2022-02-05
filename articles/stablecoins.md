@@ -16,7 +16,7 @@ Introducing stablecoins beginning with the question: What makes a coin stable? a
    - Supply Management Strategies
 5. Risks
 6. Case Studies
-   1. De-Peg
+   1. Un-Peg
       - Dai
       - sUSD
    2. Collapse
@@ -37,7 +37,7 @@ It is hard to ignore the growth and popularity of stablecoins when looking at th
 
 The top five by supply are Tether (USDT), USD-Coin by Circle (USDC), Binance USD (BUSD), and Dai (DAI). Tether, USDC, and Binance's USD are issued privately, whereas DAI maintains a US dollar peg by holding crypto assets in its treasury managed by a DAO. Here is a partial listing of stablecoins, the currency they are pegged to, the collateral backing the peg, and the blockchains where they can be found. (As of January 2022, [CoinGecko](https://www.coingecko.com/en/categories/stablecoins) lists 71 stablecoins, 52 of which have active trading.)
 
-|Stablecoin|Peg|Collateral   |Blockchains          |
+|Stablecoin|Peg         |Collateral   |Blockchains          |
 |:---------|:-----------|:------------|:--------------------|
 |USDT      |USD         |Mix of assets|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
 |USDC      |USD         |USD          |Bitcoin (Liquid), Ethereum, Algorand, BSC, Solana, Stellar, etc.|
@@ -61,6 +61,10 @@ The previous example of equilibrium versus target peg brings up a problem with s
 If we set the target to be 1 and allow some variation in either direction, this is the volatility that can be expected. In fact, the stablecoin can only be considered stable within a certain subjective tolerance. The more resolution required, the more difficult it will be to maintain the peg. If you are comfortable with ±0.5% volatility then you'll be happy trading between $0.995 and $1.005 for an asset valued at $1.000. The farther from the target that the price strays the harder it is for people to maintain confidence. In other words, they will begin to worry about the peg and our token is no longer considered stable. 
 
 **volatility analysis & calculation**
+Volatility is a measure of how much the price fluctuates around its mean.
+
+* see V-lab https://vlab.stern.nyu.edu/docs/volatility
+* 
 
 ### How does it stay pegged?
 So what can you do when your dollar is trading for 99½ cents? Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle (external to the blockchain) that can be queried from a smart contract to check that say, 1 blockchain-dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, which, by definition cost them $1.00, and sell them on the open market for $1.01, pocketing the difference. These newly minted tokens cause the supply to increases reducing the market demand. The price should reflect this supply expansion and decrease towards the peg. A similar mechanism occurs when the price drops below $1.00. Say your token is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem 100 from the protocol for $100, profiting $1 for your trouble. This type of regular arbitrage is open to anyone undertake and often executed by bots that watch the various exchanges for price and execute a trade when profitable.
