@@ -66,7 +66,8 @@ Volatility is a measure of how much the price fluctuates around its mean.
 
 * see V-lab https://vlab.stern.nyu.edu/docs/volatility
 * Does the Design of Stablecoins Impact Their Volatility? Klaudia Jarno and Hanna Kołodziejczyk. Authors conclude that design matters. They use coinmarketcap data and have a volatility methodolody
-* On the stability of stablecoins by Grobys et al compare Bitcoin volatility to stablecoins
+* On the stability of stablecoins by Grobys et al compare Bitcoin volatility to stablecoins https://www.sciencedirect.com/science/article/pii/S0927539821000761
+* 
 
 ### How does it stay pegged?
 So what can you do when your dollar is trading for 99½ cents? Maintaining the peg in a decentralised manner is of crucial importance for stability. The value of a synthetic USD asset is set by an oracle (external to the blockchain) that can be queried from a smart contract to check that say, 1 blockchain-dollar is worth 1 USD. In the market these tokens may be exchanged for higher or lower than $1 depending on market factors. If the price rises to $1.01 per token then there is an opportunity for someone to mint new tokens, which, by definition cost them $1.00, and sell them on the open market for $1.01, pocketing the difference. These newly minted tokens cause the supply to increases reducing the market demand. The price should reflect this supply expansion and decrease towards the peg. A similar mechanism occurs when the price drops below $1.00. Say your token is $0.99, now you can purchase 100 tokens for $99 in the market, turn around and redeem 100 from the protocol for $100, profiting $1 for your trouble. This type of regular arbitrage is open to anyone undertake and often executed by bots that watch the various exchanges for price and execute a trade when profitable.
