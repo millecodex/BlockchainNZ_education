@@ -28,6 +28,6 @@ A good place to start is with the *OG*: Bitcoin.
 
 # Featured Topic: DeFi
 Bitcoin has decentralised money. What can be said of *finance*?
-* :point_right: [Decentralised Finance 1.0](defi.md)
+* :point_right: [Decentralised Finance Part I](defi.md)
 ---
 [See all featured topics](../featured.md)
