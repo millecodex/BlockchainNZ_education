@@ -64,7 +64,7 @@ If we set the target to be 1 and allow some variation in either direction, this 
 **volatility analysis & calculation**
 Volatility is a measure of how much the price fluctuates around its mean.
 
-* see V-lab https://vlab.stern.nyu.edu/docs/volatility
+* see V-lab https://vlab.stern.nyu.edu/docs/volatility; you can also enter ticker symbols. Bitcoin okay, stablecoins missing.
 * Does the Design of Stablecoins Impact Their Volatility? Klaudia Jarno and Hanna Kołodziejczyk. Authors conclude that design matters. They use coinmarketcap data and have a volatility methodolody
 * On the stability of stablecoins by Grobys et al compare Bitcoin volatility to stablecoins https://www.sciencedirect.com/science/article/pii/S0927539821000761
 * 
