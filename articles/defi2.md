@@ -80,10 +80,10 @@ The longest-lived algorithmic stablecoin is `DAI` run by [MakerDAO](https://make
 
 DAI is a overcollateralized algorithmic stablecoin backed by a combination of cryptocurrency and USDC stablecoin collateral. Overcollateralization represents an inefficiency in capital allocation (extra ETH is unused in my vault) and the partially backed stablecoin situation introduces custodial risks we addressed above. On top of this there is the pricing volatility risk of ether. 
 
-For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which is fractionally collateralized under a variable ratio depending on user confidence, and `RAI` which isn't pegged to any dollar, but has a floating peg. Another notable is Ampleforth's `AMPL` that changes the amount of supply (rebases) to maintain a peg of 1 USD in 2019 inflation adjusted terms. 
-
+For these reasons there has been an innovative period of new algorithmic stablecoins being deployed, such as `FRAX` which is [fractionally collateralized](https://docs.frax.finance/overview) under a variable ratio depending on user confidence, and `RAI` which [isn't pegged](https://reflexer.finance/) to any currency and is able to float. Another notable is [Ampleforth's](https://faq.ampleforth.org/durability/) `AMPL` that changes the amount of supply (rebases) to maintain a peg of 1 USD in 2019 inflation adjusted terms. 
+<!--
 > Read more in the full primer on stablecoins [here](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md).
-
+-->
 
 # DeFi 2.0 - Second Generation Protocols!
 The name DeFi 2.0 has emerged naturally as people were trying to fix the problems with liquidity mining. The boundary is fluid but the remaining topics I will classify under this 'newer' heading representing the second iteration, perhaps, of decentralised finance. (Of course I ~~fear~~ anticipate that by the time I'm finished composing these topics a third gen will have emerged :money_with_wings:)
@@ -131,10 +131,10 @@ Many folks have made fancy bricks to help build the DeFi citadel. Perhaps you, d
 * Futures? [dydx](https://dydx.exchange/) is a DEX that can facilitate perpetual futures contracts on layer 2 via Starkware.
 * Covered-calls? [Ribbon Finance](https://www.ribbon.finance/) earns yield on its deposits by running a weekly automated options selling strategy.
 * Miner-extractable Value? or MEV as its known presents a large profit opportunity and risk. [Read Charlie Noyes' take](https://research.paradigm.xyz/MEV).
-
+<!--
 # Next
 * :point_right: [My full primer on Stablecoins](https://github.com/millecodex/BlockchainNZ_education/blob/main/articles/stablecoins.md)
-
+-->
 # Further Reading - the very short list
 * [Olympus DAO FAQ](https://docs.olympusdao.finance/main/basics/basics)
 * [The Liquidity Loyalty Problem](https://posey.medium.com/the-liquidity-loyalty-problem-7e999f912080)
