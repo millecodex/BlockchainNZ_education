@@ -87,13 +87,14 @@ In an effort to categorize or taxonomize the myriad coins in the stable, a few a
 Now, categorizing what assets, if any, are backing the stablecoins to ensure consumer confidence should they need to be redeemed. Ordered from material to virtual collateralization we have: Gold, Fiat, Crypto, and Nothing. 
 
 ### Collateral Ownership
+* user
+* protocol
+* custodian
 
 ### Peg Maintenance Dynamics
+* collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions.
 
-
-collateralized has some equivallent backing reserved for anyone wanting to redeem their crypto for dollars. This comes with custodial risk for those managing the peg offchain, or with over-collaterization requirements for onchain versions.
-
-This is by no means straight-forward, and you will find different perspectives out there. [X] does it this way; [Y] does it that way. While tempting to say that all stables are either algorithmic or not, this is inconsistent because it doesn't capture the variability withing the algorithmic sphere. For this reason, a better way to group these is by........
+* This is by no means straight-forward, and you will find different perspectives out there. [X] does it this way; [Y] does it that way. While tempting to say that all stables are either algorithmic or not, this is inconsistent because it doesn't capture the variability withing the algorithmic sphere. For this reason, a better way to group these is by........
 
 
 
