@@ -16,8 +16,8 @@ blockchain.org.nz/\
   │  ├── [featured topic: DeFi](articles/defi.md)\
   │  └── [see all featured topics](featured.md)\
   │    ├── [DeFi Part II](articles/defi2.md)\
-  │    ├── [Tokens](articles/defi.md)\
-  │    ├── [Stablecoins](articles/defi.md)\
+  │    ├── [Tokens](articles/tokens.md)\
+  │    ├── [Stablecoins](articles/stablecoins.md)\
   │    ├── NFTs\
   │    ├── DAOs\
   │    ├── Web3\
