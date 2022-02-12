@@ -1,4 +1,5 @@
 ### Decentralized
+see https://coindix.com/?name=BTC&sort=-tvl&kind=noimploss
 * gravity finance RENBTC/wBTC 6.39% https://v1.gravityfinance.io/app/#farms on polygon
 * curve.fi 0.23%, not much liquidity
 * https://fulcrum.trade/ 2.06%
