@@ -26,12 +26,22 @@ If you have some bitcoin or ether, yes, these are digital tokens because they ar
 ### Non-Fungible
 Currency tokens (and cash) are interchangeable, or fungible, because it doesn't matter what specific token you have, everyone agrees on the same value. If people were willing to pay a premium for specific tokens or characteristics, then the overall utility of the medium as money begins to fall apart. This is the problem with barter; there is far too much subjective difference in value between objects for people to easily exchange goods directly. 
 
-Think of paintings in a gallery. All the paintings are similar in many respects - paint, colour, frame, 2-dimensional - however, each painting is obviously unique with value determined by many external factors. Non-fungible tokens, where each unit is unique, are designed for this purpose. In a digital manner they implement security and scarcity. Value and use are subjective like gallery paintings, but these now inherit properties the open, permissionless, censorship-resistant properties of the blockchain. 
+Think of paintings in a gallery. All the paintings are similar in many respects - paint, colour, frame, 2-dimensional - however, each painting is obviously unique with value determined by many external factors. Non-fungible tokens, where each unit is unique, are designed for this purpose. In a digital manner they implement security and scarcity. Value and use are subjective like gallery paintings, but these now inherit properties the open, permissionless, censorship-resistant properties of the blockchain.
+
+NFTs aren't just for collectibles, art, and profile pictures. Any document or data structure that can be digitised can be represented as an NFT. Music, investment rights,  certificates, degrees, licenses, passes, patents, title deeds, concert tickets, contracts et-cetera. 
 
 ## Token Standards
-* ERC-20
-* ERC-755
-* ERC-1155!
+Over time standards have emerged that assist developers with creating new projects or building functionality. Some of the popular ones will be listed here.
+
+### ERC-20
+The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments 20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction.
+[^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
+
+
+
+
+### ERC-755 & ERC-1155
+These are both NFT standards built on Ethereum.
 
 * `ibTOKENS` interest bearing tokens
 * `wTOKENS` wrapped tokens
@@ -41,11 +51,15 @@ Think of paintings in a gallery. All the paintings are similar in many respects 
 * minting
 * airdrops
 * NFTs
+
+
 * 
 <p align="center"><img width="600" alt="tokens_abracadabra" src="https://user-images.githubusercontent.com/39792005/150704500-eab147f5-5191-4999-b44f-2bf044d7ac8b.png"></p>
 
 
 
+# What kind of token is this?
+You may have to lookup what blockchain the token runs on
 
 
 
