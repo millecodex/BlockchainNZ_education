@@ -5,7 +5,7 @@
 ### Contents
 1. [Introduction](tokens.md#introduction)
 1. [Token Standards](tokens.md#token-standards)
-1. [third](template.md#third)
+1. [Blockchains](tokens.md#other-blockchains)
 1. [What did we miss?](template.md#what-did-we-miss)
 1. [Further Reading - the very short list](template.md#further-reading---the-very-short-list)
 
@@ -28,54 +28,69 @@ Currency tokens (and cash) are interchangeable, or fungible, because it doesn't 
 
 Think of paintings in a gallery. All the paintings are similar in many respects - paint, colour, frame, 2-dimensional - however, each painting is obviously unique with value determined by many external factors. Non-fungible tokens, where each unit is unique, are designed for this purpose. In a digital manner they implement security and scarcity. Value and use are subjective like gallery paintings, but these now inherit properties the open, permissionless, censorship-resistant properties of the blockchain.
 
-NFTs aren't just for collectibles, art, and profile pictures. Any document or data structure that can be digitised can be represented as an NFT. Music, investment rights,  certificates, degrees, licenses, passes, patents, title deeds, concert tickets, contracts et-cetera. 
+NFTs aren't just for collectibles, art, and profile pictures. Any document or data structure that can be digitised can be represented as an NFT: music, certificates, degrees, licenses, passes, patents, title deeds, concert tickets, contracts, investment rights, et-cetera.
 
-## Token Standards
-Over time standards have emerged that assist developers with creating new projects or building functionality. Some of the popular ones will be listed here.
+# Token Standards
+Over time standards have emerged that assist developers with creating new projects, building functionality, and interacting with other tokens, contracts, and chains. Some of the main ones that have been developed for [Ethereum](https://ethereum.org/en/developers/docs/standards/tokens/) are:
 
 ### ERC-20
-The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments 20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction.
+The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments 20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eight decimal places (`0.000 000 001`) to allow for very small and fractional payments.
 [^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
 
+### ERC-721
+ERC-721 is a standard that includes an *integer* variable called `tokenID` that must be unique. From the EIP: "In general, all houses are distinct and no two kittens are alike. NFTs are distinguishable and you must track the ownership of each one separately." Any tokens deployed with this standard cannot be subdivided, and ownership is wholly transferred. 
+
+Examples of the ERC-721 standard in use include: 
+* [CryptoKitties](https://www.cryptokitties.co/) collectibles and game,
+* [Ethereum Name Service](https://ens.domains/) domain registrar, and
+* [the Bored Ape Yacht Club](https://boredapeyachtclub.com/#/) collectibles and club membership.
+
+### ERC-1155
+Further to the previous two standards, the 1155 standard merges both fungible and non-fungible into a new standard that extends functionality. Called a Multi-token standard it can batch transfer groups of items, for example, if your character kills another in a game it can transfer the items to the winner in a single transaction. It also improves efficiency with a focus on game design where a large number of transfers could be required and it would be cumbersome for the user to stop gameplay to interact with a smart contract and pay associated gas fees.
+
+Examples of the ERC-1155 standard in use include:
+* [OpenSea](https://opensea.io/) the NFT marketplace,
+* [Skyweaver](https://www.skyweaver.net/) the game, and
+* [The Sandbox](https://www.sandbox.game/en/) the metaverse platform.
+
+# Non-Ethereum Token Standards
+Ethereum may be the old dog, but there are many new pups vying for your crypto. Here I've listed some of the main smart contract platforms and their associated token standards.
+
+|Blockchain|native token|fungible|non-fungible|other|EVM compatible?|
+|:----------|:----------|:-------|:-----------|:----|:--------------|
+|Ethereum |ETH|ERC-20|ERC-721|ERC-777, ERC-1155|:heavy_check_mark:|
+|Avalanche|AVAX||||:heavy_check_mark:|
+|Terra    |LUNA||||:negative_squared_cross_mark:|
+|Fantom   |FTM ||||:heavy_check_mark:|
+|Polkadot |DOT ||||:heavy_check_mark:|
+|Tezos    |XTZ |[FA1.2](https://wiki.tezos.com/learn/uses-of-tezos/tokenization)|FA2||:negative_squared_cross_mark:|
 
 
+# Its a multi-chain world
+There are many smart contract platforms, or "Layer 1s", that can run dApps and transfer tokens. Some of them even appear to have the same token running on multiple blockchains. While this may true in name, the prudent reader always does their own research (DYOR) to avoid the embarassment of sending tokens to a contract that cannot accept them. 
 
-### ERC-755 & ERC-1155
-These are both NFT standards built on Ethereum.
+> You may have to lookup exactly what type of token you are dealing with. Your first hint comes from the label itself. Here some common ones. Note these are **not** standardized and thus new projects may introduce their own token identifiers.
 
-* `ibTOKENS` interest bearing tokens
-* `wTOKENS` wrapped tokens
-* `ETH-USDC-lp` liquidity provider tokens
+|Token label|description|example|
+|:----------|:----------|:------|
+|`ibTKN`| interest bearing tokens||
+|`wTKN` |wrapped tokens|`wETH.e` is wrapped ETH on avalanche|
+|`ETH-USDC-lp`| liquidity provider tokens||
+
+
 * bridging
 * burning
 * minting
 * airdrops
-* NFTs
 
 
 * 
 <p align="center"><img width="600" alt="tokens_abracadabra" src="https://user-images.githubusercontent.com/39792005/150704500-eab147f5-5191-4999-b44f-2bf044d7ac8b.png"></p>
 
-
-
-# What kind of token is this?
-You may have to lookup what blockchain the token runs on
-
-
-
-
-
 # graphic example
 Chart
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
-
-# Table example
-Table
-|Stablecoin|Currency Peg|Backing|Blockchains          |
-|:---------|:-----------|:------|:--------------------|
-|USDT      |USD      |mix|Ethereum, Algorand, Tron, BSC, Solana, Fantom, etc.|
-|USDC      |USD         |USD          |Ethereum, Algorand, BSC, Solana, Stellar, etc.|
 
 # What did we miss?
 * Point form list
