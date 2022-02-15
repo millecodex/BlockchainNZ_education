@@ -34,13 +34,18 @@ NFTs aren't just for collectibles, art, and profile pictures. Any document or da
 Over time standards have emerged that assist developers with creating new projects, building functionality, and interacting with other tokens, contracts, and chains. Some of the main ones that have been developed for [Ethereum](https://ethereum.org/en/developers/docs/standards/tokens/) are:
 
 ### ERC-20
-The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments 20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eight decimal places (`0.000 000 001`) to allow for very small and fractional payments.
+The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments #20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eight decimal places (`0.000 000 001`) to allow for very small and fractional payments.
 [^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
+
+Examples of the ERC-20 standard in use include:
+* `DAI` the decentralized algorithmic [stablecoin](https://makerdao.com/en/)
+* `LINK` the decentralized [oracle network](https://chain.link/)
+* `wBTC` [wrapped bitcoin](internal link)
 
 ### ERC-721
 ERC-721 is a standard that includes an *integer* variable called `tokenID` that must be unique. From the EIP: "In general, all houses are distinct and no two kittens are alike. NFTs are distinguishable and you must track the ownership of each one separately." Any tokens deployed with this standard cannot be subdivided, and ownership is wholly transferred. 
 
-Examples of the ERC-721 standard in use include: 
+Examples of the ERC-721 token standard include (among *many*): 
 * [CryptoKitties](https://www.cryptokitties.co/) collectibles and game,
 * [Ethereum Name Service](https://ens.domains/) domain registrar, and
 * [the Bored Ape Yacht Club](https://boredapeyachtclub.com/#/) collectibles and club membership.
