@@ -4,10 +4,11 @@
 
 ### Contents
 1. [Introduction](tokens.md#introduction)
-1. [Token Standards](tokens.md#token-standards)
-1. [Blockchains](tokens.md#other-blockchains)
-1. [What did we miss?](template.md#what-did-we-miss)
-1. [Further Reading - the very short list](template.md#further-reading---the-very-short-list)
+1. [Token Standards (Ethereum)](tokens.md#token-standards)
+2. [Non-Ethereum Standards](tokens.md#)
+3. [Token Lifecycle](tokens.md#)
+4. [What did we miss?](tokens.md#what-did-we-miss)
+5. [Further Reading - the very short list](tokens.md#further-reading---the-very-short-list)
 
 # Introduction
 Why would tokens need an introduction? 
@@ -30,7 +31,7 @@ Think of paintings in a gallery. All the paintings are similar in many respects 
 
 NFTs aren't just for collectibles, art, and profile pictures. Any document or data structure that can be digitised can be represented as an NFT: music, certificates, degrees, licenses, passes, patents, title deeds, concert tickets, contracts, investment rights, et-cetera.
 
-# Token Standards
+# Token Standards (Ethereum)
 Over time standards have emerged that assist developers with creating new projects, building functionality, and interacting with other tokens, contracts, and chains. Some of the main ones that have been developed for [Ethereum](https://ethereum.org/en/developers/docs/standards/tokens/) are:
 
 ### ERC-20
@@ -71,10 +72,24 @@ Ethereum may be the original smart contract platform, but there are plenty of yo
 |Tezos    |`XTZ` |:negative_squared_cross_mark:|Tezos has its own standards; [FA2](https://gitlab.com/tezos/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) is a unified token contract interface.|
 |Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
 
-# Its a multi-chain world
+# Token Lifecycle
+
+
+### Minting
+* & airdrops
+
+### Wrapping
+
+### Bridging
+
+### Burning
+
+
 There are many smart contract platforms, or "Layer 1s", that can run dApps and transfer tokens. Some of them even appear to have the same token running on multiple blockchains. While this may true in name, the prudent reader always does their own research (DYOR) to avoid the embarassment of sending tokens to a contract that cannot accept them. 
 
 > You may have to lookup exactly what type of token you are dealing with. Your first hint comes from the label itself. Here some common ones. Note these are **not** standardized and thus new projects may introduce their own token identifiers.
+
+Summary Table
 
 |Token label|description|example|
 |:----------|:----------|:------|
@@ -82,14 +97,6 @@ There are many smart contract platforms, or "Layer 1s", that can run dApps and t
 |`wTKN` |wrapped tokens|`wETH.e` is wrapped ETH on avalanche|
 |`ETH-USDC-lp`| liquidity provider tokens||
 
-
-* bridging
-* burning
-* minting
-* airdrops
-
-
-* 
 <p align="center"><img width="600" alt="tokens_abracadabra" src="https://user-images.githubusercontent.com/39792005/150704500-eab147f5-5191-4999-b44f-2bf044d7ac8b.png"></p>
 
 # graphic example
