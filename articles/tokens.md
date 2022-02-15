@@ -16,7 +16,7 @@ Lets start with an example. Here in West Auckland we need to put tags on our rub
 
 > <p align="center"><img width="800" alt="auckland council rubbis tags" src="https://user-images.githubusercontent.com/39792005/153701164-dd32eef5-1f89-42e6-96a7-89f26adcf38a.PNG"></p>
 
-The tag is a token. Each one is interchangeable with another one of the same colour. Each one has an underlying value determined by the issue price set by the council and enforced by the difficulty in conterfeiting. And each tag has utility, in this case a weekly empyting of your bin. In an extreme scenario you could even imagine a tag market emerging where those close to the tag-printer skim off the top and cut their neighbours in on a discount, benefiting both parties financially. Eventually the council will have to raise tag prices to cover the loss and thus affect the average every-tagger in their weekly budget. This embezzlement has now inflated the price of a tag and distorted the value (the rubbish trucks still only collect 1 bin per week). council rubbish tage are a hidden tax that disproportionately affect the lower socioeconomic class. Thankfully this is just a hypothetical scenario.
+The tag is a token. Each one is interchangeable with another one of the same colour. Each one has an underlying value determined by the issue price set by the council and enforced by the difficulty in conterfeiting. And each tag has utility, in this case a weekly empyting of your bin. In an extreme scenario you could even imagine a tag market emerging where those close to the tag-printer skim off the top and cut their neighbours in on a discount, benefiting both parties financially. Eventually the council will have to raise tag prices to cover the loss and thus hit the average every-tagger in their weekly budget. This embezzlement has now inflated the price of a tag and distorted the value (the rubbish trucks still only collect 1 bin per week). The Council rubbish tag racket is a hidden tax that disproportionately affects the lower socioeconomic class. Thankfully this is just a hypothetical scenario.
 
 Back to the tag being a token. The **digital** representation has many of the same properties: it is fungible (interchangeable), secure (can't be stolen), scarce (can't be copied), valuable (someone would pay for it), and has utility (otherwise why do I need it?). Additionally we have just described many of the properties of money itself, and this may be why a distinction between cryptocurrencies, utility tokens, securities, and collectibles can be fuzzy and subjective. Without getting into the weeds, a $20 note is a physical token, but $20 in your bank account app is *not* a digital token─its just a promise stored in the bank's database.
 
@@ -37,7 +37,7 @@ Over time standards have emerged that assist developers with creating new projec
 The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments #20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eight decimal places (`0.000 000 001`) to allow for very small and fractional payments.
 [^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
 
-Examples of the ERC-20 standard in use include:
+Examples of the ERC-20 standard include the following tokens (among *many*):
 * `DAI` the decentralized algorithmic [stablecoin](https://makerdao.com/en/)
 * `LINK` the decentralized [oracle network](https://chain.link/)
 * `wBTC` [wrapped bitcoin](internal link)
@@ -45,7 +45,7 @@ Examples of the ERC-20 standard in use include:
 ### ERC-721
 ERC-721 is a standard that includes an *integer* variable called `tokenID` that must be unique. From the EIP: "In general, all houses are distinct and no two kittens are alike. NFTs are distinguishable and you must track the ownership of each one separately." Any tokens deployed with this standard cannot be subdivided, and ownership is wholly transferred. 
 
-Examples of the ERC-721 token standard include (among *many*): 
+Examples of the ERC-721 standard include:
 * [CryptoKitties](https://www.cryptokitties.co/) collectibles and game,
 * [Ethereum Name Service](https://ens.domains/) domain registrar, and
 * [the Bored Ape Yacht Club](https://boredapeyachtclub.com/#/) collectibles and club membership.
@@ -53,22 +53,23 @@ Examples of the ERC-721 token standard include (among *many*):
 ### ERC-1155
 Further to the previous two standards, the 1155 standard merges both fungible and non-fungible into a new standard that extends functionality. Called a Multi-token standard it can batch transfer groups of items, for example, if your character kills another in a game it can transfer the items to the winner in a single transaction. It also improves efficiency with a focus on game design where a large number of transfers could be required and it would be cumbersome for the user to stop gameplay to interact with a smart contract and pay associated gas fees.
 
-Examples of the ERC-1155 standard in use include:
+Examples of the ERC-1155 standard include:
 * [OpenSea](https://opensea.io/) the NFT marketplace,
 * [Skyweaver](https://www.skyweaver.net/) the game, and
 * [The Sandbox](https://www.sandbox.game/en/) the metaverse platform.
 
 # Non-Ethereum Token Standards
-Ethereum may be the old dog, but there are many new pups vying for your crypto. Here I've listed some of the main smart contract platforms and their associated token standards.
+Ethereum may be the original smart contract platform, but there are plenty of younger ones vying for your tokens. Here I've listed some of the main smart contract platforms and their associated token standards. Many of them are listed as EVM compatible which means the contracts are compatible with the Ethereum virtual machine. In essence this means backwards compatibility with code that was intended for Ethereum smart contracts. As a new protocol you can help bootstrap users by designing your chain to be EVM compatible. On the other hand, you have .............
 
-|Blockchain|native token|fungible|non-fungible|other|EVM compatible?|
-|:----------|:----------|:-------|:-----------|:----|:--------------|
-|Ethereum |ETH|ERC-20|ERC-721|ERC-777, ERC-1155|:heavy_check_mark:|
-|Avalanche|AVAX||||:heavy_check_mark:|
-|Terra    |LUNA||||:negative_squared_cross_mark:|
-|Fantom   |FTM ||||:heavy_check_mark:|
-|Polkadot |DOT ||||:heavy_check_mark:|
-|Tezos    |XTZ |[FA1.2](https://wiki.tezos.com/learn/uses-of-tezos/tokenization)|FA2||:negative_squared_cross_mark:|
+
+|Blockchain|native token|EVM compatible?|comments|
+|:---------|:-----------|:--------------|:-------|
+|Ethereum |`ETH`|:heavy_check_mark:|`ETH` is the native currency; ERC-20 tokens run on top and are processed by the EVM|
+|Avalanche|`AVAX`|:heavy_check_mark:|Avalanche has a 'C-chain' that is designed to be compatible with Ethereum **C**ontracts; the `AVAX` token can be transferred between their standard X-chain and the C-chain|
+|Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
+|Fantom   |`FTM` |:heavy_check_mark:|The `FTM` token [exists](https://etherscan.io/address/0x4E15361FD6b4BB609Fa63C81A2be19d873717870) on Ethereum, but is the native asset of the Fantom ecosystem and can be bridged between the two|
+|Polkadot |`DOT` |:heavy_check_mark:|Although compatible with the EVM, this is not the main functionality. DOT is a new standard of the Polkadot ecosystem|
+|Tezos    |`XTZ` |:negative_squared_cross_mark:|Tezos has its own [token standard](https://wiki.tezos.com/learn/uses-of-tezos/tokenization)|
 
 
 # Its a multi-chain world
@@ -102,7 +103,7 @@ Chart
   * second
 
 # Further Reading - the very short list
-* []()
+* [An Ethereum token list standard](https://tokenlists.org/)
 * []()
 * []()
 
