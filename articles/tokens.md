@@ -56,7 +56,7 @@ Further to the previous two standards, the 1155 standard merges both fungible an
 Examples of the ERC-1155 standard include:
 * [OpenSea](https://opensea.io/) the NFT marketplace,
 * [Skyweaver](https://www.skyweaver.net/) the game, and
-* [The Sandbox](https://www.sandbox.game/en/) the metaverse platform.
+* [The Sandbox](https://www.sandbox.game/en/) metaverse platform.
 
 # Non-Ethereum Token Standards
 Ethereum may be the original smart contract platform, but there are plenty of younger ones vying for your tokens. Here I've listed some of the main smart contract platforms and their associated token standards. Many of them are listed as EVM compatible which means the contracts are compatible with the Ethereum virtual machine. In essence this means backwards compatibility with code that was intended for Ethereum smart contracts. As a new protocol you can help bootstrap users by designing your chain to be EVM compatible. On the other hand, you have .............
