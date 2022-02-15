@@ -64,12 +64,12 @@ Ethereum may be the original smart contract platform, but there are plenty of yo
 
 |Blockchain|native token|EVM compatible?|comments|
 |:---------|:-----------|:--------------|:-------|
-|Ethereum |`ETH`|:heavy_check_mark:|`ETH` is the native currency; ERC-20 tokens run on top and are processed by the EVM|
-|Avalanche|`AVAX`|:heavy_check_mark:|Avalanche has a 'C-chain' that is designed to be compatible with Ethereum **C**ontracts; the `AVAX` token can be transferred between their standard X-chain and the C-chain|
+|Ethereum |`ETH`|:heavy_check_mark:|`ETH` is the native currency; ERC-20 tokens run on top and are processed by the EVM.|
+|Avalanche|`AVAX`|:heavy_check_mark:|Avalanche has a 'X-chain' for native assets but also a 'C-chain' designed to be compatible with Ethereum **C**ontracts.|
 |Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
-|Fantom   |`FTM` |:heavy_check_mark:|The `FTM` token [exists](https://etherscan.io/address/0x4E15361FD6b4BB609Fa63C81A2be19d873717870) on Ethereum, but is the native asset of the Fantom ecosystem and can be bridged between the two|
-|Polkadot |`DOT` |:heavy_check_mark:|Although compatible with the EVM, this is not the main functionality. DOT is a new standard of the Polkadot ecosystem|
-|Tezos    |`XTZ` |:negative_squared_cross_mark:|Tezos has its own [token standard](https://wiki.tezos.com/learn/uses-of-tezos/tokenization)|
+|Fantom   |`FTM` |:heavy_check_mark:|The `FTM` token [exists](https://etherscan.io/address/0x4E15361FD6b4BB609Fa63C81A2be19d873717870) on Ethereum, but is the native asset of the Fantom ecosystem and can be bridged between the two.|
+|Polkadot |`DOT` |:heavy_check_mark:|Although compatible with the EVM, this is not the main functionality. DOT is a new standard of the Polkadot ecosystem.|
+|Tezos    |`XTZ` |:negative_squared_cross_mark:|Tezos has its own standards; [FA2](https://gitlab.com/tezos/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) is a unified token contract interface.|
 
 
 # Its a multi-chain world
