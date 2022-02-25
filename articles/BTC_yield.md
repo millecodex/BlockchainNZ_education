@@ -19,3 +19,16 @@ see https://www.cefirates.com/bitcoin-btc-interest/?location=international
 * BTC covered calls at https://app.friktion.fi/income for 21% (estimated)
 * BTC covered calls at https://app.ribbon.finance/v2/theta-vault/T-WBTC-C for 13.8% (estimated)
 * https://atomic.finance/ still in beta
+
+### Cash
+see https://www.depositrates.co.nz/interest-rates-tables.html
+* ANZ 
+  * 1.8% term deposit 240 days
+  * 0.45% Serious Saver
+* BNZ
+  * 0.45% Rapid Save
+  * 1.65% term deposit 6 months
+* Kiwibank
+  * 1.5% Notice Saver 90 days
+* General Finance
+  * 3.40% term deposit 6 months (*highest 6 month rate*)
