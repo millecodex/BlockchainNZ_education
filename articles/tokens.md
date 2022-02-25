@@ -39,9 +39,9 @@ The first use case of Ethereum was generating new coins. These projects often la
 [^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
 
 Examples of the ERC-20 standard include the following tokens (among *many*):
-* `DAI` the decentralized algorithmic [stablecoin](https://makerdao.com/en/)
-* `LINK` the decentralized [oracle network](https://chain.link/)
-* `wBTC` [wrapped bitcoin](internal link)
+* `DAI` the decentralized algorithmic [stablecoin](https://makerdao.com/en/),
+* `LINK` the decentralized [oracle network](https://chain.link/), and
+* `wBTC` [wrapped bitcoin](internal link).
 
 ### ERC-721
 ERC-721 is a standard that includes an *integer* variable called `tokenID` that must be unique. From the EIP: "In general, all houses are distinct and no two kittens are alike. NFTs are distinguishable and you must track the ownership of each one separately." Any tokens deployed with this standard cannot be subdivided, and ownership is wholly transferred. 
@@ -62,27 +62,31 @@ Examples of the ERC-1155 standard include:
 # Non-Ethereum Token Standards
 Ethereum may be the original smart contract platform, but there are plenty of younger ones vying for your tokens. Here I've listed some of the main smart contract platforms and their associated token standards. EVM compatibiliy refers to the Ethereum virtual machine which handles the processing of smart contracts. If compatible, the chain can understand contracts made for Ethereum which can help with bootstrapping users and projects that already exist there.
 
-|Blockchain|native token|EVM compatible?|comments|
+|Blockchain|Native Token|EVM Compatible?|Comments|
 |:---------|:-----------|:--------------|:-------|
 |Ethereum |`ETH`|:heavy_check_mark:|`ETH` is the native currency; ERC-20 tokens run on top and are processed by the EVM.|
 |Avalanche|`AVAX`|:heavy_check_mark:|Avalanche has a 'X-chain' for native assets but also a 'C-chain' designed to be compatible with Ethereum **C**ontracts.|
-|Fantom   |`FTM` |:heavy_check_mark:|The `FTM` token [exists](https://etherscan.io/address/0x4E15361FD6b4BB609Fa63C81A2be19d873717870) on Ethereum, but is the native asset of the Fantom ecosystem and can be bridged between the two.|
-|Polkadot |`DOT` |:heavy_check_mark:|Although compatible with the EVM, this is not the main functionality. DOT is a new standard of the Polkadot ecosystem.|
+|Fantom   |`FTM` |:heavy_check_mark:|The `FTM` token [exists on Ethereum](https://etherscan.io/address/0x4E15361FD6b4BB609Fa63C81A2be19d873717870), but is the native asset of the Fantom ecosystem and can be bridged between the two.|
+|Polkadot |`DOT` |:heavy_check_mark:|Although compatible with the EVM, this is not the main functionality. `DOT` is a new standard of the [Polkadot](https://polkadot.network/) ecosystem.|
 |Solana   |`SOL` |:negative_squared_cross_mark:|Solana has [built-in support](https://spl.solana.com/token) for creating new tokens; EVM compatibility is in progress.|
 |Tezos    |`XTZ` |:negative_squared_cross_mark:|Tezos has its own standards; [FA2](https://gitlab.com/tezos/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) is a unified token contract interface.|
 |Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
 
-# Token Lifecycle
-
+# a Token's Lifecycle
+Many things can happen to our cryptographic tokens during their life span. To begin with: where to tokens come from?
 
 ### Minting
-* & airdrops
+The popularity of NFTs has brought *minting* into common usage. Minting tokens refers to the same process of creating tradeable items of value. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the monetary supply. A key difference with the minting of cryptocurrencies such as bitcoin or ether is that they adhere to a fixed scedule, set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 every ten minutes. Ethereum's block reward schedule is 2 ETH per block, every twelve seconds.
+
+NFTs are usually created one at a time, and when the contract is called it spawns a new token in the set.
 
 ### Wrapping
+
 
 ### Bridging
 
 ### Burning
+
 
 
 There are many smart contract platforms, or "Layer 1s", that can run dApps and transfer tokens. Some of them even appear to have the same token running on multiple blockchains. While this may true in name, the prudent reader always does their own research (DYOR) to avoid the embarassment of sending tokens to a contract that cannot accept them. 
@@ -106,7 +110,7 @@ Chart
 
 # What did we miss?
 * Point form list
-  * second
+  * airdrops
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
