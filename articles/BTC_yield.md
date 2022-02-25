@@ -20,7 +20,7 @@ see https://www.cefirates.com/bitcoin-btc-interest/?location=international
 * BTC covered calls at https://app.ribbon.finance/v2/theta-vault/T-WBTC-C for 13.8% (estimated)
 * https://atomic.finance/ still in beta, I'm on the waitlist
 
-### Cash
+### Cash--for comparison
 see https://www.depositrates.co.nz/interest-rates-tables.html
 * ANZ 
   * 1.8% term deposit 240 days
