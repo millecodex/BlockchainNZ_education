@@ -73,17 +73,20 @@ Ethereum may be the original smart contract platform, but there are plenty of yo
 |Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
 
 # a Token's Lifecycle
-Many things can happen to our cryptographic tokens during their life span. To begin with: where to tokens come from?
+Many things can happen to our cryptographic tokens during their life span. To begin with: where do tokens come from?
 
 ### Minting
-The popularity of NFTs has brought *minting* into common usage. Minting tokens refers to the same process of creating tradeable items of value. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the monetary supply. A key difference with the minting of cryptocurrencies such as bitcoin or ether is that they adhere to a fixed scedule, set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 every ten minutes. Ethereum's block reward schedule is 2 ETH per block, every twelve seconds.
+Minting tokens refers to the same process of creating tradeable items of value as coins being minted as new currency. Just as with coins, it seems best to increase token supply slowly, or at least according to a set plan. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the monetary supply. A key difference with the minting of cryptocurrencies such as bitcoin is that they adhere to a [fixed schedule](bitcoin.md#economic-incentives--monetary-supply), set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 `BTC` every ten minutes. 
 
-NFTs are usually created one at a time, and when the contract is called it spawns a new token in the set.
+A slow and steady issuance has its benefits such as knowing in advance how many will ever be minted. If all the tokens were created at inception there would be a distribution problem: the creator(s) would have the total supply and have to incentivise newcomers.  Tokenomics is the central-planning activity of deciding who gets how many tokens and at what intervals. This is a hard problem because it involves human nature. For example: How much is too much to reserve for the creators? (called a pre-mine) Developers? VCs? Is the supply infationary or deflationary? 
+
+The popularity of NFTs has brought *minting* into common usage. NFTs are usually created one at a time, such that when the contract is called it spawns a new token in the set which is then sent to the buyer. 
 
 ### Wrapping
-
+Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on Bitcoin blockchain) while releaseing a new bitcoin-ish token (on Ethereum blockchain). This is where wrapping comes in. Wrapped bitcoin, or `wBTC` accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
 ### Bridging
+Transferring tokens from one blockchain to another requires a bridge.
 
 ### Burning
 
