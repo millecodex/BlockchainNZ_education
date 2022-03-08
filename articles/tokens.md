@@ -35,7 +35,7 @@ NFTs aren't just for collectibles, art, and profile pictures. Any document or da
 Over time standards have emerged that assist developers with creating new projects, building functionality, and interacting with other tokens, contracts, and chains. Some of the main ones that have been developed for [Ethereum](https://ethereum.org/en/developers/docs/standards/tokens/) are:
 
 ### ERC-20
-The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments #20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eight decimal places (`0.000 000 001`) to allow for very small and fractional payments.
+The first use case of Ethereum was generating new coins. These projects often launched with fundraising efforts called ICOs (initial coin offerings) that promised buyers a certain allocation of new tokens. All these tokens live inside (or on) the Ethereum blockchain but are separate from ether. Think of tokens as carriages that run on the rails of Ethereum and the whole train is powered by ether. The [Ethereum Request for Comments #20](https://eips.ethereum.org/EIPS/eip-20) is the standard that defines how to make a fungible token that is compatible with Ethereum itself. Because its an open network anyone is free to make their own token and launch it on Ethereum[^ownToken]. The contract will live forever on the blockchain and handle functions like transfers, account balances, token creation and destruction. These tokens can be divided into as small as eighteen decimal places (`0.000 000 000 000 000 001`) to allow for very small and fractional payments.
 [^ownToken]: This is often a tutorial exercise when learning about blockchains. Launching a self-token contract on the mainnet is expensive due to gas fees, but you can easily launch one on a testnet.
 
 Examples of the ERC-20 standard include the following tokens (among *many*):
@@ -79,17 +79,15 @@ Many things can happen to our cryptographic tokens during their life span. To be
 ### Minting
 Minting tokens refers to the same process of creating tradeable items of value as coins being minted as new currency. Just as with coins, it seems best to increase token supply slowly, or at least according to a set plan. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the monetary supply. A key difference with the minting of cryptocurrencies such as bitcoin is that they adhere to a [fixed schedule](bitcoin.md#economic-incentives--monetary-supply), set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 `BTC` every ten minutes. 
 
-A slow and steady issuance has its benefits such as knowing in advance how many will ever be minted. If all the tokens were created at inception there would be a distribution problem: the creator(s) would have the total supply and have to incentivise newcomers.  Tokenomics is the central-planning activity of deciding who gets how many tokens and at what intervals. This is a hard problem because it involves human nature. For example: How much is too much to reserve for the creators? (called a pre-mine) Developers? VCs? Is the supply infationary or deflationary? 
+A slow and steady issuance has its benefits such as knowing in advance how many will ever be minted. If all the tokens were created at inception there would be a distribution problem: the creator(s) would have the total supply and have to incentivise newcomers.  Tokenomics is the central-planning activity of deciding who gets how many tokens and at what intervals. This is a hard problem because it involves human nature. For example: How much is too much to reserve for the creators? (called a pre-mine) Developers? VCs? Is the supply infationary or deflationary? Can the details be changed in the future?
 
 The popularity of NFTs has brought *minting* into common usage. NFTs are usually created one at a time, such that when the contract is called it spawns a new token in the set which is then sent to the buyer. 
 
 ### Wrapping
-Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, [wrapped bitcoin](https://wbtc.network/), or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1.  
-
-accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
+Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, [wrapped bitcoin](https://wbtc.network/), or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
 ### Bridging
-Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another[^inter]. An analogy on bridging tokens comes traditional finance. To send money overseas a third party needs to hold the first currency and then loan out the second currency. The forex broker or bank is fine with taking this position because they can resell the excess currency while earning a fee. This parallel isn't entirely accurate because the bank is not minting new currency to sell you, rather they are using their inventory. The blockchain case does involve creating new tokens.
+Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another[^inter]. An analogy on bridging tokens comes traditional finance. To send money overseas a third party needs to buy the first currency and then sell you the second currency. The forex broker or bank is fine with taking this position because they can resell the excess currency while earning a fee. This parallel isn't entirely accurate because the bank is not minting new currency to sell you, rather they are using their inventory. The blockchain case does involve creating new tokens.
 [^inter]: Some blockchain ecosystems have been designed with this in mind, particularly Cosmos and Polkadot. This does not, however, mean that they work with each other, just that the parachains of Polkadot and individual blockchains of Cosmos are interoperable within their respective ecosystems.
 
 To bridge tokens from Bitcoin to Ethereum, using wrapped bitcoin as an example:
@@ -110,7 +108,7 @@ Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.
 ### Burning
 Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the *London* hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
 
-Practicaly speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses, sometimes called zero-addresses:
+Practically speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses, sometimes called zero-addresses:
 
 |Ethereum address|note|
 |:---|:---|
@@ -118,15 +116,12 @@ Practicaly speaking, tokens are burned by being sent to an unspendable address. 
 |`0x000000000000000000000000000000000000dEaD`|note the "dead" in hex at the end| 
 |`0xdEAD000000000000000042069420694206942069`|not officially unspendable but highly unlikely this [address](https://www.reddit.com/r/ethereum/comments/nenuk0/comment/gyi4pkn/?utm_source=share&utm_medium=web2x&context=3) is ever generated| 
 
-
-
 # graphic example
-Chart
-
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
+<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src=""></p>
 
 # What did we miss?
 * airdrops
+* tokenomics is the new blockchain branch 
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
