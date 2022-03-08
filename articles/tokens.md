@@ -84,7 +84,7 @@ A slow and steady issuance has its benefits such as knowing in advance how many 
 The popularity of NFTs has brought *minting* into common usage. NFTs are usually created one at a time, such that when the contract is called it spawns a new token in the set which is then sent to the buyer. 
 
 ### Wrapping
-Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, wrapped bitcoin, or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1.  
+Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, [wrapped bitcoin](https://wbtc.network/), or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1.  
 
 accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
@@ -92,7 +92,7 @@ accounts for about x of supply. Ether itself can be wrapped to travel to other c
 Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another[^inter]. An analogy on bridging tokens comes traditional finance. To send money overseas a third party needs to hold the first currency and then loan out the second currency. The forex broker or bank is fine with taking this position because they can resell the excess currency while earning a fee. This parallel isn't entirely accurate because the bank is not minting new currency to sell you, rather they are using their inventory. The blockchain case does involve creating new tokens.
 [^inter]: Some blockchain ecosystems have been designed with this in mind, particularly Cosmos and Polkadot. This does not, however, mean that they work with each other, just that the parachains of Polkadot and individual blockchains of Cosmos are interoperable within their respective ecosystems.
 
-To bridge tokens from Bitcoin to Ethereum, using [*Wrapped Bitcoin*](https://wbtc.network/) as an example:
+To bridge tokens from Bitcoin to Ethereum, using wrapped bitcoin as an example:
 1. send `BTC` to a trusted third party custodial service, in this example [BitGo](https://www.bitgo.com/)
 2. `BTC` is locked up and held by BitGo; its visible, but not available on the bitcoin blockchain
 3. BitGo mints new tokens called wrapped bitcoins, `wBTC`, in an ERC-20 contract, to be used on Ethereum. The wrapped version must track the price of the original token. Value transfer in this case is 1:1, and any deviation would be an opportunity for arbitrage.
@@ -108,6 +108,15 @@ For minting and burning wrapped bitcoin through the steps above the third party 
 Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works).
 
 ### Burning
+Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the *London* hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
+
+Practicaly speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses, sometimes called zero-addresses:
+
+|address|note|
+|:---|:---|
+|`0x0000000000000000000000000000000000000000`|the beginning `0x0` is enough to know its a zero address| 
+|`0x000000000000000000000000000000000000dEaD`|note the "dead" in hex at the end| 
+|`0xdEAD000000000000000042069420694206942069`|not officially unspendable but highly unlikely this [address](https://www.reddit.com/r/ethereum/comments/nenuk0/comment/gyi4pkn/?utm_source=share&utm_medium=web2x&context=3) is ever generated| 
 
 
 
@@ -136,7 +145,7 @@ Chart
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
-* []()
+* [Chapter: Tokens from *Mastering Ethereum*](https://github.com/ethereumbook/ethereumbook/blob/develop/10tokens.asciidoc)
 * []()
 
 # Next
