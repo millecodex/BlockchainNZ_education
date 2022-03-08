@@ -84,25 +84,28 @@ A slow and steady issuance has its benefits such as knowing in advance how many 
 The popularity of NFTs has brought *minting* into common usage. NFTs are usually created one at a time, such that when the contract is called it spawns a new token in the set which is then sent to the buyer. 
 
 ### Wrapping
-Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on Bitcoin blockchain) while releaseing a new bitcoin-ish token (on Ethereum blockchain). This is where wrapping comes in. Wrapped bitcoin, or `wBTC` accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
+Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, wrapped bitcoin, or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1.  
+
+accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
 ### Bridging
-Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains[^inter]. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another. An analogy comes traditional finance. To send money overseas a third party needs to hold the first currency and then loan out the second currency. The forex broker is fine with this because they can resell the excess currency while earning a fee.
-
-To bridge tokens from Bitcoin to Ethereum:
-1. send `BTC` to a contract
-2. `BTC` is locked up and not available on the bitcoin blockchain
-3. mint new tokens called wrapped bitcoins `wBTC` on Ethereum. The wrapped version must track the price of the original token. Value transfer in this case is 1:1, and any deviation would be an opportunity for arbitrage.
-4. `wBTC` can now be traded as an ERC-20 token.
-
-To bridge back from Ethereum to Bitcoin:
-1. send `wBTC` to a contract
-2. `wBTC` is now taken out of circulation by burning
-3. original `BTC` is unlocked on bitcoin
-
+Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another[^inter]. An analogy on bridging tokens comes traditional finance. To send money overseas a third party needs to hold the first currency and then loan out the second currency. The forex broker or bank is fine with taking this position because they can resell the excess currency while earning a fee. This parallel isn't entirely accurate because the bank is not minting new currency to sell you, rather they are using their inventory. The blockchain case does involve creating new tokens.
 [^inter]: Some blockchain ecosystems have been designed with this in mind, particularly Cosmos and Polkadot. This does not, however, mean that they work with each other, just that the parachains of Polkadot and individual blockchains of Cosmos are interoperable within their respective ecosystems.
 
+To bridge tokens from Bitcoin to Ethereum, using [*Wrapped Bitcoin*](https://wbtc.network/) as an example:
+1. send `BTC` to a trusted third party custodial service, in this example [BitGo](https://www.bitgo.com/)
+2. `BTC` is locked up and held by BitGo; its visible, but not available on the bitcoin blockchain
+3. BitGo mints new tokens called wrapped bitcoins, `wBTC`, in an ERC-20 contract, to be used on Ethereum. The wrapped version must track the price of the original token. Value transfer in this case is 1:1, and any deviation would be an opportunity for arbitrage.
+4. `wBTC` can now be traded as an ERC-20 token.
 
+To bridge back, or redeem, from Ethereum to Bitcoin:
+1. send `wBTC` to BitGo's contract
+2. `wBTC` is now taken out of circulation by burning
+3. original `BTC` is unlocked and sent to the user on the bitcoin blockchain
+
+For minting and burning wrapped bitcoin through the steps above the third party collects KYC information and so this process isn't entirely decentralized. For retail users that don't need to mint/burn and just want to use `wBTC` they can still use a decentralized exchange like SushiSwap or Uniswap to get the token.  According to [DeFi Llama](https://defillama.com/protocols/Bridge) there is over $13B bitcoin that has been bridged to other chains, mostly Ethereum. 
+
+Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works).
 
 ### Burning
 
