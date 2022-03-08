@@ -112,7 +112,7 @@ Burning tokens is a provable way to remove them from circulation and the overall
 
 Practicaly speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses, sometimes called zero-addresses:
 
-|address|note|
+|Ethereum address|note|
 |:---|:---|
 |`0x0000000000000000000000000000000000000000`|the beginning `0x0` is enough to know its a zero address| 
 |`0x000000000000000000000000000000000000dEaD`|note the "dead" in hex at the end| 
@@ -120,33 +120,17 @@ Practicaly speaking, tokens are burned by being sent to an unspendable address. 
 
 
 
-There are many smart contract platforms, or "Layer 1s", that can run dApps and transfer tokens. Some of them even appear to have the same token running on multiple blockchains. While this may true in name, the prudent reader always does their own research (DYOR) to avoid the embarassment of sending tokens to a contract that cannot accept them. 
-
-> You may have to lookup exactly what type of token you are dealing with. Your first hint comes from the label itself. Here some common ones. Note these are **not** standardized and thus new projects may introduce their own token identifiers.
-
-Summary Table
-
-|Token label|description|example|
-|:----------|:----------|:------|
-|`ibTKN`| interest bearing tokens||
-|`wTKN` |wrapped tokens|`wETH.e` is wrapped ETH on avalanche|
-|`ETH-USDC-lp`| liquidity provider tokens||
-
-<p align="center"><img width="600" alt="tokens_abracadabra" src="https://user-images.githubusercontent.com/39792005/150704500-eab147f5-5191-4999-b44f-2bf044d7ac8b.png"></p>
-
 # graphic example
 Chart
 
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src="https://user-images.githubusercontent.com/39792005/147860382-00470018-aae5-46a7-8d7f-023a2b163a4f.png"></p>
 
 # What did we miss?
-* Point form list
-  * airdrops
+* airdrops
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
 * [Chapter: Tokens from *Mastering Ethereum*](https://github.com/ethereumbook/ethereumbook/blob/develop/10tokens.asciidoc)
-* []()
 
 # Next
 * :point_right: [Addresses](addresses.md): bitcoin & segwit, multichain, formats, generation, vanity, security, math
