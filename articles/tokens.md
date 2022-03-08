@@ -73,6 +73,7 @@ Ethereum may be the original smart contract platform, but there are plenty of yo
 |Cosmos   |`ATOM`|:negative_squared_cross_mark:|The `ATOM` token can be found on Ethereum and Binance Smart Chain, but is the native asset of the Cosmos ecosystem. EVM compatibility is in progress.|
 
 # a Token's Lifecycle
+### Minting 👉 Wrapping 👉 Bridging 👉 Burning
 Many things can happen to our cryptographic tokens during their life span. To begin with: where do tokens come from?
 
 ### Minting
@@ -86,7 +87,22 @@ The popularity of NFTs has brought *minting* into common usage. NFTs are usually
 Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on Bitcoin blockchain) while releaseing a new bitcoin-ish token (on Ethereum blockchain). This is where wrapping comes in. Wrapped bitcoin, or `wBTC` accounts for about x of supply. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
 ### Bridging
-Transferring tokens from one blockchain to another requires a bridge.
+Transferring tokens from one blockchain to another requires a bridge because there is no native compatibility between blockchains[^inter]. In a multi-blockchain world interoperability is a necessity to transfer value from one chain to another. An analogy comes traditional finance. To send money overseas a third party needs to hold the first currency and then loan out the second currency. The forex broker is fine with this because they can resell the excess currency while earning a fee.
+
+To bridge tokens from Bitcoin to Ethereum:
+1. send `BTC` to a contract
+2. `BTC` is locked up and not available on the bitcoin blockchain
+3. mint new tokens called wrapped bitcoins `wBTC` on Ethereum. The wrapped version must track the price of the original token. Value transfer in this case is 1:1, and any deviation would be an opportunity for arbitrage.
+4. `wBTC` can now be traded as an ERC-20 token.
+
+To bridge back from Ethereum to Bitcoin:
+1. send `wBTC` to a contract
+2. `wBTC` is now taken out of circulation by burning
+3. original `BTC` is unlocked on bitcoin
+
+[^inter]: Some blockchain ecosystems have been designed with this in mind, particularly Cosmos and Polkadot. This does not, however, mean that they work with each other, just that the parachains of Polkadot and individual blockchains of Cosmos are interoperable within their respective ecosystems.
+
+
 
 ### Burning
 
