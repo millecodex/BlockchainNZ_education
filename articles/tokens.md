@@ -4,7 +4,7 @@
 
 ### Contents
 1. [Introduction](tokens.md#introduction)
-1. [Token Standards (Ethereum)](tokens.md#token-standards)
+1. [Token Standards (Ethereum)](tokens.md#token-standards-ethereum)
 2. [Non-Ethereum Standards](tokens.md#non-ethereum-token-standards)
 3. [Token Lifecycle](tokens.md#a-tokens-lifecycle)
 4. [What did we miss?](tokens.md#what-did-we-miss)
