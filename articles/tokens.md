@@ -104,7 +104,7 @@ For minting and burning wrapped bitcoin through the steps above the third party 
 Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works).
 
 ### Burning
-Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the *London* hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
+Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the [London](https://blog.ethereum.org/2021/07/15/london-mainnet-announcement/) hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
 
 Practically speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses:
 
@@ -116,6 +116,8 @@ Practically speaking, tokens are burned by being sent to an unspendable address.
 
 Sending any tokens, either accidentally or on purpose, to these addresses will be interpreted as a burn and result in a loss of funds.
 
+### A Cautionary Note
+Sending tokens to any address that you do not control or have the private keys to requires diligence in checking the destination, both to ensure the right network is being used, and the address is as intended. If tokens get sent to a random address there is no method or process for recovering them. There is no consumer protection in crypto!
 <!---
 # graphic example
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src=""></p>
