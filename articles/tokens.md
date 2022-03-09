@@ -1,7 +1,5 @@
 [↰ back](https://github.com/millecodex/BlockchainNZ_education#readme)
 # Tokens
-## 🛠️ Under Construction 🚧 👷
-
 ### Contents
 1. [Introduction](tokens.md#introduction)
 1. [Token Standards (Ethereum)](tokens.md#token-standards-ethereum)
@@ -116,16 +114,18 @@ Practically speaking, tokens are burned by being sent to an unspendable address.
 |`0x000000000000000000000000000000000000dEaD`|note the "dead" in hex at the end| 
 |`0xdEAD000000000000000042069420694206942069`|not officially unspendable but highly unlikely this [address](https://www.reddit.com/r/ethereum/comments/nenuk0/comment/gyi4pkn/?utm_source=share&utm_medium=web2x&context=3) is ever generated| 
 
+<!---
 # graphic example
 <p align="center"><img width="800" alt="total-stablecoin-supply-daily" src=""></p>
+--->
 
 # What did we miss?
-* airdrops
-* tokenomics is the new blockchain branch 
+* [Airdrops](https://airdrops.io/) - because blockchain data is public new projects can easily view addresses and send them tokens to increase visibility and achieve immediate wider token distribution. Famous airdrops include Stellar Lumens, Uniswap, and Ethereum Name Service.
+* [Tokenomics](https://101blockchains.com/tokenomics/) is the new blockchain branch of token distribution and incentives. Its wise to view most projects as 'experiments-in-progress' and be cautious of marketing claims.
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
-* [Chapter: Tokens from *Mastering Ethereum*](https://github.com/ethereumbook/ethereumbook/blob/develop/10tokens.asciidoc)
+* [The Tokens chapter from *Mastering Ethereum*](https://github.com/ethereumbook/ethereumbook/blob/develop/10tokens.asciidoc)
 
 # Next
 * :point_right: [Addresses](addresses.md): bitcoin & segwit, multichain, formats, generation, vanity, security, math
