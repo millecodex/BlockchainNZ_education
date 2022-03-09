@@ -106,13 +106,15 @@ Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.
 ### Burning
 Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the *London* hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
 
-Practically speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses, sometimes called zero-addresses:
+Practically speaking, tokens are burned by being sent to an unspendable address. This provides the verification that they can no longer be used. For Ethereum this means the recipient address has neither a private key nor a contract capable of accepting ether. You may have seen some burn addresses:
 
 |Ethereum address|note|
 |:---|:---|
-|`0x0000000000000000000000000000000000000000`|the beginning `0x0` is enough to know its a zero address| 
+|`0x0000000000000000000000000000000000000000`|the zero address; this is a default used for contract creation| 
 |`0x000000000000000000000000000000000000dEaD`|note the "dead" in hex at the end| 
-|`0xdEAD000000000000000042069420694206942069`|not officially unspendable but highly unlikely this [address](https://www.reddit.com/r/ethereum/comments/nenuk0/comment/gyi4pkn/?utm_source=share&utm_medium=web2x&context=3) is ever generated| 
+|`0xdEAD000000000000000042069420694206942069`|not technically unspendable but highly unlikely this [address](https://www.reddit.com/r/ethereum/comments/nenuk0/comment/gyi4pkn/?utm_source=share&utm_medium=web2x&context=3) is ever generated| 
+
+Sending any tokens, either accidentally or on purpose, to these addresses will be interpreted as a burn and result in a loss of funds.
 
 <!---
 # graphic example
