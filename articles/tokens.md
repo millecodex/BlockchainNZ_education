@@ -89,19 +89,24 @@ Transferring tokens from one blockchain to another requires a bridge because the
 [^inter]: Some blockchain ecosystems have been designed with this in mind, particularly Cosmos and Polkadot. This does not, however, mean that they work with each other, just that the parachains of Polkadot and individual blockchains of Cosmos are interoperable within their respective ecosystems.
 
 To bridge tokens from Bitcoin to Ethereum, using wrapped bitcoin as an example:
-1. send `BTC` to a trusted third party custodial service, in this example [BitGo](https://www.bitgo.com/)
+1. send `BTC` to a trusted third party custodial service; wrapped bitcoin uses [BitGo](https://www.bitgo.com/)
 2. `BTC` is locked up and held by BitGo; its visible, but not available on the bitcoin blockchain
 3. BitGo mints new tokens called wrapped bitcoins, `wBTC`, in an ERC-20 contract, to be used on Ethereum. The wrapped version must track the price of the original token. Value transfer in this case is 1:1, and any deviation would be an opportunity for arbitrage.
-4. `wBTC` can now be traded as an ERC-20 token.
+4. the custodian sends `wBTC` to the user and can now be traded as an ERC-20 token.
 
 To bridge back, or redeem, from Ethereum to Bitcoin:
 1. send `wBTC` to BitGo's contract
 2. `wBTC` is now taken out of circulation by burning
-3. original `BTC` is unlocked and sent to the user on the bitcoin blockchain
+3. original `BTC` is unlocked and 
+4. sent to the user on the bitcoin blockchain
 
 For minting and burning wrapped bitcoin through the steps above the third party collects KYC information and so this process isn't entirely decentralized. For retail users that don't need to mint/burn and just want to use `wBTC` they can still use a decentralized exchange like SushiSwap or Uniswap to get the token.  According to [DeFi Llama](https://defillama.com/protocols/Bridge) there is over $13B bitcoin that has been bridged to other chains, mostly Ethereum. 
 
-Bridging isn't just for bitcoin though. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works).
+The general bridging process is shown in the diagram below, this time using Ethereum as the native blockchain and Avalanche as the destination.
+
+<p align="center"><img width="800" alt="" src=""></p>
+
+Bridging isn't just for bitcoin and ether. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works). 
 
 ### Burning
 Burning tokens is a provable way to remove them from circulation and the overall supply. This is necessary in bridging operations to prevent supply inflation or [theft](https://cointelegraph.com/news/wormhole-hack-illustrates-danger-of-defi-cross-chain-bridges). Protocols may also want to burn their tokens according to scheduled supply changes or upgrades. Part of the Ethereum network's transition to proof-of-stake involved an upgrade in July 2021 that changed the fee distribution policy for miners. After the [London](https://blog.ethereum.org/2021/07/15/london-mainnet-announcement/) hardfork, miner's fees are split into two groups with a base fee being burned and a priority fee going to the miner. This has effectively changed the supply of ether from inflationary to defationary.
@@ -118,10 +123,6 @@ Sending any tokens, either accidentally or on purpose, to these addresses will b
 
 ### A Cautionary Note
 Sending tokens to any address that you do not control or have the private keys to requires diligence in checking the destination, both to ensure the right network is being used, and the address is as intended. If tokens get sent to a random address there is no method or process for recovering them. There is no consumer protection in crypto!
-<!---
-# graphic example
-<p align="center"><img width="800" alt="total-stablecoin-supply-daily" src=""></p>
---->
 
 # What did we miss?
 * [Airdrops](https://airdrops.io/) - because blockchain data is public new projects can easily view addresses and send them tokens to increase visibility and achieve immediate wider token distribution. Famous airdrops include Stellar Lumens, Uniswap, and Ethereum Name Service.
