@@ -104,7 +104,7 @@ For minting and burning wrapped bitcoin through the steps above the third party 
 
 The general bridging process is shown in the diagram below, this time using Ethereum as the native blockchain and Avalanche as the destination.
 
-<p align="center"><img width="800" alt="" src=""></p>
+<p align="center"><img width="800" alt="" src="https://user-images.githubusercontent.com/39792005/158740007-83a199eb-56d3-4067-9598-84d6e871c4b0.png"></p>
 
 Bridging isn't just for bitcoin and ether. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works). 
 
