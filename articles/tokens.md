@@ -102,10 +102,8 @@ To bridge back, or redeem, from Ethereum to Bitcoin:
 
 For minting and burning wrapped bitcoin through the steps above the third party collects KYC information and so this process isn't entirely decentralized. For retail users that don't need to mint/burn and just want to use `wBTC` they can still use a decentralized exchange like SushiSwap or Uniswap to get the token.  According to [DeFi Llama](https://defillama.com/protocols/Bridge) there is over $13B bitcoin that has been bridged to other chains, mostly Ethereum. 
 
-The general bridging process is shown in the diagram below, this time using Ethereum as the native blockchain and Avalanche as the destination.
-
-<p align="center"><img width="800" alt="" src="https://user-images.githubusercontent.com/39792005/158740007-83a199eb-56d3-4067-9598-84d6e871c4b0.png"></p>
-
+The general bridging process is shown in the diagram below, this time using Ethereum as the native blockchain and Avalanche as the destination. First the `ETH` is deposited into the bridging contract, it is locked, and the bridge is activated to mint new `wETH` tokens on Avalanche, which are then sent to the destination wallet. Redemption happens in reverse except step 3 is replaced with a burn, and step 2 is an unlock.
+> <p align="center"><img width="800" alt="" src="https://user-images.githubusercontent.com/39792005/158924916-bb061d54-4164-4638-89f3-d21bf461a2bf.PNG"></p>
 Bridging isn't just for bitcoin and ether. The [Multichain](https://app.multichain.org/#/router) service has over 600 bridged assets across most major blockchains. They also have a router for multi-chain bridging and support for NFTs. Multichain's protocol relies on a network of nodes and results in a decentralised trustless service through some clever cryptography called [Secure Multi-Party Computation](https://docs.multichain.org/how-it-works). 
 
 ### Burning
