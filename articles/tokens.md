@@ -78,13 +78,14 @@ Minting tokens refers to the same process of creating tradeable items of value a
 Compare the minting of New Zealand dollars to new bitcoin. Bitcoin's chart goes well into the future as the supply schedule is fixed in code. Click for larger version.
 |New Zealand M3 money supply since 1990 [(source)](https://tradingeconomics.com/new-zealand/money-supply-m3)|Bitcoin supply (green) since 2009 [(source)](https://www.coingecko.com/en/explain/bitcoin_halving) |
 |:---|:---|
-|<p align="center"><img width="600" alt="New_Zealand_m3_money_supply" src="https://user-images.githubusercontent.com/39792005/159104132-ec5bf9de-e09e-4c05-a6e9-42add7c83190.PNG"></p>|<p align="center"><img width="600" alt="bitcoin_supply" src="https://user-images.githubusercontent.com/39792005/147862906-6537e8d0-aa4d-403d-825b-aefd1e31585a.png"></p>|
+|<p align="center"><img width="600" alt="New_Zealand_m3_money_supply" src="https://user-images.githubusercontent.com/39792005/159141186-1d657bf2-924d-44c2-89c0-db5fad3f2b2d.PNG"></p>|<p align="center"><img width="600" alt="bitcoin_supply" src="https://user-images.githubusercontent.com/39792005/147862906-6537e8d0-aa4d-403d-825b-aefd1e31585a.png"></p>|
 
 A slow and steady issuance has its benefits such as knowing in advance how many will ever be minted. If all the tokens were created at inception there would be a distribution problem: the creator(s) would have the total supply and have to incentivise newcomers.  Tokenomics is the central-planning activity of deciding who gets how many tokens and at what intervals. This is a hard problem because it involves human nature. For example: How much is too much to reserve for the creators? (called a pre-mine) Developers? VCs? Is the supply infationary or deflationary? Can the details be changed in the future?
 
 The popularity of NFTs has brought *minting* into common usage. NFTs are usually created one at a time, such that when the contract is called it spawns a new token in the set which is then sent to the buyer. 
 
 ### Wrapping
+
 Next, our token may want to venture out beyond its home chain and explore some of the broader ecosystem. Taking a bitcoin as an example, this token is only built to be transferred between users of the Bitcoin network. What if our intrepid bitcoin wanted to participate in some yield farming on the Ethereum blockchain? One method to do this would be for someone to act as a escrow service and hold your bitcoin (on the Bitcoin blockchain) while releaseing a new bitcoin-ish token (on the Ethereum blockchain). This is where wrapping comes in. The new tokenized version, [wrapped bitcoin](https://wbtc.network/), or `wBTC`, can be used in Ethereum wallets and apps while tracking the value of bitcoin 1:1. Ether itself can be wrapped to travel to other chains where it may be seen as `wETH`.
 
 ### Bridging
