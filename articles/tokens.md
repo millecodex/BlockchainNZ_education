@@ -75,7 +75,7 @@ Many things can happen to our cryptographic tokens during their life span. To be
 ### Minting
 Minting tokens refers to the same process of creating tradeable items of value as coins being minted as new currency. Just as with coins, it seems best to increase token supply slowly, or at least according to a set plan. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the [monetary supply](https://www.interest.co.nz/charts/credit/money-supply). A key difference with the minting of cryptocurrencies such as bitcoin is that they adhere to a [fixed schedule](bitcoin.md#economic-incentives--monetary-supply), set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 `BTC` every ten minutes. 
 
-Compare the minting of new bitcoin to New Zealand dollars. Bitcoin's chart goes well into the future as the supply schedule is fixed in code. Click for larger version.
+Compare the minting of New Zealand dollars to new bitcoin. Bitcoin's chart goes well into the future as the supply schedule is fixed in code. Click for larger version.
 |New Zealand M3 money supply since 1990 [(source)](https://tradingeconomics.com/new-zealand/money-supply-m3)|Bitcoin supply (green) since 2009 [(source)](https://www.coingecko.com/en/explain/bitcoin_halving) |
 |:---|:---|
 |<p align="center"><img width="600" alt="New_Zealand_m3_money_supply" src="https://user-images.githubusercontent.com/39792005/159104132-ec5bf9de-e09e-4c05-a6e9-42add7c83190.PNG"></p>|<p align="center"><img width="600" alt="bitcoin_supply" src="https://user-images.githubusercontent.com/39792005/147862906-6537e8d0-aa4d-403d-825b-aefd1e31585a.png"></p>|
@@ -126,8 +126,8 @@ Sending any tokens, either accidentally or on purpose, to these addresses will b
 Sending tokens to any address that you do not control or have the private keys to requires diligence in checking the destination, both to ensure the right network is being used, and the address is as intended. If tokens get sent to a random address there is no method or process for recovering them. There is no consumer protection in crypto!
 
 # What did we miss?
-* [Airdrops](https://airdrops.io/) - because blockchain data is public new projects can easily view addresses and send them tokens to increase visibility and achieve immediate wider token distribution. Famous airdrops include Stellar Lumens, Uniswap, and Ethereum Name Service.
-* [Tokenomics](https://101blockchains.com/tokenomics/) is the new blockchain branch of token distribution and incentives. Its wise to view most projects as 'experiments-in-progress' and be cautious of marketing claims.
+* [Airdrops](https://airdrops.io/) - because blockchain data is public new projects can easily view wallet addresses and send them tokens to increase visibility and achieve immediate wider token distribution. Famous airdrops include Stellar Lumens, Uniswap, and Ethereum Name Service.
+* [Tokenomics](https://101blockchains.com/tokenomics/) is the new blockchain branch of token distribution and incentives. It's wise to view most projects as 'experiments-in-progress' and be cautious of marketing claims.
 
 # Further Reading - the very short list
 * [An Ethereum token list standard](https://tokenlists.org/)
