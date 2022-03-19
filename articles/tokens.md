@@ -74,11 +74,12 @@ Many things can happen to our cryptographic tokens during their life span. To be
 
 ### Minting
 Minting tokens refers to the same process of creating tradeable items of value as coins being minted as new currency. Just as with coins, it seems best to increase token supply slowly, or at least according to a set plan. All of the New Zealand dollars weren't created at once, rather they are minted over time as the Reserve Bank seeks to increase the [monetary supply](https://www.interest.co.nz/charts/credit/money-supply). A key difference with the minting of cryptocurrencies such as bitcoin is that they adhere to a [fixed schedule](bitcoin.md#economic-incentives--monetary-supply), set in advance, written into the code. For example, new bitcoins are created in the coinbase transaction of every block, presently 6.25 `BTC` every ten minutes. 
+<img width="1129" alt="New_Zealand_m3_money_supply" src="">
 
-Compare the minting of new bitcoin to New Zealand dollars.
-|New Zealand M3 money supply since 1990 [(source)](https://www.interest.co.nz/charts/credit/money-supply)|Bitcoin supply (green) since 2008 [(source)](https://www.coingecko.com/en/explain/bitcoin_halving) |
+Compare the minting of new bitcoin to New Zealand dollars. Bitcoin's chart goes well into the future as the supply schedule is fixed in code. Click for larger version.
+|New Zealand M3 money supply since 1990 [(source)](https://tradingeconomics.com/new-zealand/money-supply-m3)|Bitcoin supply (green) since 2008 [(source)](https://www.coingecko.com/en/explain/bitcoin_halving) |
 |:---|:---|
-|<p align="center"><img width="400" alt="New_Zealand_m3_money_supply" src="https://user-images.githubusercontent.com/39792005/158930852-3e592479-b84e-4805-886f-fa89a4a2fb47.PNG"></p>|<p align="center"><img width="400" alt="bitcoin_supply" src="https://user-images.githubusercontent.com/39792005/147862906-6537e8d0-aa4d-403d-825b-aefd1e31585a.png"></p>|
+|<p align="center"><img width="600" alt="New_Zealand_m3_money_supply" src="https://user-images.githubusercontent.com/39792005/159104132-ec5bf9de-e09e-4c05-a6e9-42add7c83190.PNG"></p>|<p align="center"><img width="600" alt="bitcoin_supply" src="https://user-images.githubusercontent.com/39792005/147862906-6537e8d0-aa4d-403d-825b-aefd1e31585a.png"></p>|
 
 A slow and steady issuance has its benefits such as knowing in advance how many will ever be minted. If all the tokens were created at inception there would be a distribution problem: the creator(s) would have the total supply and have to incentivise newcomers.  Tokenomics is the central-planning activity of deciding who gets how many tokens and at what intervals. This is a hard problem because it involves human nature. For example: How much is too much to reserve for the creators? (called a pre-mine) Developers? VCs? Is the supply infationary or deflationary? Can the details be changed in the future?
 
