@@ -17,6 +17,7 @@
 * multisig
 * multichain - addresses existing on many chains, explorers to find them
 * Math Alert, how many addresses are possible? random?
+* vanity
 
 # Wallets
 * passwords, encryption, seed phrases
