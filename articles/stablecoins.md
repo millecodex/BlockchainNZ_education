@@ -170,6 +170,8 @@ stuff here
 
 # What did we miss?
 * Branded Dollars allow a project to use their own token to bootstrap their own stablecoin. [ICHI](https://www.ichi.org/) is calling it stablecoin-as-a-service.
+* Neutrino is an algorithmic price-stable cryptocurrency protocol that allows for the creation of stable coins tied to a specific real world asset, such as national currency or commodity, and collateralized by a native token. https://github.com/waves-exchange/neutrino-contract
+* 
 
 # Further Reading - the very short list
 * [A Note on Cryptocurrency Stabilisation: Seigniorage Shares by Robert Sams (pdf)](https://github.com/rmsams/stablecoins/blob/master/paper.pdf)
